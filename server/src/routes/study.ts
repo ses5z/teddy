@@ -77,6 +77,12 @@ studyRouter.post('/:id/explanation', (req, res) => {
     res.status(404).json({ error: 'session_not_found' });
     return;
   }
+  // The explanation is a choice made after a hint: with hints left, the student must confirm it.
+  const confirmed = (req.body as { confirmed?: unknown } | undefined)?.confirmed === true;
+  if (session.hintsGiven < session.plan.hints.length && !confirmed) {
+    res.status(409).json({ error: 'confirmation_required' });
+    return;
+  }
   const body: StudyExplanationResponse = {
     steps: session.plan.explanation,
     practice: session.plan.practice,

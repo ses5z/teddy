@@ -65,6 +65,6 @@ export const api = {
     request<StudySample[]>(`/ai/study/samples?course=${encodeURIComponent(courseCode)}&lang=${language}`),
   studyStart: (body: StudyStartRequest) => post<StudyStartResponse>('/ai/study/start', body),
   studyHint: (id: string) => post<StudyHintResponse>(`/ai/study/${id}/hint`),
-  studyExplanation: (id: string) => post<StudyExplanationResponse>(`/ai/study/${id}/explanation`),
+  studyExplanation: (id: string) => post<StudyExplanationResponse>(`/ai/study/${id}/explanation`, { confirmed: true }),
   studyPractice: (id: string) => post<StudyPracticeResponse>(`/ai/study/${id}/practice`),
 };
