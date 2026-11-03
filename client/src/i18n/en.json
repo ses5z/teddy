@@ -263,5 +263,6 @@
   "calendar.range": "{start} – {end}",
   "source.official": "TEDU calendar",
   "announcements.error": "Could not load announcements right now.",
-  "logo.alt": "TED University"
+  "logo.alt": "TED University",
+  "course.missing": "Course not found."
 }

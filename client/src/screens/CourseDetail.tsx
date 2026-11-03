@@ -20,7 +20,7 @@ import { Skeleton } from '../components/Skeleton';
 import { DataSourceBadge } from '../components/SourceTag';
 import { useSettings } from '../context/SettingsContext';
 import type { TKey } from '../i18n';
-import { api } from '../services/api';
+import { api, ApiError } from '../services/api';
 import { formatDate, remaining } from '../utils';
 
 const TABS: { id: string; label: TKey }[] = [
@@ -202,7 +202,7 @@ export function CourseDetailScreen() {
   const courseId = Number(id);
   const lang = settings.language;
   const [searchParams, setSearchParams] = useSearchParams();
-  const [state, setState] = useState<{ source: DataSource; data: CourseDetail } | 'error' | null>(null);
+  const [state, setState] = useState<{ source: DataSource; data: CourseDetail } | 'error' | 'missing' | null>(null);
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   const load = useCallback(() => {
@@ -210,7 +210,7 @@ export function CourseDetailScreen() {
     api
       .course(courseId, lang)
       .then(setState)
-      .catch(() => setState('error'));
+      .catch((error: unknown) => setState(error instanceof ApiError && error.status === 404 ? 'missing' : 'error'));
   }, [courseId, lang]);
 
   useEffect(load, [load]);
@@ -235,6 +235,16 @@ export function CourseDetailScreen() {
   );
 
   if (state === null) return <Skeleton lines={7} label={t('course.loading')} />;
+  if (state === 'missing') {
+    return (
+      <>
+        {backLink}
+        <p role="alert" className="font-semibold">
+          {t('course.missing')}
+        </p>
+      </>
+    );
+  }
   if (state === 'error') {
     return (
       <>

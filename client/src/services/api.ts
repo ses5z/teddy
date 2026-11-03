@@ -25,9 +25,15 @@ import type {
 // Longer than the server's own limits, so the UI can never wait forever.
 const REQUEST_TIMEOUT_MS = 45_000;
 
+export class ApiError extends Error {
+  constructor(readonly status: number) {
+    super(`Request failed: ${status}`);
+  }
+}
+
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(`/api${path}`, { ...init, signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS) });
-  if (!res.ok) throw new Error(`Request failed: ${res.status}`);
+  if (!res.ok) throw new ApiError(res.status);
   return (await res.json()) as T;
 }
 
