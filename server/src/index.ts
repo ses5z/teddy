@@ -17,6 +17,7 @@ const HOST = '127.0.0.1';
 const LOCAL_ORIGIN = /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/;
 
 const app = express();
+app.disable('x-powered-by');
 
 app.use(cors({ origin: LOCAL_ORIGIN }));
 app.use(express.json({ limit: '100kb' }));
