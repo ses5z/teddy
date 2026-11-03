@@ -1,14 +1,15 @@
-import type { CalendarEntry, CampusEvent, Course, FaqEntry, Localized, Rule, SampleAnnouncement, SampleAssignment } from '../types';
+import type { CampusEvent, Course, FaqEntry, Localized, Rule, SampleAnnouncement, SampleAssignment } from '../types';
 import announcementsFile from './announcements.json';
 import assignmentsFile from './assignments.json';
-import calendarFile from './calendar.json';
 import coursesFile from './courses.json';
 import departmentsFile from './departments.json';
 import eventsFile from './events.json';
 import faqFile from './faq.json';
 import rulesFile from './rules.json';
+import teduCalendarFile from './tedu-calendar.json';
 
-export const calendar = calendarFile.items as CalendarEntry[];
+/** Official academic calendar, taken from the university's published page. */
+export const teduCalendar = teduCalendarFile.items as { name: string; start: string; end: string; type: string }[];
 export const rules = rulesFile.items as Rule[];
 export const courses = coursesFile.items as Course[];
 export const departments = departmentsFile.items as { id: string; name: Localized }[];

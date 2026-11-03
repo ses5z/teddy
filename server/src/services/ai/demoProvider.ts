@@ -153,7 +153,8 @@ async function courseWeekReply(language: Language, question: string): Promise<Ch
 }
 
 function faqReply(entry: FaqEntry, language: Language): ChatResponse {
-  return reply(entry.answer[language], entry.source[language], entry.link);
+  const answer = reply(entry.answer[language], entry.source[language], entry.link);
+  return entry.link === '/calendar' ? { ...answer, dataSource: 'official' } : answer;
 }
 
 /** Keyword matching over sample data. Used whenever no AI key is configured. */

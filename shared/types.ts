@@ -1,6 +1,7 @@
 // Types shared by client and server. Keep API contracts here.
 
-export type DataSource = 'moodle' | 'sample';
+/** official: TED University's published academic calendar */
+export type DataSource = 'moodle' | 'sample' | 'official';
 
 export interface HealthResponse {
   status: 'ok';

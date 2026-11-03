@@ -260,5 +260,6 @@
   "calendar.gridLabel": "{month} calendar",
   "calendar.sourceTedu": "TEDU",
   "calendar.sourceMoodle": "Moodle",
-  "calendar.range": "{start} – {end}"
+  "calendar.range": "{start} – {end}",
+  "source.official": "TEDU calendar"
 }

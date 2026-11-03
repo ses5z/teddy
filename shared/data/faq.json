@@ -8,8 +8,8 @@
         "en": "When is the course withdrawal deadline?"
       },
       "answer": {
-        "tr": "Ders bırakma son günü 4 Aralık 2026.",
-        "en": "The course withdrawal deadline is 4 December 2026."
+        "tr": "Ders bırakma son günü 4 Aralık 2026 (18:00).",
+        "en": "The course withdrawal deadline is 4 December 2026 (18:00)."
       },
       "source": {
         "tr": "Akademik Takvim",
@@ -32,8 +32,8 @@
         "en": "When is add-drop?"
       },
       "answer": {
-        "tr": "Ekle-bırak dönemi 21-25 Eylül 2026 arasındadır.",
-        "en": "The add-drop period is 21-25 September 2026."
+        "tr": "Güz dönemi ekle-bırak 6-7 Ekim 2026 tarihlerindedir.",
+        "en": "The fall add-drop period is 6-7 October 2026."
       },
       "source": {
         "tr": "Akademik Takvim",
@@ -54,8 +54,8 @@
         "en": "When does the term start?"
       },
       "answer": {
-        "tr": "Güz dönemi 21 Eylül 2026 tarihinde başlar.",
-        "en": "The fall term starts on 21 September 2026."
+        "tr": "Güz dönemi dersleri 28 Eylül 2026 tarihinde başlar.",
+        "en": "Fall semester classes start on 28 September 2026."
       },
       "source": {
         "tr": "Akademik Takvim",
@@ -77,8 +77,8 @@
         "en": "When do classes end?"
       },
       "answer": {
-        "tr": "Derslerin son günü 8 Ocak 2027.",
-        "en": "The last day of classes is 8 January 2027."
+        "tr": "Güz dönemi derslerinin son günü 31 Aralık 2026.",
+        "en": "The last day of fall classes is 31 December 2026."
       },
       "source": {
         "tr": "Akademik Takvim",
@@ -100,8 +100,8 @@
         "en": "When are midterms?"
       },
       "answer": {
-        "tr": "Vize haftaları 9-20 Kasım 2026 arasındadır.",
-        "en": "Midterm weeks are 9-20 November 2026."
+        "tr": "Akademik takvimde vize tarihi yok. Vize tarihleri için ders duyurularına bak.",
+        "en": "The academic calendar has no midterm dates. Check your course announcements."
       },
       "source": {
         "tr": "Akademik Takvim",
@@ -123,8 +123,8 @@
         "en": "When are finals?"
       },
       "answer": {
-        "tr": "Final haftaları 11-23 Ocak 2027 arasındadır.",
-        "en": "Final exam weeks are 11-23 January 2027."
+        "tr": "Güz dönemi finalleri 4-17 Ocak 2027 tarihlerindedir.",
+        "en": "Fall semester finals are 4-17 January 2027."
       },
       "source": {
         "tr": "Akademik Takvim",
@@ -146,8 +146,8 @@
         "en": "What holidays are there this term?"
       },
       "answer": {
-        "tr": "29 Ekim Cumhuriyet Bayramı ve 1 Ocak yılbaşı tatildir.",
-        "en": "29 October (Republic Day) and 1 January (New Year) are holidays."
+        "tr": "Sıradaki resmî tatil 1 Ocak 2027 yılbaşı. Tüm tatiller için Takvim sayfasına bak.",
+        "en": "The next official holiday is New Year's Day, 1 January 2027. See the Calendar page for all holidays."
       },
       "source": {
         "tr": "Akademik Takvim",

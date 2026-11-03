@@ -149,7 +149,8 @@ Ders Modu cevapları, tarayıcı paketine girmesin diye `server/src/data/` için
 
 ## Örnek verileri güncelleme
 
-- Kampüs verileri: `shared/data/` (`calendar`, `rules`, `courses`, `events`, `faq`, `assignments`, `departments`).
+- Akademik takvim: `shared/data/tedu-calendar.json` (TEDÜ takviminden, resmî). Yeni takvimde elle güncellenir.
+- Örnek kampüs verileri: `shared/data/` (`rules`, `courses`, `events`, `faq`, `assignments`, `departments`).
 - Ders Modu soruları: `server/src/data/study-questions.json`.
 - Her metin `tr` ve `en` alanları içerir.
 - `offsetDays` bugünden kaç gün sonrası olduğunu belirtir, böylece demoda tarihler güncel kalır. Gerçek veriye geçerken sabit tarih kullanılmalıdır.

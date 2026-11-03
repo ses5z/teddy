@@ -1,15 +1,15 @@
 import type { ChatSource, DataSource } from '@teddy/shared';
-import { FlaskConical, Link2 } from 'lucide-react';
+import { FlaskConical, Landmark, Link2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useSettings } from '../context/SettingsContext';
 
 export function DataSourceBadge({ source }: { source: DataSource }) {
   const { t } = useSettings();
-  const Icon = source === 'moodle' ? Link2 : FlaskConical;
+  const Icon = source === 'moodle' ? Link2 : source === 'official' ? Landmark : FlaskConical;
   return (
     <span className="inline-flex items-center gap-1 text-muted">
       <Icon size={14} aria-hidden="true" />
-      {t(source === 'moodle' ? 'source.moodle' : 'source.sample')}
+      {t(source === 'moodle' ? 'source.moodle' : source === 'official' ? 'source.official' : 'source.sample')}
     </span>
   );
 }

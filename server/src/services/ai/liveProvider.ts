@@ -46,7 +46,7 @@ function toChatResponse(
     answer: reply.answer,
     source,
     confident: reply.confident,
-    dataSource: usedMoodle || moodleSource ? 'moodle' : 'sample',
+    dataSource: usedMoodle || moodleSource ? 'moodle' : link === '/calendar' ? 'official' : 'sample',
   };
 }
 
