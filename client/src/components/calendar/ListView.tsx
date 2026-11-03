@@ -13,8 +13,7 @@ export function dateRange(entry: CalendarApiEntry, language: 'tr' | 'en', c: (ke
 }
 
 export function EntryRow({ entry }: { entry: CalendarApiEntry }) {
-  const { settings } = useSettings();
-  const { t: c } = useSettings();
+  const { settings, t: c } = useSettings();
   return (
     <li className="flex flex-col gap-1 border-b border-border py-3 sm:flex-row sm:items-baseline sm:gap-4">
       <span className="font-semibold sm:w-72 sm:shrink-0">{dateRange(entry, settings.language, c)}</span>
@@ -28,8 +27,7 @@ export function EntryRow({ entry }: { entry: CalendarApiEntry }) {
 }
 
 export function ListView({ entries, today, month }: { entries: CalendarApiEntry[]; today: string; month: string | null }) {
-  const { settings } = useSettings();
-  const { t: c } = useSettings();
+  const { settings, t: c } = useSettings();
   const [showPast, setShowPast] = useState(false);
 
   const sorted = [...entries].sort((a, b) => a.start.localeCompare(b.start) || a.end.localeCompare(b.end));

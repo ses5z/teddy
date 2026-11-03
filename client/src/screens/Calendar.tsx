@@ -15,7 +15,7 @@ type Status = 'loading' | 'error' | 'ready';
 
 export function CalendarPage() {
   const { t, settings } = useSettings();
-  const { t: c } = useSettings();
+  const c = t;
   const lang = settings.language;
   const [params] = useSearchParams();
   const navigate = useNavigate();
@@ -145,8 +145,7 @@ export function CalendarPage() {
           </div>
         </fieldset>
 
-        {(
-          <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
             <Button variant="secondary" aria-label={c('calendar.prev')} onClick={() => goMonth(addMonths(month, -1))}>
               <ChevronLeft aria-hidden="true" size={20} />
             </Button>
@@ -159,8 +158,7 @@ export function CalendarPage() {
             <Button variant="secondary" onClick={() => setParams(view === 'month' ? { month: '', day: '' } : { month: monthOf(today), day: '' })}>
               {c('calendar.today')}
             </Button>
-          </div>
-        )}
+        </div>
       </div>
 
       <div className="my-4">

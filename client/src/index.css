@@ -57,6 +57,7 @@ main:focus {
   * {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
   }
 }
 

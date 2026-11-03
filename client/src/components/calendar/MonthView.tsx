@@ -1,7 +1,7 @@
 import { useEffect, useRef, type KeyboardEvent } from 'react';
 import type { CalendarApiEntry, CalendarEntryType } from '@teddy/shared';
 import { useSettings } from '../../context/SettingsContext';
-import { addDays, addMonths, formatLong, formatMonth, monthOf, monthWeeks, weekdayNames } from './dates';
+import { addDays, shiftMonth, formatLong, formatMonth, monthOf, monthWeeks, weekdayNames } from './dates';
 import { EntryRow } from './ListView';
 import { TYPE_META, ALL_TYPES } from './types';
 
@@ -17,8 +17,7 @@ interface Props {
 const eventsOn = (entries: CalendarApiEntry[], day: string) => entries.filter((e) => e.start <= day && day <= e.end);
 
 export function MonthView({ month, entries, today, selected, onSelect }: Props) {
-  const { settings } = useSettings();
-  const { t: c } = useSettings();
+  const { settings, t: c } = useSettings();
   const lang = settings.language;
   const weeks = monthWeeks(month);
   const focusDay =
@@ -40,19 +39,15 @@ export function MonthView({ month, entries, today, selected, onSelect }: Props) 
       ArrowDown: addDays(day, 7),
       Home: addDays(day, -((new Date(`${day}T00:00:00Z`).getUTCDay() + 6) % 7)),
       End: addDays(day, 6 - ((new Date(`${day}T00:00:00Z`).getUTCDay() + 6) % 7)),
-      PageUp: `${addMonths(monthOf(day), -1)}-${day.slice(8)}`,
-      PageDown: `${addMonths(monthOf(day), 1)}-${day.slice(8)}`,
+      PageUp: shiftMonth(day, -1),
+      PageDown: shiftMonth(day, 1),
     };
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
       onSelect(day);
     } else if (step[event.key]) {
       event.preventDefault();
-      let next = step[event.key];
-      // Month-length overflow (e.g. 31st to a shorter month) falls back to the last valid day of the target.
-      if ((event.key === 'PageUp' || event.key === 'PageDown') && monthOf(next) !== addMonths(monthOf(day), event.key === 'PageUp' ? -1 : 1)) {
-        next = addDays(`${monthOf(next)}-01`, -1);
-      }
+      const next = step[event.key];
       moveFocus.current = true;
       onSelect(next);
     }

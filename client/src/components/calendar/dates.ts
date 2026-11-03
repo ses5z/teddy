@@ -63,3 +63,11 @@ export function formatStamp(stamp: string, language: Language): string {
   if (Number.isNaN(date.getTime())) return stamp;
   return new Intl.DateTimeFormat(locale(language), { dateStyle: 'long', timeStyle: 'short', timeZone: TZ }).format(date);
 }
+
+/** Same day number in another month, clamped to that month's last day. */
+export function shiftMonth(day: string, n: number): string {
+  const target = addMonths(monthOf(day), n);
+  const [y, m] = target.split('-').map(Number);
+  const last = new Date(Date.UTC(y, m, 0)).getUTCDate();
+  return `${target}-${pad(Math.min(Number(day.slice(8)), last))}`;
+}
