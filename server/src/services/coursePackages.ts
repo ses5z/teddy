@@ -212,10 +212,10 @@ export async function getTeachers(courseIds: number[]): Promise<Map<number, stri
       const names = (course.contacts ?? []).map((contact) => contact.fullname);
       if (names.length) teachers.set(course.id, names.join(', '));
     }
+    teacherCache.set('teachers', teachers, CACHE_TTL_MS);
   } catch {
-    // Optional detail: the page works without it.
+    // Optional detail: the page works without it. Not cached, so the next request retries.
   }
-  teacherCache.set('teachers', teachers, CACHE_TTL_MS);
   return teachers;
 }
 
