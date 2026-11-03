@@ -1,0 +1,432 @@
+{
+  "_note": "SAMPLE DATA – gerçek verilerle değiştirilecek",
+  "items": [
+    {
+      "id": "drop",
+      "question": {
+        "tr": "Ders bırakma son günü ne zaman?",
+        "en": "When is the course withdrawal deadline?"
+      },
+      "answer": {
+        "tr": "Ders bırakma son günü 4 Aralık 2026.",
+        "en": "The course withdrawal deadline is 4 December 2026."
+      },
+      "source": {
+        "tr": "Akademik Takvim",
+        "en": "Academic Calendar"
+      },
+      "link": "/calendar",
+      "keywords": [
+        "ders birakma",
+        "birakma son",
+        "ders birak",
+        "withdrawal",
+        "drop a course",
+        "drop deadline"
+      ]
+    },
+    {
+      "id": "add-drop",
+      "question": {
+        "tr": "Ekle-bırak ne zaman?",
+        "en": "When is add-drop?"
+      },
+      "answer": {
+        "tr": "Ekle-bırak dönemi 21-25 Eylül 2026 arasındadır.",
+        "en": "The add-drop period is 21-25 September 2026."
+      },
+      "source": {
+        "tr": "Akademik Takvim",
+        "en": "Academic Calendar"
+      },
+      "link": "/calendar",
+      "keywords": [
+        "ekle birak",
+        "ekle-birak",
+        "add-drop",
+        "add drop"
+      ]
+    },
+    {
+      "id": "term-start",
+      "question": {
+        "tr": "Dönem ne zaman başlıyor?",
+        "en": "When does the term start?"
+      },
+      "answer": {
+        "tr": "Güz dönemi 21 Eylül 2026 tarihinde başlar.",
+        "en": "The fall term starts on 21 September 2026."
+      },
+      "source": {
+        "tr": "Akademik Takvim",
+        "en": "Academic Calendar"
+      },
+      "link": "/calendar",
+      "keywords": [
+        "donem ne zaman",
+        "donem basl",
+        "dersler ne zaman basl",
+        "term start",
+        "semester start"
+      ]
+    },
+    {
+      "id": "term-end",
+      "question": {
+        "tr": "Dersler ne zaman bitiyor?",
+        "en": "When do classes end?"
+      },
+      "answer": {
+        "tr": "Derslerin son günü 8 Ocak 2027.",
+        "en": "The last day of classes is 8 January 2027."
+      },
+      "source": {
+        "tr": "Akademik Takvim",
+        "en": "Academic Calendar"
+      },
+      "link": "/calendar",
+      "keywords": [
+        "dersler ne zaman bit",
+        "donem ne zaman bit",
+        "classes end",
+        "term end",
+        "semester end"
+      ]
+    },
+    {
+      "id": "midterms",
+      "question": {
+        "tr": "Vizeler ne zaman?",
+        "en": "When are midterms?"
+      },
+      "answer": {
+        "tr": "Vize haftaları 9-20 Kasım 2026 arasındadır.",
+        "en": "Midterm weeks are 9-20 November 2026."
+      },
+      "source": {
+        "tr": "Akademik Takvim",
+        "en": "Academic Calendar"
+      },
+      "link": "/calendar",
+      "keywords": [
+        "vizeler",
+        "vize haftasi",
+        "vize ne zaman",
+        "midterms",
+        "midterm week"
+      ]
+    },
+    {
+      "id": "finals",
+      "question": {
+        "tr": "Finaller ne zaman?",
+        "en": "When are finals?"
+      },
+      "answer": {
+        "tr": "Final haftaları 11-23 Ocak 2027 arasındadır.",
+        "en": "Final exam weeks are 11-23 January 2027."
+      },
+      "source": {
+        "tr": "Akademik Takvim",
+        "en": "Academic Calendar"
+      },
+      "link": "/calendar",
+      "keywords": [
+        "finaller",
+        "final haftasi",
+        "final ne zaman",
+        "finals",
+        "final exam"
+      ]
+    },
+    {
+      "id": "holidays",
+      "question": {
+        "tr": "Bu dönem hangi tatiller var?",
+        "en": "What holidays are there this term?"
+      },
+      "answer": {
+        "tr": "29 Ekim Cumhuriyet Bayramı ve 1 Ocak yılbaşı tatildir.",
+        "en": "29 October (Republic Day) and 1 January (New Year) are holidays."
+      },
+      "source": {
+        "tr": "Akademik Takvim",
+        "en": "Academic Calendar"
+      },
+      "link": "/calendar",
+      "keywords": [
+        "tatil",
+        "holiday"
+      ]
+    },
+    {
+      "id": "attendance",
+      "question": {
+        "tr": "Devamsızlık sınırı kaç?",
+        "en": "What is the attendance limit?"
+      },
+      "answer": {
+        "tr": "Teorik derslerin en fazla %30'una katılmayabilirsin.",
+        "en": "You may miss at most 30% of lecture hours."
+      },
+      "source": {
+        "tr": "Yönetmelik",
+        "en": "Regulations"
+      },
+      "link": "/rules",
+      "keywords": [
+        "devamsizlik",
+        "yoklama",
+        "attendance",
+        "absence"
+      ]
+    },
+    {
+      "id": "grading",
+      "question": {
+        "tr": "Not sistemi nasıl?",
+        "en": "How does grading work?"
+      },
+      "answer": {
+        "tr": "Harf notları AA ile FF arasındadır. Geçme notu en az DD'dir.",
+        "en": "Letter grades run from AA to FF. The minimum passing grade is DD."
+      },
+      "source": {
+        "tr": "Yönetmelik",
+        "en": "Regulations"
+      },
+      "link": "/rules",
+      "keywords": [
+        "not sistemi",
+        "harf notu",
+        "gecme notu",
+        "grading",
+        "letter grade",
+        "passing grade"
+      ]
+    },
+    {
+      "id": "makeup",
+      "question": {
+        "tr": "Mazeret sınavına nasıl girerim?",
+        "en": "How do I get a make-up exam?"
+      },
+      "answer": {
+        "tr": "Belgeli mazeretini sınavdan sonraki 5 iş günü içinde bölüm sekreterliğine ilet.",
+        "en": "Submit your documented excuse to the department office within 5 working days after the exam."
+      },
+      "source": {
+        "tr": "Yönetmelik",
+        "en": "Regulations"
+      },
+      "link": "/rules",
+      "keywords": [
+        "mazeret",
+        "make-up",
+        "makeup",
+        "missed exam",
+        "sinava giremedim"
+      ]
+    },
+    {
+      "id": "probation",
+      "question": {
+        "tr": "Akademik uyarı nedir?",
+        "en": "What is academic probation?"
+      },
+      "answer": {
+        "tr": "Genel not ortalaman 2,00'ın altına düşerse akademik uyarı alırsın.",
+        "en": "You are placed on probation if your GPA falls below 2.00."
+      },
+      "source": {
+        "tr": "Yönetmelik",
+        "en": "Regulations"
+      },
+      "link": "/rules",
+      "keywords": [
+        "akademik uyari",
+        "probation"
+      ]
+    },
+    {
+      "id": "late",
+      "question": {
+        "tr": "Ödevimi geç teslim edebilir miyim?",
+        "en": "Can I submit an assignment late?"
+      },
+      "answer": {
+        "tr": "Geç teslim koşullarını her dersin hocası belirler. Ders izlencesini kontrol et.",
+        "en": "Each instructor sets late submission terms. Check the syllabus."
+      },
+      "source": {
+        "tr": "Yönetmelik",
+        "en": "Regulations"
+      },
+      "link": "/rules",
+      "keywords": [
+        "gec teslim",
+        "late submission",
+        "submit late",
+        "submit an assignment late"
+      ]
+    },
+    {
+      "id": "office",
+      "question": {
+        "tr": "Hocamın ofis saati ne zaman?",
+        "en": "When are office hours?"
+      },
+      "answer": {
+        "tr": "Her dersin ofis saatini Derslerim sayfasında görebilirsin.",
+        "en": "You can see office hours for each course on the Courses page."
+      },
+      "source": {
+        "tr": "Dersler",
+        "en": "Courses"
+      },
+      "link": "/courses",
+      "keywords": [
+        "ofis saat",
+        "office hour"
+      ]
+    },
+    {
+      "id": "clubs",
+      "question": {
+        "tr": "Kulüplere nasıl katılırım?",
+        "en": "How do I join a club?"
+      },
+      "answer": {
+        "tr": "Kulüp Tanıtım Günü'nde başvurabilir veya kulüp temsilcisine yazabilirsin.",
+        "en": "You can sign up at the Club Fair or message a club representative."
+      },
+      "source": {
+        "tr": "Etkinlikler",
+        "en": "Events"
+      },
+      "link": "/events",
+      "keywords": [
+        "kulube",
+        "kulupler",
+        "join a club",
+        "clubs"
+      ]
+    },
+    {
+      "id": "library",
+      "question": {
+        "tr": "Kütüphane saatleri nedir?",
+        "en": "What are the library hours?"
+      },
+      "answer": {
+        "tr": "Kütüphane hafta içi 08:30-22:00 arasında açıktır.",
+        "en": "The library is open 08:30-22:00 on weekdays."
+      },
+      "source": {
+        "tr": "Kampüs Rehberi",
+        "en": "Campus Guide"
+      },
+      "keywords": [
+        "kutuphane",
+        "library"
+      ]
+    },
+    {
+      "id": "cafeteria",
+      "question": {
+        "tr": "Yemekhane nerede?",
+        "en": "Where is the cafeteria?"
+      },
+      "answer": {
+        "tr": "Yemekhane ana binanın zemin katındadır.",
+        "en": "The cafeteria is on the ground floor of the main building."
+      },
+      "source": {
+        "tr": "Kampüs Rehberi",
+        "en": "Campus Guide"
+      },
+      "keywords": [
+        "yemekhane",
+        "cafeteria",
+        "dining"
+      ]
+    },
+    {
+      "id": "wifi",
+      "question": {
+        "tr": "Kampüs Wi-Fi'ına nasıl bağlanırım?",
+        "en": "How do I connect to campus Wi-Fi?"
+      },
+      "answer": {
+        "tr": "Öğrenci hesabınla kampüs ağına bağlanabilirsin. Sorun olursa Bilgi İşlem'e başvur.",
+        "en": "Use your student account to join the campus network. Contact IT if it fails."
+      },
+      "source": {
+        "tr": "Kampüs Rehberi",
+        "en": "Campus Guide"
+      },
+      "keywords": [
+        "wifi",
+        "wi-fi",
+        "internet"
+      ]
+    },
+    {
+      "id": "transcript",
+      "question": {
+        "tr": "Transkript nasıl alırım?",
+        "en": "How do I get a transcript?"
+      },
+      "answer": {
+        "tr": "Transkript için Öğrenci İşleri'ne başvur.",
+        "en": "Request your transcript from the Student Affairs office."
+      },
+      "source": {
+        "tr": "Kampüs Rehberi",
+        "en": "Campus Guide"
+      },
+      "keywords": [
+        "transkript",
+        "transcript"
+      ]
+    },
+    {
+      "id": "advisor",
+      "question": {
+        "tr": "Danışmanımı nasıl öğrenirim?",
+        "en": "How do I find my advisor?"
+      },
+      "answer": {
+        "tr": "Danışmanını öğrenmek için bölüm sekreterliğine sorabilirsin.",
+        "en": "Ask your department office to find out who your advisor is."
+      },
+      "source": {
+        "tr": "Kampüs Rehberi",
+        "en": "Campus Guide"
+      },
+      "keywords": [
+        "danisman",
+        "advisor"
+      ]
+    },
+    {
+      "id": "erasmus",
+      "question": {
+        "tr": "Erasmus başvurusu nasıl yapılır?",
+        "en": "How do I apply for Erasmus?"
+      },
+      "answer": {
+        "tr": "Başvuru duyuruları için Uluslararası Ofis'i takip et.",
+        "en": "Follow the International Office for application announcements."
+      },
+      "source": {
+        "tr": "Kampüs Rehberi",
+        "en": "Campus Guide"
+      },
+      "keywords": [
+        "erasmus",
+        "exchange program"
+      ]
+    }
+  ]
+}

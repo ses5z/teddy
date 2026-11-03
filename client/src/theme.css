@@ -1,0 +1,85 @@
+/*
+ * TEDDY theme: change brand colors here only.
+ * Brand values are sampled from public/brand/tedu-logo.png:
+ *   blue #00488C, red #EA241E, yellow #FCD800.
+ * Red is darkened for text. Yellow fails contrast on white, so it is decorative only.
+ */
+:root {
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --tint: #e8eff6;
+  --text: #15202b;
+  --muted: #4d5966;
+  --border: #d5d9de;
+  --primary: #00488c;
+  --on-primary: #ffffff;
+  --accent: #b81a15;
+  --brand-stripe: #fcd800;
+  --focus: #00488c;
+  --critical: #a32a24;
+  --critical-bg: #fbeceb;
+  --important: #7a5400;
+  --important-bg: #faf1da;
+  --info: #24683d;
+  --info-bg: #e8f3ea;
+}
+:root[data-theme='dark'] {
+  --bg: #0f1923;
+  --surface: #16222e;
+  --tint: #1d3144;
+  --text: #f1f3f5;
+  --muted: #b8c2cc;
+  --border: #3c4b5a;
+  --primary: #93c4f5;
+  --on-primary: #0f1923;
+  --accent: #ff9f99;
+  --brand-stripe: #fcd800;
+  --focus: #fcd800;
+  --critical: #ffb4ae;
+  --critical-bg: #3f1f1e;
+  --important: #f0c674;
+  --important-bg: #39301a;
+  --info: #9ad6ad;
+  --info-bg: #1c3425;
+}
+:root[data-contrast='high'] {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --tint: #ffffff;
+  --text: #000000;
+  --muted: #000000;
+  --border: #000000;
+  --primary: #002f5c;
+  --on-primary: #ffffff;
+  --accent: #8b0000;
+  --focus: #000000;
+  --critical: #7a0000;
+  --critical-bg: #ffffff;
+  --important: #5c3d00;
+  --important-bg: #ffffff;
+  --info: #004d1a;
+  --info-bg: #ffffff;
+}
+:root[data-theme='dark'][data-contrast='high'] {
+  --bg: #000000;
+  --surface: #000000;
+  --tint: #000000;
+  --text: #ffffff;
+  --muted: #ffffff;
+  --border: #ffffff;
+  --primary: #fcd800;
+  --on-primary: #000000;
+  --accent: #fcd800;
+  --focus: #ffffff;
+  --critical: #ffb4ae;
+  --critical-bg: #000000;
+  --important: #fcd800;
+  --important-bg: #000000;
+  --info: #9ad6ad;
+  --info-bg: #000000;
+}
+
+:root {
+  --font-heading: 'Source Serif 4', Georgia, serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+}

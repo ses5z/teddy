@@ -1,0 +1,20 @@
+{
+  "_note": "SAMPLE DATA – gerçek verilerle değiştirilecek",
+  "items": [
+    { "code": "ECON 101", "name": { "tr": "İktisada Giriş", "en": "Introduction to Economics" }, "instructor": "Dr. Örnek Hoca A", "officeHours": { "tr": "Salı 14:00-15:00", "en": "Tue 14:00-15:00" },
+      "exams": [{ "id": "econ-mid", "name": { "tr": "Vize", "en": "Midterm" }, "offsetDays": 6 }, { "id": "econ-final", "name": { "tr": "Final", "en": "Final" }, "offsetDays": 70 }],
+      "topics": [{ "tr": "Arz ve Talep", "en": "Supply and Demand" }, { "tr": "Esneklik", "en": "Elasticity" }, { "tr": "Piyasa Dengesi", "en": "Market Equilibrium" }] },
+    { "code": "MATH 101", "name": { "tr": "Matematik I", "en": "Calculus I" }, "instructor": "Dr. Örnek Hoca B", "officeHours": { "tr": "Pazartesi 11:00-12:00", "en": "Mon 11:00-12:00" },
+      "exams": [{ "id": "math-mid", "name": { "tr": "Vize", "en": "Midterm" }, "offsetDays": 11 }, { "id": "math-final", "name": { "tr": "Final", "en": "Final" }, "offsetDays": 72 }],
+      "topics": [{ "tr": "Limit", "en": "Limits" }, { "tr": "Türev", "en": "Derivatives" }, { "tr": "İntegral", "en": "Integrals" }] },
+    { "code": "CMPE 101", "name": { "tr": "Programlamaya Giriş", "en": "Introduction to Programming" }, "instructor": "Dr. Örnek Hoca C", "officeHours": { "tr": "Çarşamba 15:00-16:00", "en": "Wed 15:00-16:00" },
+      "exams": [{ "id": "cmpe-mid", "name": { "tr": "Vize", "en": "Midterm" }, "offsetDays": 13 }, { "id": "cmpe-final", "name": { "tr": "Final", "en": "Final" }, "offsetDays": 74 }],
+      "topics": [{ "tr": "Değişkenler", "en": "Variables" }, { "tr": "Döngüler", "en": "Loops" }, { "tr": "Fonksiyonlar", "en": "Functions" }] },
+    { "code": "PSY 101", "name": { "tr": "Psikolojiye Giriş", "en": "Introduction to Psychology" }, "instructor": "Dr. Örnek Hoca D", "officeHours": { "tr": "Perşembe 10:00-11:00", "en": "Thu 10:00-11:00" },
+      "exams": [{ "id": "psy-mid", "name": { "tr": "Vize", "en": "Midterm" }, "offsetDays": 15 }],
+      "topics": [{ "tr": "Öğrenme", "en": "Learning" }, { "tr": "Bellek", "en": "Memory" }, { "tr": "Algı", "en": "Perception" }] },
+    { "code": "ENG 101", "name": { "tr": "Akademik İngilizce", "en": "Academic English" }, "instructor": "Örnek Okutman E", "officeHours": { "tr": "Cuma 13:00-14:00", "en": "Fri 13:00-14:00" },
+      "exams": [{ "id": "eng-mid", "name": { "tr": "Vize", "en": "Midterm" }, "offsetDays": 18 }],
+      "topics": [{ "tr": "Tez Cümlesi", "en": "Thesis Statements" }, { "tr": "Kaynak Gösterme", "en": "Citation" }, { "tr": "Paragraf Yapısı", "en": "Paragraph Structure" }] }
+  ]
+}

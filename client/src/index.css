@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+@import './theme.css';
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-tint: var(--tint);
+  --color-critical: var(--critical);
+  --color-critical-bg: var(--critical-bg);
+  --color-important: var(--important);
+  --color-important-bg: var(--important-bg);
+  --color-info: var(--info);
+  --color-info-bg: var(--info-bg);
+  --color-stripe: var(--brand-stripe);
+  --color-accent: var(--accent);
+}
+
+/* Root size drives every rem value, so the font setting scales the whole UI. */
+html {
+  font-size: 100%;
+}
+html[data-font='large'] {
+  font-size: 112.5%;
+}
+html[data-font='xlarge'] {
+  font-size: 125%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+main:focus {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}

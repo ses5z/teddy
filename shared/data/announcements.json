@@ -1,0 +1,89 @@
+{
+  "_note": "SAMPLE DATA – gerçek verilerle değiştirilecek",
+  "items": [
+    {
+      "id": "s1",
+      "courseCode": "ECON 101",
+      "author": "Örnek Hoca",
+      "title": {
+        "tr": "Vize sınavının yeri değişti",
+        "en": "Midterm location changed"
+      },
+      "message": {
+        "tr": "ECON 101 vize sınavının yeri Salon A yerine Salon C olarak değişti.",
+        "en": "The ECON 101 midterm location changed from Hall A to Hall C."
+      },
+      "offsetDays": -1
+    },
+    {
+      "id": "s2",
+      "courseCode": "MATH 101",
+      "author": "Örnek Hoca",
+      "title": {
+        "tr": "Yarınki ders iptal edildi",
+        "en": "Tomorrow's class is cancelled"
+      },
+      "message": {
+        "tr": "Hocanın mazereti nedeniyle yarınki ders iptal edildi. Telafi tarihi duyurulacak.",
+        "en": "Tomorrow's class is cancelled. A make-up date will be announced."
+      },
+      "offsetDays": 0
+    },
+    {
+      "id": "s3",
+      "courseCode": "CMPE 101",
+      "author": "Örnek Hoca",
+      "title": {
+        "tr": "Yeni ödev yayımlandı",
+        "en": "New assignment published"
+      },
+      "message": {
+        "tr": "Döngüler konusunda yeni ödev yayımlandı. Son tarih için ödev sayfasına bakın.",
+        "en": "A new assignment on loops is published. See its page for the deadline."
+      },
+      "offsetDays": -2
+    },
+    {
+      "id": "s4",
+      "courseCode": "PSY 101",
+      "author": "Örnek Hoca",
+      "title": {
+        "tr": "Vize sınav konuları",
+        "en": "Midterm topics"
+      },
+      "message": {
+        "tr": "Vize sınavı ilk üç haftanın konularını kapsayacak.",
+        "en": "The midterm exam covers the first three weeks."
+      },
+      "offsetDays": -3
+    },
+    {
+      "id": "s5",
+      "courseCode": "ENG 101",
+      "author": "Örnek Hoca",
+      "title": {
+        "tr": "Hafta 3 slaytları yüklendi",
+        "en": "Week 3 slides uploaded"
+      },
+      "message": {
+        "tr": "Hafta 3 slaytları ders sayfasına yüklendi.",
+        "en": "Week 3 slides have been uploaded to the course page."
+      },
+      "offsetDays": -1
+    },
+    {
+      "id": "s6",
+      "courseCode": "ECON 101",
+      "author": "Örnek Hoca",
+      "title": {
+        "tr": "Seminer daveti",
+        "en": "Seminar invitation"
+      },
+      "message": {
+        "tr": "Örnek konuşmacı ile seminer Cuma günü yapılacak, ilgilenenler katılabilir.",
+        "en": "A seminar with a sample speaker is on Friday; all are welcome."
+      },
+      "offsetDays": -4
+    }
+  ]
+}

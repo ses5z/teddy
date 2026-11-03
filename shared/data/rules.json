@@ -1,0 +1,11 @@
+{
+  "_note": "SAMPLE DATA – gerçek verilerle değiştirilecek",
+  "items": [
+    { "id": "attendance", "article": "Örnek Madde 12", "title": { "tr": "Devamsızlık", "en": "Attendance" }, "summary": { "tr": "Teorik derslerin en fazla %30'una katılmayabilirsin. Sınır aşılırsa dersten kalırsın.", "en": "You may miss at most 30% of lecture hours. Going over the limit means failing the course." } },
+    { "id": "grading", "article": "Örnek Madde 18", "title": { "tr": "Not sistemi", "en": "Grading system" }, "summary": { "tr": "Harf notları AA ile FF arasındadır. AA 4,00 değerindedir. Geçme notu en az DD'dir.", "en": "Letter grades run from AA to FF. AA equals 4.00. The minimum passing grade is DD." } },
+    { "id": "withdrawal", "article": "Örnek Madde 21", "title": { "tr": "Ders bırakma", "en": "Course withdrawal" }, "summary": { "tr": "Akademik takvimdeki son güne kadar danışman onayıyla ders bırakabilirsin. Transkriptte W görünür.", "en": "You can withdraw until the calendar deadline with advisor approval. A W appears on your transcript." } },
+    { "id": "makeup", "article": "Örnek Madde 25", "title": { "tr": "Mazeret sınavı", "en": "Make-up exam" }, "summary": { "tr": "Belgeli mazeretini sınavdan sonraki 5 iş günü içinde bölüm sekreterliğine ilet.", "en": "Submit your documented excuse to the department office within 5 working days after the exam." } },
+    { "id": "probation", "article": "Örnek Madde 30", "title": { "tr": "Akademik uyarı", "en": "Academic probation" }, "summary": { "tr": "Genel not ortalaman 2,00'ın altına düşerse akademik uyarı alırsın.", "en": "You are placed on academic probation if your GPA falls below 2.00." } },
+    { "id": "late-work", "article": "Örnek Madde 33", "title": { "tr": "Geç teslim", "en": "Late submission" }, "summary": { "tr": "Geç teslim koşullarını her dersin hocası belirler. Ders izlencesini kontrol et.", "en": "Each instructor sets the late submission terms. Check the course syllabus." } }
+  ]
+}

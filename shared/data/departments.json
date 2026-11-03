@@ -1,0 +1,11 @@
+{
+  "_note": "SAMPLE DATA – gerçek verilerle değiştirilecek",
+  "items": [
+    { "id": "cmpe", "name": { "tr": "Bilgisayar Mühendisliği", "en": "Computer Engineering" } },
+    { "id": "econ", "name": { "tr": "İktisat", "en": "Economics" } },
+    { "id": "psy", "name": { "tr": "Psikoloji", "en": "Psychology" } },
+    { "id": "law", "name": { "tr": "Hukuk", "en": "Law" } },
+    { "id": "arch", "name": { "tr": "Mimarlık", "en": "Architecture" } },
+    { "id": "edu", "name": { "tr": "Eğitim Bilimleri", "en": "Educational Sciences" } }
+  ]
+}

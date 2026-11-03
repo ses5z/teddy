@@ -1,0 +1,50 @@
+{
+  "_note": "SAMPLE DATA – gerçek verilerle değiştirilecek",
+  "items": [
+    {
+      "id": "a1",
+      "courseCode": "ECON 101",
+      "title": {
+        "tr": "Arz-Talep Problem Seti",
+        "en": "Supply-Demand Problem Set"
+      },
+      "offsetDays": 2
+    },
+    {
+      "id": "a2",
+      "courseCode": "CMPE 101",
+      "title": {
+        "tr": "Döngüler Laboratuvar Ödevi",
+        "en": "Loops Lab Assignment"
+      },
+      "offsetDays": 4
+    },
+    {
+      "id": "a3",
+      "courseCode": "ENG 101",
+      "title": {
+        "tr": "Paragraf Yazma Taslağı",
+        "en": "Paragraph Writing Draft"
+      },
+      "offsetDays": 6
+    },
+    {
+      "id": "a4",
+      "courseCode": "MATH 101",
+      "title": {
+        "tr": "Türev Çalışma Kâğıdı",
+        "en": "Derivatives Worksheet"
+      },
+      "offsetDays": 9
+    },
+    {
+      "id": "a0",
+      "courseCode": "ECON 101",
+      "title": {
+        "tr": "Giriş Okuması Özeti",
+        "en": "Intro Reading Summary"
+      },
+      "offsetDays": -5
+    }
+  ]
+}

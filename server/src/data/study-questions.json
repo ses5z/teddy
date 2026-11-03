@@ -1,0 +1,825 @@
+{
+  "_note": "SAMPLE DATA – gerçek verilerle değiştirilecek",
+  "items": [
+    {
+      "id": "econ-1",
+      "courseCode": "ECON 101",
+      "topic": {
+        "tr": "Arz ve Talep",
+        "en": "Supply and Demand"
+      },
+      "question": {
+        "tr": "Fiyat artınca talep edilen miktar neden azalır?",
+        "en": "Why does quantity demanded fall when price rises?"
+      },
+      "hints": [
+        {
+          "tr": "Tüketicinin bütçesini düşün: fiyat artınca aynı parayla ne olur?",
+          "en": "Think about a consumer's budget: what happens to the same money when price rises?"
+        },
+        {
+          "tr": "Ürünün yerine geçebilecek başka ürünleri düşün.",
+          "en": "Think about other products that could replace it."
+        },
+        {
+          "tr": "Gelir etkisi ve ikame etkisi kavramlarını hatırla.",
+          "en": "Recall the income effect and the substitution effect."
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "Gelir etkisi: Fiyat artınca satın alma gücü azalır.",
+          "en": "Income effect: a higher price reduces purchasing power."
+        },
+        {
+          "tr": "İkame etkisi: Tüketici görece ucuz ürünlere yönelir.",
+          "en": "Substitution effect: consumers switch to relatively cheaper goods."
+        },
+        {
+          "tr": "İki etki birlikte talep edilen miktarı azaltır. Buna talep yasası denir.",
+          "en": "Together these reduce quantity demanded. This is the law of demand."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "Bir ürünün fiyatı düşerse talep eğrisinde ne olur?",
+          "en": "If a product's price falls, what happens on the demand curve?"
+        },
+        "answer": {
+          "tr": "Eğri kaymaz. Eğri üzerinde daha yüksek bir miktara hareket edilir.",
+          "en": "The curve does not shift. There is a movement along it to a higher quantity."
+        }
+      },
+      "keywords": [
+        "talep",
+        "fiyat artinca",
+        "demand"
+      ]
+    },
+    {
+      "id": "econ-2",
+      "courseCode": "ECON 101",
+      "topic": {
+        "tr": "Esneklik",
+        "en": "Elasticity"
+      },
+      "question": {
+        "tr": "Fiyat %10 artınca miktar %20 azalıyorsa talebin fiyat esnekliği kaçtır?",
+        "en": "If price rises 10% and quantity falls 20%, what is the price elasticity of demand?"
+      },
+      "hints": [
+        {
+          "tr": "Esnekliğin formülünü hatırla: hangi yüzde hangisine bölünür?",
+          "en": "Recall the formula: which percentage is divided by which?"
+        },
+        {
+          "tr": "Paya miktardaki yüzde değişimi yaz.",
+          "en": "Put the percentage change in quantity on top."
+        },
+        {
+          "tr": "Sonucun mutlak değeri 1'den büyük mü küçük mü, yorumla.",
+          "en": "Check whether the absolute value is above or below 1."
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "Formül: Esneklik = miktardaki % değişim / fiyattaki % değişim.",
+          "en": "Formula: elasticity = % change in quantity / % change in price."
+        },
+        {
+          "tr": "Değerleri yaz: -20 / 10 = -2.",
+          "en": "Substitute: -20 / 10 = -2."
+        },
+        {
+          "tr": "Mutlak değer 2, yani 1'den büyük. Talep esnektir.",
+          "en": "The absolute value is 2, above 1. Demand is elastic."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "Fiyat %5 artınca miktar %2,5 azalıyorsa esneklik kaçtır?",
+          "en": "If price rises 5% and quantity falls 2.5%, what is the elasticity?"
+        },
+        "answer": {
+          "tr": "-0,5. Mutlak değer 1'den küçük, talep esnek değildir.",
+          "en": "-0.5. The absolute value is below 1, so demand is inelastic."
+        }
+      },
+      "keywords": [
+        "esneklik",
+        "elastic"
+      ]
+    },
+    {
+      "id": "econ-3",
+      "courseCode": "ECON 101",
+      "topic": {
+        "tr": "Piyasa Dengesi",
+        "en": "Market Equilibrium"
+      },
+      "question": {
+        "tr": "Qd = 100 - 2P ve Qs = 20 + 2P ise denge fiyatı ve miktarı nedir?",
+        "en": "If Qd = 100 - 2P and Qs = 20 + 2P, what are the equilibrium price and quantity?"
+      },
+      "hints": [
+        {
+          "tr": "Dengede arz ve talep arasında nasıl bir ilişki vardır?",
+          "en": "How are supply and demand related at equilibrium?"
+        },
+        {
+          "tr": "İki denklemi birbirine eşitle.",
+          "en": "Set the two equations equal."
+        },
+        {
+          "tr": "Bulduğun P değerini denklemlerden birine yerleştir.",
+          "en": "Put your P value into one of the equations."
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "Dengede Qd = Qs: 100 - 2P = 20 + 2P.",
+          "en": "At equilibrium Qd = Qs: 100 - 2P = 20 + 2P."
+        },
+        {
+          "tr": "80 = 4P, yani P = 20.",
+          "en": "80 = 4P, so P = 20."
+        },
+        {
+          "tr": "Q = 100 - 2(20) = 60.",
+          "en": "Q = 100 - 2(20) = 60."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "Qd = 120 - 3P ve Qs = 20 + 2P ise denge nedir?",
+          "en": "If Qd = 120 - 3P and Qs = 20 + 2P, what is the equilibrium?"
+        },
+        "answer": {
+          "tr": "P = 20, Q = 60.",
+          "en": "P = 20, Q = 60."
+        }
+      },
+      "keywords": [
+        "denge",
+        "equilibrium",
+        "qd"
+      ]
+    },
+    {
+      "id": "math-1",
+      "courseCode": "MATH 101",
+      "topic": {
+        "tr": "Türev",
+        "en": "Derivatives"
+      },
+      "question": {
+        "tr": "f(x) = x³ + 2x fonksiyonunun türevi nedir?",
+        "en": "What is the derivative of f(x) = x³ + 2x?"
+      },
+      "hints": [
+        {
+          "tr": "Toplamın türevini terim terim alabilirsin.",
+          "en": "You can differentiate a sum term by term."
+        },
+        {
+          "tr": "Kuvvet kuralını hatırla: xⁿ nasıl değişir?",
+          "en": "Recall the power rule: what happens to xⁿ?"
+        },
+        {
+          "tr": "2x teriminde x'in kuvveti 1'dir.",
+          "en": "In 2x, the power of x is 1."
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "Kuvvet kuralı: xⁿ teriminin türevi n·xⁿ⁻¹.",
+          "en": "Power rule: the derivative of xⁿ is n·xⁿ⁻¹."
+        },
+        {
+          "tr": "x³ teriminin türevi 3x².",
+          "en": "The derivative of x³ is 3x²."
+        },
+        {
+          "tr": "2x teriminin türevi 2. Sonuç: f'(x) = 3x² + 2.",
+          "en": "The derivative of 2x is 2. Result: f'(x) = 3x² + 2."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "g(x) = x⁴ - 5x fonksiyonunun türevi nedir?",
+          "en": "What is the derivative of g(x) = x⁴ - 5x?"
+        },
+        "answer": {
+          "tr": "g'(x) = 4x³ - 5.",
+          "en": "g'(x) = 4x³ - 5."
+        }
+      },
+      "keywords": [
+        "turev",
+        "derivative"
+      ]
+    },
+    {
+      "id": "math-2",
+      "courseCode": "MATH 101",
+      "topic": {
+        "tr": "Limit",
+        "en": "Limits"
+      },
+      "question": {
+        "tr": "x 1'e giderken (x² - 1)/(x - 1) limiti kaçtır?",
+        "en": "What is the limit of (x² - 1)/(x - 1) as x approaches 1?"
+      },
+      "hints": [
+        {
+          "tr": "x = 1 yazınca ne elde ediyorsun?",
+          "en": "What do you get by substituting x = 1?"
+        },
+        {
+          "tr": "0/0 belirsizliğinde payı çarpanlarına ayırmayı dene.",
+          "en": "For 0/0, try factoring the numerator."
+        },
+        {
+          "tr": "İki kare farkını hatırla.",
+          "en": "Recall the difference of squares."
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "x = 1 için 0/0 belirsizliği oluşur.",
+          "en": "At x = 1 we get the indeterminate form 0/0."
+        },
+        {
+          "tr": "Pay: x² - 1 = (x - 1)(x + 1). x - 1 sadeleşir.",
+          "en": "Numerator: x² - 1 = (x - 1)(x + 1). The x - 1 cancels."
+        },
+        {
+          "tr": "Geriye x + 1 kalır. x = 1 için limit 2'dir.",
+          "en": "This leaves x + 1. At x = 1 the limit is 2."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "x 2'ye giderken (x² - 4)/(x - 2) limiti kaçtır?",
+          "en": "What is the limit of (x² - 4)/(x - 2) as x approaches 2?"
+        },
+        "answer": {
+          "tr": "4.",
+          "en": "4."
+        }
+      },
+      "keywords": [
+        "limit"
+      ]
+    },
+    {
+      "id": "math-3",
+      "courseCode": "MATH 101",
+      "topic": {
+        "tr": "İntegral",
+        "en": "Integrals"
+      },
+      "question": {
+        "tr": "2x fonksiyonunun 0'dan 3'e belirli integrali kaçtır?",
+        "en": "What is the definite integral of 2x from 0 to 3?"
+      },
+      "hints": [
+        {
+          "tr": "Hangi fonksiyonun türevi 2x'tir?",
+          "en": "Which function has the derivative 2x?"
+        },
+        {
+          "tr": "Analizin temel teoremini hatırla: üst sınır eksi alt sınır.",
+          "en": "Recall the fundamental theorem: upper limit minus lower limit."
+        },
+        {
+          "tr": "Bulduğun fonksiyona önce 3, sonra 0 koy.",
+          "en": "Evaluate your function at 3, then at 0."
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "2x'in ters türevi x²'dir.",
+          "en": "An antiderivative of 2x is x²."
+        },
+        {
+          "tr": "Üst sınır: 3² = 9. Alt sınır: 0² = 0.",
+          "en": "Upper limit: 3² = 9. Lower limit: 0² = 0."
+        },
+        {
+          "tr": "Sonuç: 9 - 0 = 9.",
+          "en": "Result: 9 - 0 = 9."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "3x² fonksiyonunun 0'dan 2'ye integrali kaçtır?",
+          "en": "What is the integral of 3x² from 0 to 2?"
+        },
+        "answer": {
+          "tr": "8.",
+          "en": "8."
+        }
+      },
+      "keywords": [
+        "integral"
+      ]
+    },
+    {
+      "id": "cmpe-1",
+      "courseCode": "CMPE 101",
+      "topic": {
+        "tr": "Döngüler",
+        "en": "Loops"
+      },
+      "question": {
+        "tr": "1'den 5'e kadar sayıların toplamını döngüyle nasıl bulurum?",
+        "en": "How do I sum the numbers from 1 to 5 with a loop?"
+      },
+      "hints": [
+        {
+          "tr": "Toplamı tutmak için neye ihtiyacın var?",
+          "en": "What do you need to keep the running total?"
+        },
+        {
+          "tr": "Döngü değişkeni hangi değerleri almalı?",
+          "en": "Which values should the loop variable take?"
+        },
+        {
+          "tr": "Her adımda toplamı nasıl güncellersin?",
+          "en": "How do you update the total at each step?"
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "Başta toplam = 0 tanımla.",
+          "en": "Start with total = 0."
+        },
+        {
+          "tr": "i değişkeni 1'den 5'e kadar dönsün.",
+          "en": "Loop i from 1 to 5."
+        },
+        {
+          "tr": "Her adımda toplam = toplam + i yap. Sonuç 15 olur.",
+          "en": "At each step set total = total + i. The result is 15."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "1'den 6'ya kadar çift sayıların toplamı kaçtır?",
+          "en": "What is the sum of even numbers from 1 to 6?"
+        },
+        "answer": {
+          "tr": "2 + 4 + 6 = 12.",
+          "en": "2 + 4 + 6 = 12."
+        }
+      },
+      "keywords": [
+        "dongu",
+        "loop",
+        "toplam"
+      ]
+    },
+    {
+      "id": "cmpe-2",
+      "courseCode": "CMPE 101",
+      "topic": {
+        "tr": "Değişkenler",
+        "en": "Variables"
+      },
+      "question": {
+        "tr": "x = 2; x = x * 3; x = x + 1 sonunda x kaçtır?",
+        "en": "After x = 2; x = x * 3; x = x + 1, what is x?"
+      },
+      "hints": [
+        {
+          "tr": "Satırları yukarıdan aşağıya tek tek izle.",
+          "en": "Trace the lines one by one from the top."
+        },
+        {
+          "tr": "Her atamadan sonra x'in değerini not et.",
+          "en": "Write down x after each assignment."
+        },
+        {
+          "tr": "İkinci satırdan sonra x'in değeri 2 değildir.",
+          "en": "After the second line, x is no longer 2."
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "İlk satır: x = 2.",
+          "en": "First line: x = 2."
+        },
+        {
+          "tr": "İkinci satır: x = 2 * 3 = 6.",
+          "en": "Second line: x = 2 * 3 = 6."
+        },
+        {
+          "tr": "Üçüncü satır: x = 6 + 1 = 7.",
+          "en": "Third line: x = 6 + 1 = 7."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "y = 5; y = y - 2; y = y * 4 sonunda y kaçtır?",
+          "en": "After y = 5; y = y - 2; y = y * 4, what is y?"
+        },
+        "answer": {
+          "tr": "12.",
+          "en": "12."
+        }
+      },
+      "keywords": [
+        "degisken",
+        "variable",
+        "x ="
+      ]
+    },
+    {
+      "id": "cmpe-3",
+      "courseCode": "CMPE 101",
+      "topic": {
+        "tr": "Fonksiyonlar",
+        "en": "Functions"
+      },
+      "question": {
+        "tr": "Bir sayının çift olup olmadığını döndüren fonksiyonu nasıl yazarım?",
+        "en": "How do I write a function that returns whether a number is even?"
+      },
+      "hints": [
+        {
+          "tr": "Fonksiyon hangi girdiyi almalı, ne döndürmeli?",
+          "en": "What input should it take, and what should it return?"
+        },
+        {
+          "tr": "Çift sayının 2'ye bölümünden kalan kaçtır?",
+          "en": "What is the remainder of an even number divided by 2?"
+        },
+        {
+          "tr": "Kalan için % operatörünü düşün.",
+          "en": "Think about the % operator for remainders."
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "Fonksiyon bir n sayısı alır ve doğru/yanlış döndürür.",
+          "en": "The function takes a number n and returns true or false."
+        },
+        {
+          "tr": "Çift sayılarda n % 2 sonucu 0'dır.",
+          "en": "For even numbers, n % 2 equals 0."
+        },
+        {
+          "tr": "Gövde: return n % 2 == 0.",
+          "en": "Body: return n % 2 == 0."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "Sayının 3'e tam bölünüp bölünmediğini hangi ifade verir?",
+          "en": "Which expression tells whether a number is divisible by 3?"
+        },
+        "answer": {
+          "tr": "n % 3 == 0.",
+          "en": "n % 3 == 0."
+        }
+      },
+      "keywords": [
+        "fonksiyon",
+        "function",
+        "cift"
+      ]
+    },
+    {
+      "id": "psy-1",
+      "courseCode": "PSY 101",
+      "topic": {
+        "tr": "Öğrenme",
+        "en": "Learning"
+      },
+      "question": {
+        "tr": "Pavlov deneyinde zil sesi neden koşullu uyarıcı olur?",
+        "en": "Why does the bell become a conditioned stimulus in Pavlov's experiment?"
+      },
+      "hints": [
+        {
+          "tr": "Zil başlangıçta köpekte tepki yaratıyor muydu?",
+          "en": "Did the bell cause a response at first?"
+        },
+        {
+          "tr": "Zil hangi uyarıcıyla tekrar tekrar eşleşti?",
+          "en": "Which stimulus was the bell repeatedly paired with?"
+        },
+        {
+          "tr": "Eşleşmeden sonra zil tek başına ne yaptı?",
+          "en": "What did the bell do alone after the pairing?"
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "Zil başlangıçta nötr bir uyarıcıdır.",
+          "en": "The bell starts as a neutral stimulus."
+        },
+        {
+          "tr": "Zil, yemekle tekrar tekrar eşleşir.",
+          "en": "The bell is repeatedly paired with food."
+        },
+        {
+          "tr": "Sonunda zil tek başına salya tepkisi oluşturur. Bu yüzden koşullu uyarıcıdır.",
+          "en": "Eventually the bell alone causes salivation, so it is a conditioned stimulus."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "Bildirim sesini duyunca telefona bakmak nasıl bir öğrenmeye örnek olabilir?",
+          "en": "What kind of learning can checking your phone at a notification sound illustrate?"
+        },
+        "answer": {
+          "tr": "İlişkilendirmeye dayalı öğrenme. Ses, ödüllendirici içerikle ilişkilendirilmiştir.",
+          "en": "Associative learning. The sound has been linked with rewarding content."
+        }
+      },
+      "keywords": [
+        "pavlov",
+        "kosullu",
+        "conditioned"
+      ]
+    },
+    {
+      "id": "psy-2",
+      "courseCode": "PSY 101",
+      "topic": {
+        "tr": "Bellek",
+        "en": "Memory"
+      },
+      "question": {
+        "tr": "Kısa süreli belleğin kapasitesi yaklaşık kaç birimdir?",
+        "en": "What is the approximate capacity of short-term memory?"
+      },
+      "hints": [
+        {
+          "tr": "Miller'ın klasik çalışmasını hatırla.",
+          "en": "Recall Miller's classic study."
+        },
+        {
+          "tr": "Telefon numaralarının neden gruplanarak ezberlendiğini düşün.",
+          "en": "Think about why phone numbers are memorized in groups."
+        },
+        {
+          "tr": "Cevap tek basamaklı bir sayı etrafında bir aralıktır.",
+          "en": "The answer is a range around a single-digit number."
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "Miller kapasiteyi \"7 artı eksi 2\" birim olarak önermiştir.",
+          "en": "Miller proposed \"7 plus or minus 2\" items."
+        },
+        {
+          "tr": "Birim, tek bir sayı veya anlamlı bir grup olabilir.",
+          "en": "An item can be one digit or a meaningful group."
+        },
+        {
+          "tr": "Daha yeni çalışmalar kapasitenin daha düşük olabileceğini de öne sürer.",
+          "en": "More recent studies suggest capacity may be lower."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "Bilgiyi anlamlı gruplara ayırmaya ne denir?",
+          "en": "What is grouping information into meaningful units called?"
+        },
+        "answer": {
+          "tr": "Öbekleme (chunking).",
+          "en": "Chunking."
+        }
+      },
+      "keywords": [
+        "bellek",
+        "memory",
+        "kapasite"
+      ]
+    },
+    {
+      "id": "psy-3",
+      "courseCode": "PSY 101",
+      "topic": {
+        "tr": "Algı",
+        "en": "Perception"
+      },
+      "question": {
+        "tr": "Aşağıdan yukarıya ve yukarıdan aşağıya işlemleme arasındaki fark nedir?",
+        "en": "What is the difference between bottom-up and top-down processing?"
+      },
+      "hints": [
+        {
+          "tr": "Algı neyle başlıyor: duyusal veriyle mi, beklentiyle mi?",
+          "en": "What does perception start with: sensory data or expectation?"
+        },
+        {
+          "tr": "Bir yazıyı okurken önceki bilginin rolünü düşün.",
+          "en": "Think about the role of prior knowledge when reading."
+        },
+        {
+          "tr": "Yönleri bilginin akışı olarak yorumla.",
+          "en": "Read the directions as the flow of information."
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "Aşağıdan yukarıya işlemleme duyusal veriden başlar.",
+          "en": "Bottom-up processing starts from sensory data."
+        },
+        {
+          "tr": "Yukarıdan aşağıya işlemleme bilgi ve beklentiden başlar.",
+          "en": "Top-down processing starts from knowledge and expectations."
+        },
+        {
+          "tr": "Günlük algıda ikisi birlikte çalışır.",
+          "en": "In everyday perception, both work together."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "Yazım hatalı bir kelimeyi yine de doğru okumak hangi işlemlemeye örnektir?",
+          "en": "Reading a misspelled word correctly is an example of which processing?"
+        },
+        "answer": {
+          "tr": "Yukarıdan aşağıya işlemleme.",
+          "en": "Top-down processing."
+        }
+      },
+      "keywords": [
+        "algi",
+        "islemleme",
+        "perception",
+        "top-down",
+        "bottom-up"
+      ]
+    },
+    {
+      "id": "eng-1",
+      "courseCode": "ENG 101",
+      "topic": {
+        "tr": "Tez Cümlesi",
+        "en": "Thesis Statements"
+      },
+      "question": {
+        "tr": "İyi bir tez cümlesi nasıl yazılır?",
+        "en": "How do I write a good thesis statement?"
+      },
+      "hints": [
+        {
+          "tr": "Tez cümlesi konu mu, yoksa konu hakkında bir iddia mı?",
+          "en": "Is a thesis a topic, or a claim about a topic?"
+        },
+        {
+          "tr": "Birinin karşı çıkabileceği bir ifade mi, kontrol et.",
+          "en": "Check whether someone could disagree with it."
+        },
+        {
+          "tr": "Yazının ana noktalarını nasıl haber verebilir?",
+          "en": "How could it preview your main points?"
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "Konunu daralt ve net bir iddia belirle.",
+          "en": "Narrow your topic and choose a clear claim."
+        },
+        {
+          "tr": "İddianın tartışılabilir olduğundan emin ol.",
+          "en": "Make sure the claim is debatable."
+        },
+        {
+          "tr": "Ana gerekçeleri tek cümlede belirt.",
+          "en": "State your main reasons in one sentence."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "\"Sosyal medya popülerdir\" iyi bir tez cümlesi midir?",
+          "en": "Is \"Social media is popular\" a good thesis statement?"
+        },
+        "answer": {
+          "tr": "Hayır. Tartışılabilir bir iddia içermez.",
+          "en": "No. It makes no debatable claim."
+        }
+      },
+      "keywords": [
+        "tez",
+        "thesis"
+      ]
+    },
+    {
+      "id": "eng-2",
+      "courseCode": "ENG 101",
+      "topic": {
+        "tr": "Kaynak Gösterme",
+        "en": "Citation"
+      },
+      "question": {
+        "tr": "Akademik yazıda neden kaynak gösteririz?",
+        "en": "Why do we cite sources in academic writing?"
+      },
+      "hints": [
+        {
+          "tr": "Fikir sana ait değilse ne yapman gerekir?",
+          "en": "What should you do when an idea is not yours?"
+        },
+        {
+          "tr": "Okuyucu iddianı nasıl kontrol edebilir?",
+          "en": "How can a reader check your claim?"
+        },
+        {
+          "tr": "Akademik dürüstlüğü düşün.",
+          "en": "Think about academic integrity."
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "Kaynak, fikrin sahibine hakkını verir.",
+          "en": "Citation gives credit to the idea's owner."
+        },
+        {
+          "tr": "Okuyucunun bilgiyi doğrulamasını sağlar.",
+          "en": "It lets the reader verify the information."
+        },
+        {
+          "tr": "İntihalden korur ve iddiayı güçlendirir.",
+          "en": "It prevents plagiarism and strengthens the claim."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "Bir fikri kendi cümlelerinle anlatırsan yine kaynak gösterir misin?",
+          "en": "If you paraphrase an idea, do you still cite it?"
+        },
+        "answer": {
+          "tr": "Evet. Fikir başkasına ait olduğu için kaynak gösterilir.",
+          "en": "Yes. The idea belongs to someone else, so you cite it."
+        }
+      },
+      "keywords": [
+        "kaynak",
+        "cite",
+        "citation",
+        "intihal"
+      ]
+    },
+    {
+      "id": "eng-3",
+      "courseCode": "ENG 101",
+      "topic": {
+        "tr": "Paragraf Yapısı",
+        "en": "Paragraph Structure"
+      },
+      "question": {
+        "tr": "Bir paragrafın temel bölümleri nelerdir?",
+        "en": "What are the main parts of a paragraph?"
+      },
+      "hints": [
+        {
+          "tr": "Paragrafın ana fikri nerede belirtilir?",
+          "en": "Where is the main idea stated?"
+        },
+        {
+          "tr": "Ana fikri ne destekler?",
+          "en": "What supports the main idea?"
+        },
+        {
+          "tr": "Paragraf nasıl bitmeli?",
+          "en": "How should the paragraph end?"
+        }
+      ],
+      "explanation": [
+        {
+          "tr": "Konu cümlesi ana fikri söyler.",
+          "en": "The topic sentence states the main idea."
+        },
+        {
+          "tr": "Destek cümleleri örnek ve kanıt sunar.",
+          "en": "Supporting sentences give examples and evidence."
+        },
+        {
+          "tr": "Sonuç cümlesi fikri toparlar.",
+          "en": "The concluding sentence wraps up the idea."
+        }
+      ],
+      "practice": {
+        "question": {
+          "tr": "Konu cümlesi genellikle paragrafın neresinde olur?",
+          "en": "Where is the topic sentence usually placed?"
+        },
+        "answer": {
+          "tr": "Genellikle başında.",
+          "en": "Usually at the beginning."
+        }
+      },
+      "keywords": [
+        "paragraf",
+        "paragraph"
+      ]
+    }
+  ]
+}

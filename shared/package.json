@@ -1,0 +1,10 @@
+{
+  "name": "@teddy/shared",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./types.ts",
+    "./data": "./data/index.ts"
+  }
+}
