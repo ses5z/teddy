@@ -100,10 +100,8 @@ export async function call<T>(wsfunction: string, params: Record<string, string>
 }
 
 function isoDate(seconds: number): string {
-  const date = new Date(seconds * 1000);
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  return `${date.getFullYear()}-${month}-${day}`;
+  // Dates are shown for Turkey, wherever the server runs. en-CA formats as YYYY-MM-DD.
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Istanbul' }).format(new Date(seconds * 1000));
 }
 
 interface RawCourse {
