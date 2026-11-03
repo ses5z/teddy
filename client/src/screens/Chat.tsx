@@ -104,7 +104,7 @@ export function Chat() {
           onChange={(event) => setDraft(event.target.value)}
           maxLength={2000}
           placeholder={t('home.askPlaceholder')}
-          className="min-h-12 min-w-0 flex-1 rounded border-2 border-border bg-surface px-4"
+          className="min-h-12 min-w-0 flex-1 rounded border-2 border-control bg-surface px-4"
         />
         <Button type="submit" disabled={typing || !draft.trim()}>
           {t('chat.send')}

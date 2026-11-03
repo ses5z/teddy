@@ -53,7 +53,7 @@ export function Home() {
           value={question}
           onChange={(event) => setQuestion(event.target.value)}
           placeholder={t('home.askPlaceholder')}
-          className="min-h-14 min-w-0 flex-1 rounded border-2 border-border bg-surface px-4 text-lg"
+          className="min-h-14 min-w-0 flex-1 rounded border-2 border-control bg-surface px-4 text-lg"
         />
         <Button type="submit">{t('home.send')}</Button>
       </form>

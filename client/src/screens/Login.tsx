@@ -9,7 +9,7 @@ import { useProfile } from '../context/ProfileContext';
 import { useSettings } from '../context/SettingsContext';
 import { api } from '../services/api';
 
-const FIELD = 'min-h-11 rounded border border-border bg-surface px-3 font-normal';
+const FIELD = 'min-h-11 rounded border border-control bg-surface px-3 font-normal';
 
 // No password anywhere: Moodle details are confirmed, or typed in and kept in localStorage.
 export function Login() {

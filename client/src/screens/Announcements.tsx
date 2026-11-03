@@ -178,7 +178,7 @@ export function AnnouncementsScreen() {
             <select
               value={sortByDate ? 'date' : 'importance'}
               onChange={(event) => setParam('sort', event.target.value === 'date' ? 'date' : '')}
-              className="min-h-11 max-w-full cursor-pointer rounded border border-border bg-surface px-2"
+              className="min-h-11 max-w-full cursor-pointer rounded border border-control bg-surface px-2"
             >
               <option value="importance">{t('announcementsPage.sortImportance')}</option>
               <option value="date">{t('announcementsPage.sortDate')}</option>

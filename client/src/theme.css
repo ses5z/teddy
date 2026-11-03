@@ -11,6 +11,7 @@
   --text: #15202b;
   --muted: #4d5966;
   --border: #d5d9de;
+  --control-border: #808a96;
   --primary: #00488c;
   --on-primary: #ffffff;
   --accent: #b81a15;
@@ -30,6 +31,7 @@
   --text: #f1f3f5;
   --muted: #b8c2cc;
   --border: #3c4b5a;
+  --control-border: #788899;
   --primary: #93c4f5;
   --on-primary: #0f1923;
   --accent: #ff9f99;
@@ -49,6 +51,7 @@
   --text: #000000;
   --muted: #000000;
   --border: #000000;
+  --control-border: #000000;
   --primary: #002f5c;
   --on-primary: #ffffff;
   --accent: #8b0000;
@@ -67,6 +70,7 @@
   --text: #ffffff;
   --muted: #ffffff;
   --border: #ffffff;
+  --control-border: #ffffff;
   --primary: #fcd800;
   --on-primary: #000000;
   --accent: #fcd800;

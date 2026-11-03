@@ -11,6 +11,7 @@
   --color-primary: var(--primary);
   --color-on-primary: var(--on-primary);
   --color-tint: var(--tint);
+  --color-control: var(--control-border);
   --color-critical: var(--critical);
   --color-critical-bg: var(--critical-bg);
   --color-important: var(--important);

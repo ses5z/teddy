@@ -198,7 +198,7 @@ export function StudyMode() {
             maxLength={2000}
             rows={3}
             placeholder={t('study.placeholder')}
-            className="rounded border-2 border-border bg-surface p-3"
+            className="rounded border-2 border-control bg-surface p-3"
           />
           <Button type="submit" disabled={busy || !draft.trim()}>
             {t('study.start')}
