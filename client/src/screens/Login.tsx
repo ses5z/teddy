@@ -66,7 +66,8 @@ export function Login() {
           <ul className="border-t border-border">
             {moodle.courses.map((course) => (
               <li key={course.code} className="border-b border-border py-2">
-                <strong>{course.code}</strong> · {course.name}
+                <strong>{course.code}</strong>
+                {course.name !== course.code && ` · ${course.name}`}
               </li>
             ))}
           </ul>

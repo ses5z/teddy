@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import type { CalendarApiEntry, CalendarResponse, UpcomingItem } from '@teddy/shared';
 import calendarFile from '@teddy/shared/data/tedu-calendar.json';
+import { readableCode } from '../services/coursePackages';
 import { getSnapshot } from '../services/moodleService';
 
 interface TeduEntry {
@@ -34,7 +35,7 @@ calendarRouter.get('/', async (req, res) => {
     entries.push(
       ...snapshot.upcoming.map((item: UpcomingItem) => ({
         id: `moodle-${item.id}`,
-        name: `${item.courseCode}: ${item.title}`,
+        name: `${readableCode(item.courseCode).label}: ${item.title}`,
         start: item.date,
         end: item.date,
         type: 'moodle' as const,

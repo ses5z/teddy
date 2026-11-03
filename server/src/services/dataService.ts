@@ -1,6 +1,7 @@
 import { courses } from '@teddy/shared/data';
 import type { CourseSummary, Language, MoodleProfile, Sourced, UpcomingItem } from '@teddy/shared';
 import { dateFromOffset } from '@teddy/shared/data';
+import { readableCode } from './coursePackages';
 import { getSnapshot } from './moodleService';
 import { getSampleUpcoming } from './sampleData';
 
@@ -10,7 +11,12 @@ export async function getUpcoming(language: Language, days: number): Promise<Sou
   try {
     const { upcoming } = await getSnapshot();
     const last = dateFromOffset(days);
-    return { source: 'moodle', data: upcoming.filter((item) => item.date <= last) };
+    return {
+      source: 'moodle',
+      data: upcoming
+        .filter((item) => item.date <= last)
+        .map((item) => ({ ...item, courseCode: readableCode(item.courseCode).label })),
+    };
   } catch {
     return { source: 'sample', data: getSampleUpcoming(language, days) };
   }
@@ -32,7 +38,14 @@ export async function getCourses(language: Language): Promise<Sourced<CourseSumm
 export async function getMoodleProfile(): Promise<MoodleProfile | null> {
   try {
     const { name, courses: enrolled } = await getSnapshot();
-    return { name, courses: enrolled };
+    // Moodle full names here repeat the raw short name, so both show the readable code.
+    return {
+      name,
+      courses: enrolled.map((course) => {
+        const { label } = readableCode(course.code);
+        return { ...course, code: label, name: course.name.includes('_') ? label : course.name };
+      }),
+    };
   } catch {
     return null;
   }
