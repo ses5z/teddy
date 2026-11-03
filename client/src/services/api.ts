@@ -3,6 +3,7 @@ import type {
   ChatResponse,
   HealthResponse,
   Announcement,
+  Assignment,
   CourseDetail,
   CourseListItem,
   Importance,
@@ -50,6 +51,11 @@ export const api = {
     if (filters.courseId != null) query.set('courseId', String(filters.courseId));
     if (filters.importance) query.set('importance', filters.importance);
     return request<Sourced<Announcement[]>>(`/announcements?${query}`);
+  },
+  assignments: (language: Language, importance?: Importance) => {
+    const query = new URLSearchParams({ lang: language });
+    if (importance) query.set('importance', importance);
+    return request<Sourced<Assignment[]>>(`/assignments?${query}`);
   },
   moodleRefresh: () => post<MoodleStatus>('/refresh'),
   chat: (body: ChatRequest) => post<ChatResponse>('/ai/chat', body),

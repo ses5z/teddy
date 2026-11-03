@@ -1,5 +1,5 @@
 import { Router, type Request } from 'express';
-import { classifyInBackground, getCourseDetail, listAnnouncements, listCourses } from '../services/courseCatalog';
+import { classifyInBackground, getCourseDetail, listAnnouncements, listAssignments, listCourses } from '../services/courseCatalog';
 import { getCoursePackages } from '../services/coursePackages';
 import { clearMoodleCache, getStatus } from '../services/moodleService';
 
@@ -36,6 +36,14 @@ announcementsRouter.get('/', async (req, res) => {
         (!req.query.courseId || item.courseId === courseId) && (!importance || item.importance === importance),
     ),
   });
+});
+
+export const assignmentsRouter = Router();
+
+assignmentsRouter.get('/', async (req, res) => {
+  const { source, data } = await listAssignments(languageOf(req));
+  const { importance } = req.query;
+  res.json({ source, data: data.filter((item) => !importance || item.importance === importance) });
 });
 
 export const refreshRouter = Router();

@@ -10,6 +10,9 @@ const STYLES: Record<Importance, { icon: LucideIcon; label: TKey; badge: string 
   info: { icon: Info, label: 'importance.info', badge: 'bg-info-bg text-info' },
 };
 
+/** Most urgent first, for sorting lists. */
+export const IMPORTANCE_RANK: Record<Importance, number> = { critical: 0, important: 1, info: 2 };
+
 /** Left stripe for cards and list rows. */
 export const IMPORTANCE_STRIPE: Record<Importance, string> = {
   critical: 'border-critical',

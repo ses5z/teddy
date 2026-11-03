@@ -18,6 +18,8 @@ import { aiClassifier } from './importance/aiClassifier';
 import { announcementLevel, dateLevel, higher, keywordLevel } from './importance/rules';
 import { getSnapshot } from './moodleService';
 
+type Snapshot = Awaited<ReturnType<typeof getSnapshot>>;
+
 // One entry point for the course pages: Moodle when connected, sample data in the same shape otherwise.
 
 const SUMMARY_CHARS = 200;
@@ -117,6 +119,39 @@ function moodleAnnouncements(group: CoursePackage[], language: Language): Announ
     .sort((a, b) => b.postedAt.localeCompare(a.postedAt));
 }
 
+function moodleAssignments(group: CoursePackage[], snapshot: Snapshot, language: Language): Assignment[] {
+  const { id, code } = listItem(group);
+  const primary = primaryOf(group);
+  const shortnames = new Set(group.map((item) => item.shortname));
+  const assignments: Assignment[] = snapshot.assignments
+    .filter((item) => shortnames.has(item.courseCode))
+    .map((item) => ({
+      id: `assign-${item.id}`,
+      courseId: id,
+      courseCode: code,
+      name: item.name,
+      dueAt: item.dueAt,
+      moodleUrl: item.url,
+      kind: 'assignment' as const,
+      ...classifyAssignment(item.name, item.dueAt, language),
+    }));
+  for (const event of snapshot.upcoming) {
+    if (!shortnames.has(event.courseCode) || event.id.startsWith('assign-')) continue;
+    const dueAt = event.dueAt ?? null;
+    assignments.push({
+      id: event.id,
+      courseId: id,
+      courseCode: code,
+      name: event.title,
+      dueAt,
+      moodleUrl: event.url ?? primary.url,
+      kind: event.type,
+      ...classifyAssignment(event.title, dueAt, language),
+    });
+  }
+  return assignments;
+}
+
 async function moodleDetail(group: CoursePackage[], language: Language): Promise<CourseDetail> {
   const { id, code, name } = listItem(group);
   const primary = primaryOf(group);
@@ -156,32 +191,7 @@ async function moodleDetail(group: CoursePackage[], language: Language): Promise
 
   const current = sections.find((section) => section.isCurrentWeek);
 
-  const assignments: Assignment[] = snapshot.assignments
-    .filter((item) => shortnames.has(item.courseCode))
-    .map((item) => ({
-      id: `assign-${item.id}`,
-      courseId: id,
-      courseCode: code,
-      name: item.name,
-      dueAt: item.dueAt,
-      moodleUrl: item.url,
-      kind: 'assignment' as const,
-      ...classifyAssignment(item.name, item.dueAt, language),
-    }));
-  for (const event of snapshot.upcoming) {
-    if (!shortnames.has(event.courseCode) || event.id.startsWith('assign-')) continue;
-    const dueAt = event.dueAt ?? null;
-    assignments.push({
-      id: event.id,
-      courseId: id,
-      courseCode: code,
-      name: event.title,
-      dueAt,
-      moodleUrl: event.url ?? primary.url,
-      kind: event.type,
-      ...classifyAssignment(event.title, dueAt, language),
-    });
-  }
+  const assignments = moodleAssignments(group, snapshot, language);
 
   return {
     id,
@@ -222,19 +232,9 @@ function sampleCourseAnnouncements(code: string, id: number, name: string, langu
     }));
 }
 
-function sampleDetail(index: number, language: Language): CourseDetail {
+function sampleCourseAssignments(index: number, language: Language): Assignment[] {
   const course = sampleCourses[index];
   const id = sampleId(index);
-  const name = course.name[language];
-  const week = language === 'tr' ? 'Hafta' : 'Week';
-  const slides = language === 'tr' ? 'slaytları' : 'slides';
-  const sections = course.topics.map((topic, position) => ({
-    title: `${week} ${position + 1}: ${topic[language]}`,
-    summary: topic[language],
-    isCurrentWeek: position === CURRENT_SAMPLE_WEEK,
-    items: [{ name: `${topic[language]} ${slides}`, type: 'resource', url: '' }],
-  }));
-  const current = sections[CURRENT_SAMPLE_WEEK];
   const assignments: Assignment[] = [
     ...sampleAssignments
       .filter((item) => item.courseCode === course.code)
@@ -265,6 +265,22 @@ function sampleDetail(index: number, language: Language): CourseDetail {
       };
     }),
   ];
+  return assignments;
+}
+
+function sampleDetail(index: number, language: Language): CourseDetail {
+  const course = sampleCourses[index];
+  const id = sampleId(index);
+  const name = course.name[language];
+  const week = language === 'tr' ? 'Hafta' : 'Week';
+  const slides = language === 'tr' ? 'slaytları' : 'slides';
+  const sections = course.topics.map((topic, position) => ({
+    title: `${week} ${position + 1}: ${topic[language]}`,
+    summary: topic[language],
+    isCurrentWeek: position === CURRENT_SAMPLE_WEEK,
+    items: [{ name: `${topic[language]} ${slides}`, type: 'resource', url: '' }],
+  }));
+  const current = sections[CURRENT_SAMPLE_WEEK];
   return {
     id,
     code: course.code,
@@ -276,7 +292,7 @@ function sampleDetail(index: number, language: Language): CourseDetail {
     announcements: sampleCourseAnnouncements(course.code, id, name, language).sort((a, b) =>
       b.postedAt.localeCompare(a.postedAt),
     ),
-    assignments,
+    assignments: sampleCourseAssignments(index, language),
   };
 }
 
@@ -315,4 +331,13 @@ export async function listAnnouncements(language: Language): Promise<{ source: D
       );
   data.sort((a, b) => b.postedAt.localeCompare(a.postedAt));
   return { source: packages ? 'moodle' : 'sample', data };
+}
+
+export async function listAssignments(language: Language): Promise<{ source: DataSource; data: Assignment[] }> {
+  const packages = await getCoursePackages();
+  if (!packages) {
+    return { source: 'sample', data: sampleCourses.flatMap((_course, index) => sampleCourseAssignments(index, language)) };
+  }
+  const snapshot = await getSnapshot();
+  return { source: 'moodle', data: groupPackages(packages).flatMap((group) => moodleAssignments(group, snapshot, language)) };
 }

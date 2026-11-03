@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AnnouncementsBox } from '../components/AnnouncementsBox';
 import { Button } from '../components/Button';
+import { CriticalBanner } from '../components/CriticalBanner';
 import { QuickActionCard } from '../components/QuickActionCard';
 import { UpcomingBox } from '../components/UpcomingBox';
 import { useProfile } from '../context/ProfileContext';
@@ -36,7 +37,9 @@ export function Home() {
   };
 
   return (
-    <div className="flex flex-col gap-5">
+    <>
+      <CriticalBanner />
+      <div className="flex flex-col gap-5">
       <h1 className="text-3xl font-bold">
         {t(greetingKey(new Date().getHours()))} {profile?.name}
       </h1>
@@ -87,6 +90,7 @@ export function Home() {
 
       <UpcomingBox />
       <AnnouncementsBox />
-    </div>
+      </div>
+    </>
   );
 }

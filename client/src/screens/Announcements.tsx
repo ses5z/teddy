@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import type { Announcement, Importance } from '@teddy/shared';
+import { IMPORTANCE_RANK } from '../components/ImportanceBadge';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { AnnouncementCard } from '../components/AnnouncementCard';
 import { Button } from '../components/Button';
@@ -14,7 +15,6 @@ const LEVELS: { id: Importance; label: TKey }[] = [
   { id: 'important', label: 'importance.important' },
   { id: 'info', label: 'importance.info' },
 ];
-const RANK: Record<Importance, number> = { critical: 0, important: 1, info: 2 };
 
 const CHECKBOX_LABEL = 'flex min-h-11 cursor-pointer items-center gap-2';
 const CHECKBOX = 'h-5 w-5 shrink-0 cursor-pointer accent-primary';
@@ -79,7 +79,7 @@ export function AnnouncementsScreen() {
         (!unreadOnly || !isRead(item.id) || readHere.has(item.id)),
     );
     return filtered.sort(
-      sortByDate ? byDate : (a, b) => RANK[a.importance] - RANK[b.importance] || byDate(a, b),
+      sortByDate ? byDate : (a, b) => IMPORTANCE_RANK[a.importance] - IMPORTANCE_RANK[b.importance] || byDate(a, b),
     );
     // The list params are compared by value through their joined form.
     // eslint-disable-next-line react-hooks/exhaustive-deps

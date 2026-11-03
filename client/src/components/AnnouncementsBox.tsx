@@ -1,27 +1,24 @@
-import { useEffect, useState } from 'react';
-import type { Announcement, Sourced } from '@teddy/shared';
+import { useMemo } from 'react';
+import { Link } from 'react-router-dom';
+import { useReadAnnouncements } from '../context/ReadAnnouncementsContext';
 import { useSettings } from '../context/SettingsContext';
-import { api } from '../services/api';
-import { formatDate } from '../utils';
+import { AnnouncementCard } from './AnnouncementCard';
+import { IMPORTANCE_RANK } from './ImportanceBadge';
 import { DataSourceBadge } from './SourceTag';
 
+const MAX_ITEMS = 5;
+
 export function AnnouncementsBox() {
-  const { t, settings } = useSettings();
-  const lang = settings.language;
-  const [result, setResult] = useState<Sourced<Announcement[]> | 'error' | null>(null);
+  const { t } = useSettings();
+  const { status, source, announcements, isRead, markRead } = useReadAnnouncements();
 
-  useEffect(() => {
-    let active = true;
-    api
-      .announcements(lang)
-      .then((data) => active && setResult(data))
-      .catch(() => active && setResult('error'));
-    return () => {
-      active = false;
-    };
-  }, [lang]);
-
-  const items = result && result !== 'error' ? result.data.slice(0, 5) : [];
+  const items = useMemo(
+    () =>
+      [...announcements]
+        .sort((a, b) => IMPORTANCE_RANK[a.importance] - IMPORTANCE_RANK[b.importance] || b.postedAt.localeCompare(a.postedAt))
+        .slice(0, MAX_ITEMS),
+    [announcements],
+  );
 
   return (
     <section aria-labelledby="announcements-title" className="border-t-2 border-primary pt-3">
@@ -29,27 +26,18 @@ export function AnnouncementsBox() {
         <h2 id="announcements-title" className="text-lg font-bold">
           {t('announcements.title')}
         </h2>
-        {result && result !== 'error' && <DataSourceBadge source={result.source} />}
+        {status === 'ready' && source && <DataSourceBadge source={source} />}
       </div>
-      {result === 'error' && <p role="alert">{t('announcements.offline')}</p>}
-      {result && result !== 'error' && items.length === 0 && <p>{t('announcements.empty')}</p>}
+      {status === 'error' && <p role="alert">{t('announcements.offline')}</p>}
+      {status === 'ready' && items.length === 0 && <p>{t('announcements.empty')}</p>}
       <ul>
         {items.map((item) => (
-          <li key={item.id} className="border-t border-border py-2">
-            <strong>{item.courseCode}</strong> ·{' '}
-            {item.moodleUrl ? (
-              <a href={item.moodleUrl} target="_blank" rel="noopener noreferrer" className="underline">
-                {item.title}
-                <span className="sr-only"> ({t('course.opensNewTab')})</span>
-              </a>
-            ) : (
-              item.title
-            )}
-            <br />
-            <span className="text-muted">{formatDate(item.postedAt, lang)}</span>
-          </li>
+          <AnnouncementCard key={item.id} item={item} isRead={isRead(item.id)} onRead={markRead} heading="h3" />
         ))}
       </ul>
+      <Link to="/announcements" className="mt-2 inline-flex min-h-11 items-center font-semibold text-primary underline">
+        {t('announcements.all')}
+      </Link>
     </section>
   );
 }

@@ -3,7 +3,7 @@ import cors from 'cors';
 import express, { type NextFunction, type Request, type Response } from 'express';
 import type { HealthResponse } from '@teddy/shared';
 import { aiRouter } from './routes/ai';
-import { announcementsRouter, coursesRouter, refreshRouter } from './routes/courses';
+import { announcementsRouter, assignmentsRouter, coursesRouter, refreshRouter } from './routes/courses';
 import { dataRouter } from './routes/data';
 import { moodleRouter } from './routes/moodle';
 import { studyRouter } from './routes/study';
@@ -34,6 +34,7 @@ app.use('/api/data', dataRouter);
 app.use('/api/moodle', moodleRouter);
 app.use('/api/courses', coursesRouter);
 app.use('/api/announcements', announcementsRouter);
+app.use('/api/assignments', assignmentsRouter);
 app.use('/api/refresh', refreshRouter);
 app.use('/api/ai/study', studyRouter);
 

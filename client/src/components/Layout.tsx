@@ -35,7 +35,7 @@ export function Layout() {
   const { t, settings } = useSettings();
   const { pathname } = useLocation();
   const mainRef = useRef<HTMLElement>(null);
-  const isFirstRender = useRef(true);
+  const previousPathname = useRef(pathname);
   const navRef = useRef<HTMLElement>(null);
 
   // When the mobile menu scrolls sideways, keep the current screen's item in view.
@@ -59,11 +59,11 @@ export function Layout() {
 
   // Move focus on navigation so screen readers announce the new screen.
   useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
-    mainRef.current?.focus();
+    // Compared, not a first-run flag: StrictMode runs effects twice on load.
+    if (previousPathname.current === pathname) return;
+    previousPathname.current = pathname;
+    mainRef.current?.focus({ preventScroll: true });
+    window.scrollTo(0, 0);
   }, [pathname]);
 
   // Each screen gets its own tab title, taken from its heading.

@@ -9,9 +9,11 @@ interface AnnouncementCardProps {
   item: Announcement;
   isRead: boolean;
   onRead: (id: string) => void;
+  /** h3 when the card sits under a section heading. */
+  heading?: 'h2' | 'h3';
 }
 
-export function AnnouncementCard({ item, isRead, onRead }: AnnouncementCardProps) {
+export function AnnouncementCard({ item, isRead, onRead, heading: Heading = 'h2' }: AnnouncementCardProps) {
   const { t, settings } = useSettings();
   const [open, setOpen] = useState(false);
   const messageId = useId();
@@ -35,7 +37,7 @@ export function AnnouncementCard({ item, isRead, onRead }: AnnouncementCardProps
           {formatRelativeDate(item.postedAt, settings.language)}
         </time>
       </div>
-      <h2 className={`mt-1 text-lg ${isRead ? 'font-medium' : 'font-bold'}`}>{item.title}</h2>
+      <Heading className={`mt-1 text-lg ${isRead ? 'font-medium' : 'font-bold'}`}>{item.title}</Heading>
       <p id={messageId} className={open ? 'whitespace-pre-wrap' : 'line-clamp-2'}>
         {open ? item.message : item.summary}
       </p>
