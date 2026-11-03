@@ -20,7 +20,7 @@ export function createOpenAiClient(apiKey: string): LlmClient {
   }
 
   return {
-    async completeJson({ system, user, schema }) {
+    async completeJson({ system, user, schema, noRetry }) {
       let lastError: Error = new Error('No model available');
       for (const name of models) {
         try {
@@ -40,6 +40,7 @@ export function createOpenAiClient(apiKey: string): LlmClient {
           });
           if (!res.ok) {
             lastError = new Error(`HTTP ${res.status}`);
+            if (noRetry && res.status === 429) throw lastError;
             if (TRY_NEXT_STATUS.has(res.status)) {
               console.warn(`AI model ${name} failed (${lastError.message}); trying the next one`);
               continue;

@@ -5,7 +5,8 @@ import type { AiProvider, StudyPlan } from './types';
 
 /** What a vendor file must provide: one JSON completion. */
 export interface LlmClient {
-  completeJson(request: { system: string; user: string; schema: object }): Promise<unknown>;
+  /** noRetry: a 429 throws at once, for background work that must not spend quota retrying. */
+  completeJson(request: { system: string; user: string; schema: object; noRetry?: boolean }): Promise<unknown>;
 }
 
 // Source names come from here, not the model, so the label always matches the link.

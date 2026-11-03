@@ -1,33 +1,10 @@
-import { createAnthropicClient } from './anthropicProvider';
 import { demoProvider } from './demoProvider';
-import { createLiveProvider, type LlmClient } from './liveProvider';
-import { createOpenAiClient } from './openaiProvider';
+import { llmClient } from './llmClient';
+import { createLiveProvider } from './liveProvider';
 import { smallTalkReply } from './smallTalk';
 import type { AiProvider } from './types';
 
-// To add a vendor: write a client file and register it here. Nothing else changes.
-const CLIENTS: Record<string, (apiKey: string) => LlmClient> = {
-  anthropic: createAnthropicClient,
-  openai: createOpenAiClient,
-};
-
-function createProvider(): AiProvider {
-  const apiKey = process.env.AI_API_KEY;
-  if (!apiKey) return demoProvider;
-  const factory = CLIENTS[process.env.AI_PROVIDER || 'anthropic'];
-  if (!factory) {
-    console.warn('Unknown AI_PROVIDER; using demo mode');
-    return demoProvider;
-  }
-  try {
-    return createLiveProvider(factory(apiKey));
-  } catch {
-    console.warn('Live AI settings are invalid; using demo mode');
-    return demoProvider;
-  }
-}
-
-const provider = createProvider();
+const provider: AiProvider = llmClient ? createLiveProvider(llmClient) : demoProvider;
 
 export const aiMode: 'demo' | 'live' = provider === demoProvider ? 'demo' : 'live';
 

@@ -14,7 +14,7 @@ export function createAnthropicClient(apiKey: string): LlmClient {
   });
 
   return {
-    async completeJson({ system, user, schema }) {
+    async completeJson({ system, user, schema, noRetry }) {
       const response = await client.beta.messages.create({
         model: process.env.AI_MODEL || DEFAULT_MODEL,
         max_tokens: 16000,
@@ -23,7 +23,7 @@ export function createAnthropicClient(apiKey: string): LlmClient {
         system,
         messages: [{ role: 'user', content: user }],
         output_config: { effort: 'medium', format: { type: 'json_schema', schema } },
-      } as never);
+      } as never, noRetry ? { maxRetries: 0 } : undefined);
       const message = response as unknown as Anthropic.Message;
 
       if (message.stop_reason === 'refusal' || message.stop_reason === 'max_tokens') {

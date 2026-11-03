@@ -14,7 +14,8 @@ import type {
   Language,
 } from '@teddy/shared';
 import { getCoursePackages, getTeachers, isCurrentWeekName, isSameWeek, parseWeekRange, readableCode, type WeekRange } from './coursePackages';
-import { dateLevel, higher, keywordLevel } from './importance/rules';
+import { aiClassifier } from './importance/aiClassifier';
+import { announcementLevel, dateLevel, higher, keywordLevel } from './importance/rules';
 import { getSnapshot } from './moodleService';
 
 // One entry point for the course pages: Moodle when connected, sample data in the same shape otherwise.
@@ -28,9 +29,17 @@ function summarize(text: string): string {
   return flat.length > SUMMARY_CHARS ? `${flat.slice(0, SUMMARY_CHARS).trimEnd()}…` : flat;
 }
 
-function classifyAnnouncement(title: string, message: string, language: Language) {
-  const { level, reason } = keywordLevel(`${title} ${message}`, language);
+function classifyAnnouncement(title: string, message: string, postedAt: string, language: Language) {
+  const { level, reason } = announcementLevel(`${title} ${message}`, postedAt, language);
   return { importance: level, importanceReason: reason, importanceSource: 'rules' as const };
+}
+
+/** Moodle announcements may have an AI verdict; the date rule still applies on top of it. */
+function classifyMoodleAnnouncement(id: string, courseCode: string, title: string, message: string, postedAt: string, language: Language) {
+  const ai = aiClassifier.lookup({ id, courseCode, title, message, postedAt }, language);
+  if (!ai) return classifyAnnouncement(title, message, postedAt, language);
+  const { level, reason } = announcementLevel(`${title} ${message}`, postedAt, language, Date.now(), ai);
+  return { importance: level, importanceReason: reason, importanceSource: 'ai' as const };
 }
 
 function classifyAssignment(name: string, dueAt: string | null, language: Language) {
@@ -103,7 +112,7 @@ function moodleAnnouncements(group: CoursePackage[], language: Language): Announ
       postedAt: item.date,
       author: item.author,
       moodleUrl: item.url,
-      ...classifyAnnouncement(item.title, item.text, language),
+      ...classifyMoodleAnnouncement(String(item.id), code, item.title, item.text, item.date, language),
     }))
     .sort((a, b) => b.postedAt.localeCompare(a.postedAt));
 }
@@ -209,7 +218,7 @@ function sampleCourseAnnouncements(code: string, id: number, name: string, langu
       postedAt: dateFromOffset(item.offsetDays),
       author: item.author,
       moodleUrl: '',
-      ...classifyAnnouncement(item.title[language], item.message[language], language),
+      ...classifyAnnouncement(item.title[language], item.message[language], dateFromOffset(item.offsetDays), language),
     }));
 }
 
@@ -272,6 +281,11 @@ function sampleDetail(index: number, language: Language): CourseDetail {
 }
 
 // ---- Public API
+
+/** Called by the page routes only, so chat questions never spend quota on this. */
+export function classifyInBackground(source: DataSource, announcements: Announcement[]): void {
+  if (source === 'moodle') void aiClassifier.schedule(announcements);
+}
 
 export async function listCourses(language: Language): Promise<{ source: DataSource; data: CourseListItem[] }> {
   const packages = await getCoursePackages();

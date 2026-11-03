@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useId, useState } from 'react';
 import type { Importance } from '@teddy/shared';
 import { AlertTriangle, Clock, HelpCircle, Info, type LucideIcon } from 'lucide-react';
 import { useSettings } from '../context/SettingsContext';
@@ -20,6 +20,7 @@ export const IMPORTANCE_STRIPE: Record<Importance, string> = {
 export function ImportanceBadge({ level, reason }: { level: Importance; reason: string }) {
   const { t } = useSettings();
   const [open, setOpen] = useState(false);
+  const tooltipId = useId();
   const { icon: Icon, label, badge } = STYLES[level];
 
   return (
@@ -37,14 +38,18 @@ export function ImportanceBadge({ level, reason }: { level: Importance; reason: 
         type="button"
         aria-label={t('importance.why')}
         aria-expanded={open}
+        aria-describedby={open ? tooltipId : undefined}
         onClick={() => setOpen(!open)}
         onBlur={() => setOpen(false)}
+        onKeyDown={(event) => {
+          if (event.key === 'Escape') setOpen(false);
+        }}
         className="inline-flex min-h-8 min-w-8 cursor-pointer items-center justify-center rounded text-muted"
       >
         <HelpCircle size={16} aria-hidden="true" />
       </button>
       {open && (
-        <span role="tooltip" className="basis-full text-muted">
+        <span id={tooltipId} role="tooltip" className="basis-full text-muted">
           {reason}
         </span>
       )}

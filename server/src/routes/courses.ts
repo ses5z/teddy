@@ -1,5 +1,5 @@
 import { Router, type Request } from 'express';
-import { getCourseDetail, listAnnouncements, listCourses } from '../services/courseCatalog';
+import { classifyInBackground, getCourseDetail, listAnnouncements, listCourses } from '../services/courseCatalog';
 import { getCoursePackages } from '../services/coursePackages';
 import { clearMoodleCache, getStatus } from '../services/moodleService';
 
@@ -18,6 +18,7 @@ coursesRouter.get('/:id', async (req, res) => {
     return;
   }
   const source = (await getCoursePackages()) ? 'moodle' : 'sample';
+  classifyInBackground(source, detail.announcements);
   res.json({ source, data: detail });
 });
 
@@ -25,6 +26,7 @@ export const announcementsRouter = Router();
 
 announcementsRouter.get('/', async (req, res) => {
   const { source, data } = await listAnnouncements(languageOf(req));
+  classifyInBackground(source, data);
   const courseId = Number(req.query.courseId);
   const { importance } = req.query;
   res.json({
