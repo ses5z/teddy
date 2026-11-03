@@ -149,9 +149,9 @@ export function CalendarPage() {
             <Button variant="secondary" aria-label={c('calendar.prev')} onClick={() => goMonth(addMonths(month, -1))}>
               <ChevronLeft aria-hidden="true" size={20} />
             </Button>
-            <h2 aria-live="polite" className="min-w-40 text-center text-xl font-bold">
+            <p aria-live="polite" className="min-w-40 text-center font-[family-name:var(--font-heading)] text-xl font-bold">
               {formatMonth(month, lang)}
-            </h2>
+            </p>
             <Button variant="secondary" aria-label={c('calendar.next')} onClick={() => goMonth(addMonths(month, 1))}>
               <ChevronRight aria-hidden="true" size={20} />
             </Button>
