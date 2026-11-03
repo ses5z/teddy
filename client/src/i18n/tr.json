@@ -261,5 +261,6 @@
   "calendar.sourceTedu": "TEDÜ",
   "calendar.sourceMoodle": "Moodle",
   "calendar.range": "{start} – {end}",
-  "source.official": "TEDÜ takvimi"
+  "source.official": "TEDÜ takvimi",
+  "announcements.error": "Duyurular şu anda yüklenemedi."
 }

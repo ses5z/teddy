@@ -28,7 +28,7 @@ export function AnnouncementsBox() {
         </h2>
         {status === 'ready' && source && <DataSourceBadge source={source} />}
       </div>
-      {status === 'error' && <p role="alert">{t('announcements.offline')}</p>}
+      {status === 'error' && <p role="alert">{t('announcements.error')}</p>}
       {status === 'ready' && items.length === 0 && <p>{t('announcements.empty')}</p>}
       <ul>
         {items.map((item) => (

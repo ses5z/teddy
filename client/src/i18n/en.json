@@ -261,5 +261,6 @@
   "calendar.sourceTedu": "TEDU",
   "calendar.sourceMoodle": "Moodle",
   "calendar.range": "{start} – {end}",
-  "source.official": "TEDU calendar"
+  "source.official": "TEDU calendar",
+  "announcements.error": "Could not load announcements right now."
 }

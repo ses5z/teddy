@@ -1,6 +1,6 @@
 import { dateFromOffset, faq } from '@teddy/shared/data';
 import type { ChatRequest, ChatResponse, FaqEntry, Language, StudyStartRequest } from '@teddy/shared';
-import { getCourseDetail } from '../courseCatalog';
+import { getCourseDetail, listAnnouncements, listCourses } from '../courseCatalog';
 import { getCoursePackages } from '../coursePackages';
 import { getUpcoming } from '../dataService';
 import { getSampleEvents } from '../sampleData';
@@ -29,6 +29,7 @@ const TEXT = {
   assignmentsSource: { tr: 'Ödevler', en: 'Assignments' },
   examsSource: { tr: 'Dersler', en: 'Courses' },
   eventsSource: { tr: 'Etkinlikler', en: 'Events' },
+  announcementsSource: { tr: 'Duyurular', en: 'Announcements' },
 };
 
 // Multi-word keywords are more specific, so they score higher.
@@ -83,18 +84,38 @@ function eventsReply(language: Language): ChatResponse {
   return reply(answer, TEXT.eventsSource[language], '/events');
 }
 
+const compactText = (text: string) => normalize(text).replace(/[^a-z0-9]/g, '');
+
+/** A sample course named in the question, when Moodle isn't connected. */
+async function namedSampleCourse(question: string, language: Language): Promise<number | null> {
+  if (await getCoursePackages()) return null;
+  const text = compactText(question);
+  const { data } = await listCourses(language);
+  return data.find((course) => text.includes(compactText(course.code)))?.id ?? null;
+}
+
 async function announcementsReply(language: Language, question: string): Promise<ChatResponse> {
   const packages = await getCoursePackages();
   const matched = packages ? matchCourses(question, packages) : [];
-  const latest = (matched.length ? matched : (packages ?? []))
+  const header = { tr: 'Son duyurular:', en: 'Latest announcements:' };
+  if (!packages) {
+    // Without Moodle the sample announcements answer, the same ones the pages show.
+    const { data } = await listAnnouncements(language);
+    const text = compactText(question);
+    const named = data.filter((item) => text.includes(compactText(item.courseCode)));
+    const lines = (named.length ? named : data)
+      .slice(0, 5)
+      .map((item) => `${item.courseCode}: ${item.title} (${formatDay(item.postedAt, language)})`);
+    return reply(bullets(header[language], lines), TEXT.announcementsSource[language], '/announcements');
+  }
+  const latest = (matched.length ? matched : packages)
     .flatMap((item) => item.announcements)
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, 5);
   if (!latest.length) {
     const none = { tr: 'Moodle\'da duyuru bulamadım.', en: 'I found no announcements on Moodle.' };
-    return { answer: none[language], source: null, confident: false, dataSource: packages ? 'moodle' : 'sample' };
+    return { answer: none[language], source: null, confident: false, dataSource: 'moodle' };
   }
-  const header = { tr: 'Son duyurular:', en: 'Latest announcements:' };
   const lines = latest.map((item) => `${item.courseCode}: ${item.title} (${formatDay(item.date, language)})`);
   return { ...reply(bullets(header[language], lines), 'Moodle'), dataSource: 'moodle' };
 }
@@ -170,6 +191,11 @@ export const demoProvider: AiProvider = {
     // A specific FAQ ("geç teslim") beats the broader "ödev" intent.
     if (match && match.score >= 2) return faqReply(match.entry, language);
     if (hasAny(text, ANNOUNCEMENT_WORDS)) return announcementsReply(language, question);
+    const sampleCourseId = await namedSampleCourse(question, language);
+    if (sampleCourseId != null) {
+      const sampleReply = await selectedCourseReply(sampleCourseId, language, false);
+      if (sampleReply) return sampleReply;
+    }
     const courseReply = await courseWeekReply(language, question);
     if (courseReply) return courseReply;
     if (hasAny(text, ASSIGNMENT_WORDS)) return upcomingReply(language, 'assignment');
