@@ -114,7 +114,7 @@ export function MobileMenu() {
         ref={panelRef}
         tabIndex={-1}
         onKeyDown={onKeyDown}
-        className={`fixed inset-y-0 right-0 z-40 flex w-72 max-w-[85vw] flex-col border-l border-border bg-surface shadow-lg ${
+        className={`fixed inset-y-0 right-0 z-40 flex w-72 max-w-[85vw] flex-col border-l border-border bg-surface ${
           open
             ? 'visible translate-x-0 transition-[transform] duration-200'
             : 'invisible translate-x-full transition-[transform,visibility] duration-200 [transition-property:transform,visibility] [transition-delay:0s,200ms]'
