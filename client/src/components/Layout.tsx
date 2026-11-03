@@ -22,8 +22,17 @@ export function Layout() {
 
   // Each screen gets its own tab title, taken from its heading.
   useEffect(() => {
-    const heading = mainRef.current?.querySelector('h1')?.textContent;
-    document.title = heading ? `${heading} – ${t('app.name')}` : t('app.name');
+    const main = mainRef.current;
+    if (!main) return;
+    const update = () => {
+      const heading = main.querySelector('h1')?.textContent;
+      document.title = heading ? `${heading} – ${t('app.name')}` : t('app.name');
+    };
+    update();
+    // Pages that load data render their heading later.
+    const observer = new MutationObserver(update);
+    observer.observe(main, { childList: true, subtree: true, characterData: true });
+    return () => observer.disconnect();
   }, [pathname, settings.language, t]);
 
   return (
