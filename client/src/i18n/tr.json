@@ -197,5 +197,22 @@
   "course.left.hours": "{hours} saat kaldı",
   "course.left.minutes": "{minutes} dakika kaldı",
   "chat.courseContext": "{code} hakkında konuşuyorsun",
-  "chat.clearCourse": "Ders bağlamını kaldır"
+  "chat.clearCourse": "Ders bağlamını kaldır",
+  "nav.announcements": "Duyurular",
+  "nav.unreadBadge": "{count} okunmamış duyuru",
+  "announcementsPage.title": "Duyurular",
+  "announcementsPage.loading": "Duyurular yükleniyor",
+  "announcementsPage.error": "Duyurular yüklenemedi.",
+  "announcementsPage.none": "Henüz duyuru yok.",
+  "announcementsPage.noMatch": "Bu filtrelere uyan duyuru yok.",
+  "announcementsPage.clearFilters": "Filtreleri temizle",
+  "announcementsPage.filterCourse": "Ders",
+  "announcementsPage.filterImportance": "Önem",
+  "announcementsPage.unreadOnly": "Sadece okunmamış",
+  "announcementsPage.sort": "Sıralama",
+  "announcementsPage.sortImportance": "Önem + tarih",
+  "announcementsPage.sortDate": "Sadece tarih",
+  "announcementsPage.count": "{shown} duyuru gösteriliyor, toplam {unread} okunmamış",
+  "announcementsPage.markAll": "Tümünü okundu işaretle",
+  "announcementsPage.new": "Yeni"
 }

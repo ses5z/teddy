@@ -197,5 +197,22 @@
   "course.left.hours": "{hours} hours left",
   "course.left.minutes": "{minutes} minutes left",
   "chat.courseContext": "Talking about {code}",
-  "chat.clearCourse": "Remove course context"
+  "chat.clearCourse": "Remove course context",
+  "nav.announcements": "Announcements",
+  "nav.unreadBadge": "{count} unread announcements",
+  "announcementsPage.title": "Announcements",
+  "announcementsPage.loading": "Loading announcements",
+  "announcementsPage.error": "Could not load announcements.",
+  "announcementsPage.none": "No announcements yet.",
+  "announcementsPage.noMatch": "No announcements match these filters.",
+  "announcementsPage.clearFilters": "Clear filters",
+  "announcementsPage.filterCourse": "Course",
+  "announcementsPage.filterImportance": "Importance",
+  "announcementsPage.unreadOnly": "Unread only",
+  "announcementsPage.sort": "Sort by",
+  "announcementsPage.sortImportance": "Importance + date",
+  "announcementsPage.sortDate": "Date only",
+  "announcementsPage.count": "Showing {shown} announcements, {unread} unread in total",
+  "announcementsPage.markAll": "Mark all as read",
+  "announcementsPage.new": "New"
 }

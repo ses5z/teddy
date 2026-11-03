@@ -33,3 +33,24 @@ export function formatDate(iso: string, language: Language): string {
     weekday: 'short',
   }).format(new Date(year, month - 1, day));
 }
+
+function intlLocale(language: Language): string {
+  return language === 'tr' ? 'tr-TR' : 'en-GB';
+}
+
+/** Full date for a YYYY-MM-DD value or ISO timestamp. */
+export function formatFullDate(iso: string, language: Language): string {
+  const [year, month, day] = iso.slice(0, 10).split('-').map(Number);
+  return new Intl.DateTimeFormat(intlLocale(language), { dateStyle: 'full' }).format(new Date(year, month - 1, day));
+}
+
+/** "2 days ago" style label, in whole calendar days from today. */
+export function formatRelativeDate(iso: string, language: Language, from = new Date()): string {
+  const format = new Intl.RelativeTimeFormat(intlLocale(language), { numeric: 'auto' });
+  const days = daysUntil(iso.slice(0, 10), from);
+  const size = Math.abs(days);
+  if (size < 7) return format.format(days, 'day');
+  if (size < 30) return format.format(Math.trunc(days / 7), 'week');
+  if (size < 365) return format.format(Math.trunc(days / 30), 'month');
+  return format.format(Math.trunc(days / 365), 'year');
+}

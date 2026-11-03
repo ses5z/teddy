@@ -94,7 +94,7 @@ export function Chat() {
       )}
       <div ref={endRef} />
 
-      <form onSubmit={submit} className="sticky bottom-20 flex gap-2 md:bottom-4">
+      <form onSubmit={submit} className="sticky bottom-[calc(var(--mobile-nav-height)+0.5rem)] flex gap-2 md:bottom-4">
         <label htmlFor="chat-input" className="sr-only">
           {t('chat.inputLabel')}
         </label>

@@ -1,8 +1,10 @@
 import type { ReactNode } from 'react';
 import { BrowserRouter, Link, Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout';
+import { ReadAnnouncementsProvider } from './context/ReadAnnouncementsContext';
 import { useProfile } from './context/ProfileContext';
 import { useSettings } from './context/SettingsContext';
+import { AnnouncementsScreen } from './screens/Announcements';
 import { Chat } from './screens/Chat';
 import { CourseDetailScreen } from './screens/CourseDetail';
 import { Dashboard } from './screens/Dashboard';
@@ -42,7 +44,9 @@ export function App() {
         <Route
           element={
             <RequireProfile>
-              <Layout />
+              <ReadAnnouncementsProvider>
+                <Layout />
+              </ReadAnnouncementsProvider>
             </RequireProfile>
           }
         >
@@ -54,6 +58,7 @@ export function App() {
           <Route path="/events" element={<EventsScreen />} />
           <Route path="/rules" element={<RulesScreen />} />
           <Route path="/study" element={<StudyMode />} />
+          <Route path="/announcements" element={<AnnouncementsScreen />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="*" element={<NotFound />} />
