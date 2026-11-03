@@ -68,19 +68,44 @@ export function readableCode(shortname: string): { code: string; label: string }
 
 const MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
 
-/** Moodle weekly sections are named like "26 October - 1 November". */
-export function isCurrentWeekName(name: string, now = new Date()): boolean {
+const DAY_MS = 24 * 60 * 60 * 1000;
+const DAYS_IN_YEAR = 365;
+const SAME_WEEK_MAX_DAYS = 2;
+
+export interface WeekRange {
+  startMonth: number;
+  startDay: number;
+  endMonth: number;
+  endDay: number;
+}
+
+/** Moodle weekly sections are named like "26 October - 1 November". Null for any other name. */
+export function parseWeekRange(name: string): WeekRange | null {
   const match = name.toLowerCase().match(/(\d{1,2})\s+([a-z]+)\s*-\s*(\d{1,2})\s+([a-z]+)/);
-  if (!match) return false;
+  if (!match) return null;
   const startMonth = MONTHS.indexOf(match[2]);
   const endMonth = MONTHS.indexOf(match[4]);
-  if (startMonth < 0 || endMonth < 0) return false;
+  if (startMonth < 0 || endMonth < 0) return null;
+  return { startMonth, startDay: Number(match[1]), endMonth, endDay: Number(match[3]) };
+}
+
+/** Two Moodle courses may date one week a day or two apart. Titles carry no year, so the gap wraps around New Year. */
+export function isSameWeek(a: WeekRange, b: WeekRange): boolean {
+  const dayOfYear = (range: WeekRange) => Date.UTC(2001, range.startMonth, range.startDay) / DAY_MS;
+  const gap = Math.abs(dayOfYear(a) - dayOfYear(b));
+  return Math.min(gap, DAYS_IN_YEAR - gap) <= SAME_WEEK_MAX_DAYS;
+}
+
+export function isCurrentWeekName(name: string, now = new Date()): boolean {
+  const range = parseWeekRange(name);
+  if (!range) return false;
+  const { startMonth, startDay, endMonth, endDay } = range;
   const day = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
   // Checks neighbouring years so weeks across New Year still match.
   return [-1, 0].some((offset) => {
     const year = now.getFullYear() + offset;
-    const start = new Date(year, startMonth, Number(match[1])).getTime();
-    const end = new Date(endMonth < startMonth ? year + 1 : year, endMonth, Number(match[3])).getTime();
+    const start = new Date(year, startMonth, startDay).getTime();
+    const end = new Date(endMonth < startMonth ? year + 1 : year, endMonth, endDay).getTime();
     return day >= start && day <= end;
   });
 }

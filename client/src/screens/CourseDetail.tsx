@@ -116,7 +116,7 @@ function sortAssignments(items: Assignment[]): Assignment[] {
   const time = (item: Assignment) => (item.dueAt ? new Date(item.dueAt).getTime() : Number.POSITIVE_INFINITY);
   const upcoming = items.filter((item) => time(item) >= now).sort((a, b) => time(a) - time(b));
   const past = items.filter((item) => time(item) < now).sort((a, b) => time(b) - time(a));
-  return [...upcoming, ...past];
+  return [...upcoming.filter((item) => item.dueAt), ...past, ...upcoming.filter((item) => !item.dueAt)];
 }
 
 function Box({ title, onSeeAll, children }: { title: string; onSeeAll?: () => void; children: ReactNode }) {
@@ -174,23 +174,21 @@ function TopicsTab({ course }: { course: CourseDetail }) {
                 />
               </button>
             </h2>
-            {open && (
-              <div id={`section-${index}`} className="pb-3">
-                {section.summary && <p className="mb-2 whitespace-pre-wrap text-muted">{section.summary}</p>}
-                {section.items.length === 0 && !section.summary && <p className="text-muted">{t('course.noThisWeek')}</p>}
-                <ul className="flex flex-col gap-1">
-                  {section.items.map((item) => {
-                    const Icon = MATERIAL_ICONS[item.type] ?? File;
-                    return (
-                      <li key={`${item.name}-${item.url}`} className="flex items-start gap-2">
-                        <Icon size={18} className="mt-1 shrink-0 text-primary" aria-hidden="true" />
-                        <ExternalAnchor href={item.url}>{item.name}</ExternalAnchor>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            )}
+            <div id={`section-${index}`} hidden={!open} className="pb-3">
+              {section.summary && <p className="mb-2 whitespace-pre-wrap text-muted">{section.summary}</p>}
+              {section.items.length === 0 && !section.summary && <p className="text-muted">{t('course.noThisWeek')}</p>}
+              <ul className="flex flex-col gap-1">
+                {section.items.map((item) => {
+                  const Icon = MATERIAL_ICONS[item.type] ?? File;
+                  return (
+                    <li key={`${item.name}-${item.url}`} className="flex items-start gap-2">
+                      <Icon size={18} className="mt-1 shrink-0 text-primary" aria-hidden="true" />
+                      <ExternalAnchor href={item.url}>{item.name}</ExternalAnchor>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </li>
         );
       })}
@@ -366,7 +364,7 @@ export function CourseDetailScreen() {
       </div>
 
       {/* Sits above the mobile bottom menu; on desktop it stays in the corner of the content. */}
-      <div className="fixed inset-x-0 bottom-20 z-10 border-t border-border bg-surface p-2 md:static md:border-0 md:bg-transparent md:p-0">
+      <div className="fixed inset-x-0 bottom-[var(--mobile-nav-height)] z-10 border-t border-border bg-surface p-2 md:static md:border-0 md:bg-transparent md:p-0">
         <Link
           to={`/chat?courseId=${course.id}`}
           className="flex min-h-11 items-center justify-center gap-2 rounded bg-primary px-4 py-2 font-semibold text-on-primary md:inline-flex"

@@ -13,7 +13,7 @@ import type {
   DataSource,
   Language,
 } from '@teddy/shared';
-import { getCoursePackages, getTeachers, readableCode } from './coursePackages';
+import { getCoursePackages, getTeachers, isCurrentWeekName, isSameWeek, parseWeekRange, readableCode, type WeekRange } from './coursePackages';
 import { dateLevel, higher, keywordLevel } from './importance/rules';
 import { getSnapshot } from './moodleService';
 
@@ -34,7 +34,10 @@ function classifyAnnouncement(title: string, message: string, language: Language
 }
 
 function classifyAssignment(name: string, dueAt: string | null, language: Language) {
-  const { level, reason } = higher(dateLevel(dueAt, language), keywordLevel(name, language));
+  // A passed deadline needs no action, whatever its name says.
+  const byDate = dateLevel(dueAt, language);
+  const isPast = dueAt != null && new Date(dueAt).getTime() < Date.now();
+  const { level, reason } = isPast ? byDate : higher(byDate, keywordLevel(name, language));
   return { importance: level, importanceReason: reason };
 }
 
@@ -52,6 +55,24 @@ function groupPackages(packages: CoursePackage[]): CoursePackage[][] {
 
 const primaryOf = (group: CoursePackage[]) => group.find((item) => !/ALL/i.test(item.shortname)) ?? group[0];
 
+/** Primary first, so its titles and links win when the same thing appears in both courses. */
+function primaryFirst(group: CoursePackage[]): CoursePackage[] {
+  const primary = primaryOf(group);
+  return [primary, ...group.filter((item) => item !== primary)];
+}
+
+/** "Exam & Project", "exam and project" and "Exam  and Project." are one title. */
+function announcementTitleKey(title: string): string {
+  return title
+    .toLocaleLowerCase('en')
+    .replace(/\band\b/g, '')
+    .replace(/[^\p{L}\p{N}]/gu, '');
+}
+
+function announcementKey(title: string, text: string): string {
+  return `${announcementTitleKey(title)}|${text.replace(/\s+/g, ' ').trim()}`;
+}
+
 export function packagesForCourse(courseId: number, packages: CoursePackage[]): CoursePackage[] {
   return groupPackages(packages).find((group) => primaryOf(group).id === courseId) ?? [];
 }
@@ -68,9 +89,9 @@ function moodleAnnouncements(group: CoursePackage[], language: Language): Announ
   // The same post is often published to both the section and the all-sections course.
   const seen = new Set<string>();
   const isNew = (key: string) => !seen.has(key) && Boolean(seen.add(key));
-  return group
+  return primaryFirst(group)
     .flatMap((item) => item.announcements)
-    .filter((item) => isNew(`${item.title}|${item.text}`))
+    .filter((item) => isNew(announcementKey(item.title, item.text)))
     .map((item) => ({
       id: String(item.id),
       courseId: id,
@@ -94,26 +115,35 @@ async function moodleDetail(group: CoursePackage[], language: Language): Promise
   const shortnames = new Set(group.map((item) => item.shortname));
   const teachers = await getTeachers(snapshot.courses.flatMap((course) => (course.id == null ? [] : [course.id])));
 
-  // Same week in both Moodle courses becomes one section.
-  const byTitle = new Map<string, CourseDetail['sections'][number] & { order: number }>();
-  for (const section of group.flatMap((item) => item.sections)) {
-    const existing = byTitle.get(section.name);
-    const items = section.materials.map((material) => ({
-      name: material.name,
-      type: material.type,
-      url: material.url ?? '',
-    }));
-    if (existing) {
-      existing.items.push(...items.filter((item) => !existing.items.some((other) => other.url === item.url)));
-      if (!existing.summary) existing.summary = section.summary;
-    } else {
-      byTitle.set(section.name, { title: section.name, summary: section.summary, isCurrentWeek: section.isCurrentWeek, items, order: section.number });
+  // Same week in both Moodle courses becomes one section under the primary course's title.
+  const merged: (CourseDetail['sections'][number] & { order: number; range: WeekRange | null })[] = [];
+  for (const section of primaryFirst(group).flatMap((item) => item.sections)) {
+    const range = parseWeekRange(section.name);
+    const existing = merged.find((other) =>
+      range && other.range ? isSameWeek(range, other.range) : !range && !other.range && other.title === section.name,
+    );
+    const target =
+      existing ?? { title: section.name, summary: section.summary, isCurrentWeek: false, items: [], order: section.number, range };
+    if (!existing) merged.push(target);
+    for (const material of section.materials) {
+      const item = { name: material.name, type: material.type, url: material.url ?? '' };
+      // Items without a link can only be told apart by name.
+      const isDuplicate = target.items.some((other) => (item.url ? other.url === item.url : !other.url && other.name === item.name));
+      if (!isDuplicate) target.items.push(item);
     }
+    if (!target.summary) target.summary = section.summary;
+    target.isCurrentWeek ||= section.isCurrentWeek;
   }
-  const sections = [...byTitle.values()]
+
+  // Weeks a day apart can leave two sections marked; the one whose shown title holds today wins.
+  const marked = merged.filter((section) => section.isCurrentWeek);
+  const currentWeek = marked.find((section) => isCurrentWeekName(section.title)) ?? marked[0];
+  for (const section of merged) section.isCurrentWeek = section === currentWeek;
+
+  const sections = merged
     .sort((a, b) => a.order - b.order)
     .filter((section) => section.isCurrentWeek || section.items.length > 0 || section.summary)
-    .map(({ order: _order, ...section }) => section);
+    .map(({ order: _order, range: _range, ...section }) => section);
 
   const current = sections.find((section) => section.isCurrentWeek);
 

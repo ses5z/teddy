@@ -82,4 +82,6 @@
 :root {
   --font-heading: 'Source Serif 4', Georgia, serif;
   --font-body: 'Source Sans 3', system-ui, sans-serif;
+  /* Fits an icon and a two-line label. In rem, so it grows with the text size setting. */
+  --mobile-nav-height: 4.5rem;
 }

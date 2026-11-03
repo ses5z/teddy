@@ -49,16 +49,16 @@ export function Layout() {
           <Logo />
           <nav
             aria-label={t('nav.main')}
-            className="fixed inset-x-0 bottom-0 z-10 border-t border-border bg-surface md:static md:border-t-0"
+            className="fixed inset-x-0 bottom-0 z-10 h-[var(--mobile-nav-height)] border-t border-border bg-surface md:static md:h-auto md:border-t-0"
           >
-            <ul className="flex md:gap-1">
+            <ul className="flex h-full md:h-auto md:gap-1">
               {NAV_ITEMS.map(({ to, icon: Icon, label }) => (
-                <li key={to} className="flex-1">
+                <li key={to} className="min-w-0 flex-1">
                   <NavLink
                     to={to}
                     end={to === '/'}
                     className={({ isActive }) =>
-                      `flex min-h-14 flex-col items-center justify-center gap-0.5 border-t-2 px-1 transition-colors md:min-h-11 md:flex-row md:gap-2 md:border-t-0 md:border-b-2 md:px-3 md:text-base md:whitespace-nowrap ${
+                      `flex h-full flex-col items-center justify-center gap-0.5 border-t-2 text-center leading-tight [overflow-wrap:anywhere] transition-colors md:h-auto md:min-h-11 md:flex-row md:gap-2 md:border-t-0 md:border-b-2 md:px-3 md:text-base md:leading-normal md:whitespace-nowrap ${
                         isActive ? 'border-primary font-bold text-primary' : 'border-transparent text-muted'
                       }`
                     }
