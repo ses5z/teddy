@@ -262,5 +262,6 @@
   "calendar.sourceMoodle": "Moodle",
   "calendar.range": "{start} – {end}",
   "source.official": "TEDÜ takvimi",
-  "announcements.error": "Duyurular şu anda yüklenemedi."
+  "announcements.error": "Duyurular şu anda yüklenemedi.",
+  "logo.alt": "TED Üniversitesi"
 }

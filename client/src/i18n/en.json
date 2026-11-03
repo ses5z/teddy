@@ -262,5 +262,6 @@
   "calendar.sourceMoodle": "Moodle",
   "calendar.range": "{start} – {end}",
   "source.official": "TEDU calendar",
-  "announcements.error": "Could not load announcements right now."
+  "announcements.error": "Could not load announcements right now.",
+  "logo.alt": "TED University"
 }

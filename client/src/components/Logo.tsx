@@ -14,7 +14,7 @@ export function Logo({ size = 40, stacked = false }: { size?: number; stacked?: 
       {src && (
         <img
           src={src}
-          alt="TED Üniversitesi"
+          alt={t('logo.alt')}
           height={size}
           style={{ height: size, width: 'auto' }}
           onError={() => setIndex(index + 1)}
