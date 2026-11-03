@@ -19,6 +19,9 @@ const SOURCE_LABELS: Record<string, Localized> = {
 const isText = (value: unknown): value is string => typeof value === 'string' && value.trim().length > 0;
 const isTextList = (value: unknown): value is string[] => Array.isArray(value) && value.length > 0 && value.every(isText);
 
+// Keeps student and Moodle text from closing the tags around it.
+const escapeTags = (text: string) => text.replace(/</g, '\\u003c');
+
 const CLARIFY: Localized = {
   tr: 'Hangi dersi soruyorsun?',
   en: 'Which course do you mean?',
@@ -79,7 +82,7 @@ export function createLiveProvider(llm: LlmClient): AiProvider {
       }
       const raw = await llm.completeJson({
         system: chatSystemPrompt(language),
-        user: `<data>${text}</data>\n<question>${question}</question>`,
+        user: `<data>${escapeTags(text)}</data>\n<question>${escapeTags(question)}</question>`,
         schema: CHAT_SCHEMA,
       });
       return toChatResponse(raw, moodleUsed === 'moodle', language, refs);
@@ -88,7 +91,7 @@ export function createLiveProvider(llm: LlmClient): AiProvider {
     async study({ courseCode, question, language }: StudyStartRequest) {
       const raw = await llm.completeJson({
         system: studySystemPrompt(language),
-        user: `<course>${courseCode}</course>\n<question>${question}</question>`,
+        user: `<course>${escapeTags(courseCode)}</course>\n<question>${escapeTags(question)}</question>`,
         schema: STUDY_SCHEMA,
       });
       return toStudyPlan(raw);
