@@ -64,8 +64,3 @@ main:focus {
   color: var(--muted);
   opacity: 1;
 }
-
-/* The mobile menu scrolls sideways and would clip an outline drawn outside the link. */
-nav a:focus-visible {
-  outline-offset: -3px;
-}
