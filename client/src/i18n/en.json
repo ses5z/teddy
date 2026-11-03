@@ -225,5 +225,8 @@
   "announcementsPage.sortDate": "Date only",
   "announcementsPage.count": "Showing {shown} announcements, {unread} unread in total",
   "announcementsPage.markAll": "Mark all as read",
-  "announcementsPage.new": "New"
+  "announcementsPage.new": "New",
+  "nav.calendar": "Calendar",
+  "nav.openMenu": "Open menu",
+  "nav.closeMenu": "Close menu"
 }

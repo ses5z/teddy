@@ -273,3 +273,33 @@ export interface SampleAnnouncement {
   /** Days from today; negative means in the past */
   offsetDays: number;
 }
+
+// Academic calendar API
+export type CalendarEntryType =
+  | 'holiday'
+  | 'half_day'
+  | 'exam'
+  | 'registration'
+  | 'deadline'
+  | 'special'
+  | 'moodle'
+  | 'academic';
+
+export interface CalendarApiEntry {
+  id: string;
+  name: string;
+  /** Inclusive, YYYY-MM-DD in Europe/Istanbul */
+  start: string;
+  end: string;
+  type: CalendarEntryType;
+  source: 'tedu' | 'moodle';
+  sourceUrl: string;
+  lastFetchedAt: string;
+}
+
+export interface CalendarResponse {
+  entries: CalendarApiEntry[];
+  /** Official calendar page and when its copy was taken */
+  sourceUrl: string;
+  lastFetchedAt: string;
+}

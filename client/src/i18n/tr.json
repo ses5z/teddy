@@ -225,5 +225,8 @@
   "announcementsPage.sortDate": "Sadece tarih",
   "announcementsPage.count": "{shown} duyuru gösteriliyor, toplam {unread} okunmamış",
   "announcementsPage.markAll": "Tümünü okundu işaretle",
-  "announcementsPage.new": "Yeni"
+  "announcementsPage.new": "Yeni",
+  "nav.calendar": "Takvim",
+  "nav.openMenu": "Menüyü aç",
+  "nav.closeMenu": "Menüyü kapat"
 }

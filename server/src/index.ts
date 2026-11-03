@@ -4,6 +4,7 @@ import express, { type NextFunction, type Request, type Response } from 'express
 import type { HealthResponse } from '@teddy/shared';
 import { aiRouter } from './routes/ai';
 import { announcementsRouter, assignmentsRouter, coursesRouter, refreshRouter } from './routes/courses';
+import { calendarRouter } from './routes/calendar';
 import { dataRouter } from './routes/data';
 import { moodleRouter } from './routes/moodle';
 import { studyRouter } from './routes/study';
@@ -32,6 +33,7 @@ app.get('/api/health', (_req, res) => {
 app.use('/api/ai', aiRouter);
 app.use('/api/data', dataRouter);
 app.use('/api/moodle', moodleRouter);
+app.use('/api/calendar', calendarRouter);
 app.use('/api/courses', coursesRouter);
 app.use('/api/announcements', announcementsRouter);
 app.use('/api/assignments', assignmentsRouter);

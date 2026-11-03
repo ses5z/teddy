@@ -4,6 +4,7 @@ import type {
   HealthResponse,
   Announcement,
   Assignment,
+  CalendarResponse,
   CourseDetail,
   CourseListItem,
   Importance,
@@ -39,6 +40,7 @@ function post<T>(path: string, body?: unknown): Promise<T> {
 }
 
 export const api = {
+  calendar: (language: Language) => request<CalendarResponse>(`/calendar?lang=${language}`),
   health: () => request<HealthResponse>('/health'),
   upcoming: (language: Language, days: 7 | 30 = 7) =>
     request<Sourced<UpcomingItem[]>>(`/data/upcoming?lang=${language}&days=${days}`),

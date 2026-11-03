@@ -5,6 +5,7 @@
   "type": "module",
   "exports": {
     ".": "./types.ts",
-    "./data": "./data/index.ts"
+    "./data": "./data/index.ts",
+    "./data/tedu-calendar.json": "./data/tedu-calendar.json"
   }
 }

@@ -1,0 +1,1038 @@
+{
+ "_source": "TED University Academic Calendar, https://www.tedu.edu.tr/en/academic-calendar, PDF printed 2026-11-03",
+ "sourceUrl": "https://www.tedu.edu.tr/en/academic-calendar",
+ "lastFetchedAt": "2026-11-03T22:36:00+03:00",
+ "items": [
+  {
+   "id": "tedu-rd-half",
+   "name": "REPUBLIC DAY (1,5 Days of National Holiday)",
+   "start": "2025-10-28",
+   "end": "2025-10-28",
+   "type": "half_day",
+   "nameTr": "Cumhuriyet Bayramı (Ulusal Tatil)"
+  },
+  {
+   "id": "tedu-1",
+   "name": "REPUBLIC DAY (1,5 Days of National Holiday)",
+   "start": "2025-10-29",
+   "end": "2025-10-29",
+   "type": "holiday",
+   "nameTr": "Cumhuriyet Bayramı (Ulusal Tatil)"
+  },
+  {
+   "id": "tedu-2",
+   "name": "Spring Semester Final Exams",
+   "start": "2026-06-01",
+   "end": "2026-06-14",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-3",
+   "name": "Semester final exam grade entry (Starts at 09:00 / Ends at 23:59)",
+   "start": "2026-06-01",
+   "end": "2026-06-18",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-4",
+   "name": "2026 Spring Semester English Language School Courses End Dates",
+   "start": "2026-06-12",
+   "end": "2026-06-12",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-5",
+   "name": "English Language School Spring Semester Exams (Final)",
+   "start": "2026-06-15",
+   "end": "2026-06-17",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-6",
+   "name": "Announcement of 2025 Spring Semester letter grades (at 17:00)",
+   "start": "2026-06-19",
+   "end": "2026-06-19",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-7",
+   "name": "Selection of majors through the portal for students who have completed 30 credits. (Starts at 09:00 - Ends at 18:00)",
+   "start": "2026-06-22",
+   "end": "2026-06-23",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-8",
+   "name": "Supplementary exam applications for graduation",
+   "start": "2026-06-22",
+   "end": "2026-06-23",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-9",
+   "name": "Tuition payment for the Summer School Semester registration",
+   "start": "2026-06-24",
+   "end": "2026-06-25",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-10",
+   "name": "2026 Summer School Special Student applications and registration",
+   "start": "2026-06-24",
+   "end": "2026-06-25",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-11",
+   "name": "Dates of the supplementary exam",
+   "start": "2026-06-25",
+   "end": "2026-06-26",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-12",
+   "name": "Double major/minor applications for 2026 Fall semester undergraduate programs",
+   "start": "2026-06-25",
+   "end": "2026-06-26",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-13",
+   "name": "Deadline for missing (I) grade entry for 2026 Spring Semester",
+   "start": "2026-06-29",
+   "end": "2026-06-29",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-14",
+   "name": "English Proficiency Exam",
+   "start": "2026-06-29",
+   "end": "2026-06-30",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-15",
+   "name": "2026 Summer School Course Start Date",
+   "start": "2026-06-29",
+   "end": "2026-06-29",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-16",
+   "name": "Tuition payment and registration of the International Students admitted to undergraduate programs",
+   "start": "2026-07-01",
+   "end": "2026-09-25",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-17",
+   "name": "Deadline for submission of the letter grades for the supplementary exam",
+   "start": "2026-07-03",
+   "end": "2026-07-03",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-18",
+   "name": "GRADUATION CEREMONY",
+   "start": "2026-07-04",
+   "end": "2026-07-04",
+   "type": "special",
+   "nameTr": "Mezuniyet Töreni"
+  },
+  {
+   "id": "tedu-19",
+   "name": "Deadline for course withdrawal start-end and Advisor approvals (Ends: 18:00)",
+   "start": "2026-07-06",
+   "end": "2026-07-31",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-20",
+   "name": "DEMOCRACY AND NATIONAL SOLIDARITY DAY (HOLIDAY)",
+   "start": "2026-07-15",
+   "end": "2026-07-15",
+   "type": "holiday",
+   "nameTr": "Demokrasi ve Millî Birlik Günü (Tatil)"
+  },
+  {
+   "id": "tedu-21",
+   "name": "Applications for transfer to undergraduate programs for the 2026 Fall semester",
+   "start": "2026-07-22",
+   "end": "2026-08-07",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-22",
+   "name": "Application for transfer in graduate programs (between programs with/without thesis) for 2026 Fall Semester",
+   "start": "2026-07-31",
+   "end": "2026-07-31",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-23",
+   "name": "Announcement of double major/minor application results for 2026 Fall semester undergraduate programs",
+   "start": "2026-07-31",
+   "end": "2026-07-31",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-24",
+   "name": "End of applications by the graduate students to be admitted to the Graduate School for the 2026 Fall Semester",
+   "start": "2026-08-07",
+   "end": "2026-08-07",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-25",
+   "name": "2026 Summer School Course Ending Date",
+   "start": "2026-08-14",
+   "end": "2026-08-14",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-26",
+   "name": "Summer School Final Exams",
+   "start": "2026-08-17",
+   "end": "2026-08-18",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-27",
+   "name": "Summer School grade entry (Starts at 09:00, Ends at 23:59)",
+   "start": "2026-08-17",
+   "end": "2026-08-20",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-28",
+   "name": "Announcement of the Summer school letter grades",
+   "start": "2026-08-21",
+   "end": "2026-08-21",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-29",
+   "name": "Application for the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
+   "start": "2026-08-24",
+   "end": "2026-08-25",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-30",
+   "name": "Selection of majors through the portal for students who have completed 30 credits. (Starts at 09:00 / Ends at 18:00)",
+   "start": "2026-08-24",
+   "end": "2026-08-25",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-31",
+   "name": "Announcement of transfer application results for 2026 Fall semester undergraduate programs",
+   "start": "2026-08-25",
+   "end": "2026-08-25",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-32",
+   "name": "Registration dates for students newly admitted to double major/minor programs for 2026 Fall semester undergraduate programs",
+   "start": "2026-08-26",
+   "end": "2026-08-27",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-33",
+   "name": "Registration for undergraduate transfer programs for 2026 Fall Semester",
+   "start": "2026-08-27",
+   "end": "2026-08-28",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-34",
+   "name": "Announcement of students admitted to graduate programs for the 2026 Fall Semester",
+   "start": "2026-08-28",
+   "end": "2026-08-28",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-35",
+   "name": "VICTORY DAY (NATIONAL HOLIDAY)",
+   "start": "2026-08-30",
+   "end": "2026-08-30",
+   "type": "holiday",
+   "nameTr": "Zafer Bayramı (Ulusal Tatil)"
+  },
+  {
+   "id": "tedu-36",
+   "name": "Dates of the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
+   "start": "2026-08-31",
+   "end": "2026-09-01",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-37",
+   "name": "Deadline for assigning a graduate thesis/project advisor and determining the thesis subject",
+   "start": "2026-08-31",
+   "end": "2026-08-31",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-38",
+   "name": "Announcement of the results of the applications for transfer in graduate programs (between programs with/without thesis) for 2026 Fall Semester",
+   "start": "2026-08-31",
+   "end": "2026-09-06",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-39",
+   "name": "Deadline for missing (I) grade entry for 2026 Summer School",
+   "start": "2026-08-31",
+   "end": "2026-08-31",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-40",
+   "name": "Deadline for thesis grades entries for graduate students (Ends at 23:59)",
+   "start": "2026-09-02",
+   "end": "2026-09-02",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-41",
+   "name": "Tuition fee payment and registration for transfer in graduate programs (between programs with/without thesis) for 2026 Fall Semester",
+   "start": "2026-09-04",
+   "end": "2026-09-04",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-42",
+   "name": "English Placement Exam and Announcement",
+   "start": "2026-09-07",
+   "end": "2026-09-07",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-43",
+   "name": "Deadline for submission of the letter grades for the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
+   "start": "2026-09-07",
+   "end": "2026-09-08",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-44",
+   "name": "English Proficiency Exam",
+   "start": "2026-09-08",
+   "end": "2026-09-09",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-45",
+   "name": "Registration dates of the Graduate Students admitted to graduate programs for 2026 Fall Semester",
+   "start": "2026-09-10",
+   "end": "2026-09-10",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-46",
+   "name": "Announcement of English Proficiency Exam results",
+   "start": "2026-09-14",
+   "end": "2026-09-14",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-47",
+   "name": "2026 Fall Semester Special Student applications- tuition fee payment and registration",
+   "start": "2026-09-14",
+   "end": "2026-09-15",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-48",
+   "name": "English Language School courses start date (Fall Module 1)",
+   "start": "2026-09-21",
+   "end": "2026-09-21",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-49",
+   "name": "Orientation program for newly registered students",
+   "start": "2026-09-21",
+   "end": "2026-09-21",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-50",
+   "name": "Selection of the secondary field programs through the portal (Starts at 09:00 - Ends at 18:00)",
+   "start": "2026-09-22",
+   "end": "2026-09-24",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-51",
+   "name": "Course registration for senior students (4thyear) (Opening at 09.00)",
+   "start": "2026-09-22",
+   "end": "2026-09-22",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-52",
+   "name": "Course registration for sophister students (3rd year) (Opening at 13.00)",
+   "start": "2026-09-22",
+   "end": "2026-09-22",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-53",
+   "name": "Course registration for post-graduate students (Opening at 09.00)",
+   "start": "2026-09-23",
+   "end": "2026-09-23",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-54",
+   "name": "Course registration for sophomore students (2nd year) (Starts at 09.00)",
+   "start": "2026-09-23",
+   "end": "2026-09-23",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-55",
+   "name": "Course registration for first year students (1st year) (Starts at 09.00)",
+   "start": "2026-09-24",
+   "end": "2026-09-24",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-56",
+   "name": "Course registrations for all students (Ends at: 18:00)",
+   "start": "2026-09-24",
+   "end": "2026-09-24",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-57",
+   "name": "2026 Fall Semester Course Start Date",
+   "start": "2026-09-28",
+   "end": "2026-09-28",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-58",
+   "name": "Selection of the secondary field programs through the portal (Starts at 09:00, Ends at 18:00)",
+   "start": "2026-10-06",
+   "end": "2026-10-07",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-59",
+   "name": "Fall Semester / Add & Drop (Starts at 09:00 - Ends at 18:00)",
+   "start": "2026-10-06",
+   "end": "2026-10-07",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-60",
+   "name": "Deadline for submitting the 2026 Fall Semester absence of leave applications",
+   "start": "2026-10-23",
+   "end": "2026-10-23",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-61",
+   "name": "COMMEMORATION OF ATATURK",
+   "start": "2026-11-10",
+   "end": "2026-11-10",
+   "type": "special",
+   "nameTr": "Atatürk'ü Anma Günü"
+  },
+  {
+   "id": "tedu-62",
+   "name": "English Language School courses start date (Fall Module 2)",
+   "start": "2026-11-23",
+   "end": "2026-11-23",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-63",
+   "name": "Application dates of 2027 Spring Semester post- graduate students to the related graduate programs",
+   "start": "2026-12-01",
+   "end": "2026-12-01",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-64",
+   "name": "Deadline for course withdrawal start-end and Advisor approvals (Ends: 18:00)",
+   "start": "2026-12-04",
+   "end": "2026-12-04",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-65",
+   "name": "2026 Fall Semester Course End Date",
+   "start": "2026-12-31",
+   "end": "2026-12-31",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-66",
+   "name": "NEW YEAR’S DAY (HOLIDAY)",
+   "start": "2027-01-01",
+   "end": "2027-01-01",
+   "type": "holiday",
+   "nameTr": "Yılbaşı (Tatil)"
+  },
+  {
+   "id": "tedu-67",
+   "name": "Fall Semester Final Exams",
+   "start": "2027-01-04",
+   "end": "2027-01-17",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-68",
+   "name": "Application of the 2027 Spring Semester undergraduate transfer",
+   "start": "2027-01-04",
+   "end": "2027-01-08",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-69",
+   "name": "Semester final exam grade entry (Starts at 09:00, Ends at 23:59)",
+   "start": "2027-01-04",
+   "end": "2027-01-21",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-70",
+   "name": "2026 Fall Semester English Language School Courses End Dates",
+   "start": "2027-01-15",
+   "end": "2027-01-15",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-71",
+   "name": "Announcement of students admitted to graduate programs for the 2027 Spring semester",
+   "start": "2027-01-22",
+   "end": "2027-01-22",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-72",
+   "name": "Announcement of letter grades (at 17:00)",
+   "start": "2027-01-22",
+   "end": "2027-01-22",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-73",
+   "name": "Application for transfer in graduate programs (between programs with/without thesis) for 2027 Spring Semester",
+   "start": "2027-01-25",
+   "end": "2027-01-25",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-74",
+   "name": "English Proficiency Exam",
+   "start": "2027-01-25",
+   "end": "2027-01-26",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-75",
+   "name": "Application of the 2027 Spring Semester double major/minor degree program",
+   "start": "2027-01-25",
+   "end": "2027-01-26",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-76",
+   "name": "Selection of majors through the portal for students who have completed 30 credits. (Starts at 09:00 - Ends at 18:00)",
+   "start": "2027-01-25",
+   "end": "2027-01-26",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-77",
+   "name": "2027 Spring Semester Special Student applications- tuition fee payment and registration",
+   "start": "2027-01-25",
+   "end": "2027-01-26",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-78",
+   "name": "Deadline for assigning a graduate thesis/project advisor and determining the thesis subject",
+   "start": "2027-01-27",
+   "end": "2027-01-27",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-79",
+   "name": "Registration dates for new admitted students to graduate programs of 2027 Spring Semester",
+   "start": "2027-01-28",
+   "end": "2027-01-29",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-80",
+   "name": "Deadline for missing (I) grade entry for 2026 Fall Semester",
+   "start": "2027-01-31",
+   "end": "2027-01-31",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-81",
+   "name": "Tuition payment and registration dates for new admitted undergraduate students to transfer applications of 2027 Spring Semester",
+   "start": "2027-02-01",
+   "end": "2027-02-02",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-82",
+   "name": "Dates of the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
+   "start": "2027-02-01",
+   "end": "2027-02-02",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-83",
+   "name": "Announcement of the results of the applications for transfer in graduate programs (between programs with/without thesis) for 2027 Spring Semester",
+   "start": "2027-02-03",
+   "end": "2027-02-03",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-84",
+   "name": "Deadline for submission of the letter grades for the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
+   "start": "2027-02-08",
+   "end": "2027-02-09",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-85",
+   "name": "Course registration for senior students (4th year) (Opening at 09.00)",
+   "start": "2027-02-09",
+   "end": "2027-02-09",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-86",
+   "name": "Selection of the secondary field programs through the portal (Starts at 09:00 - Ends at 18:00)",
+   "start": "2027-02-09",
+   "end": "2027-02-11",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-87",
+   "name": "Course registration for sophister students (3rd year) (Opening at 13.00)",
+   "start": "2027-02-09",
+   "end": "2027-02-09",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-88",
+   "name": "Course registration for post-graduate students (Starts at 09:00)",
+   "start": "2027-02-10",
+   "end": "2027-02-10",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-89",
+   "name": "Course registration for sophomore students (2nd year) (Starts at 09:00)",
+   "start": "2027-02-10",
+   "end": "2027-02-10",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-90",
+   "name": "Course registration for first year students (1st year) (Starts at 09:00)",
+   "start": "2027-02-11",
+   "end": "2027-02-11",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-91",
+   "name": "Course registrations for all students (Ends at 18:00)",
+   "start": "2027-02-11",
+   "end": "2027-02-11",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-92",
+   "name": "Announcement of the results on the applications regarding the transfer to undergraduate programs for 2027 Spring semester, double/minor program admissions",
+   "start": "2027-02-12",
+   "end": "2027-02-12",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-93",
+   "name": "Registration dates for students newly admitted to double major/minor programs for 2026 Spring semester undergraduate programs",
+   "start": "2027-02-15",
+   "end": "2027-02-16",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-94",
+   "name": "2027 Spring Semester Course Starting Date",
+   "start": "2027-02-15",
+   "end": "2027-02-15",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-95",
+   "name": "English Language School courses start date (Spring Module 1)",
+   "start": "2027-02-15",
+   "end": "2027-02-15",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-96",
+   "name": "Spring Semester / Add & Drop (Starts at 09:00 - Ends at 18:00)",
+   "start": "2027-02-23",
+   "end": "2027-02-24",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-97",
+   "name": "Selection of the secondary field programs through the portal (Starts at 09:00 - Ends at 18:00)",
+   "start": "2027-02-23",
+   "end": "2027-02-24",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-98",
+   "name": "Deadline for course withdrawal start-end and Advisor approvals (Ends: 18:00)",
+   "start": "2027-03-01",
+   "end": "2027-05-07",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-99",
+   "name": "FEAST OF RAMADAN (3 days Holiday)",
+   "start": "2027-03-09",
+   "end": "2027-03-11",
+   "type": "holiday",
+   "nameTr": "Ramazan Bayramı (3 gün tatil)"
+  },
+  {
+   "id": "tedu-100",
+   "name": "Break",
+   "start": "2027-03-12",
+   "end": "2027-03-12",
+   "type": "holiday",
+   "nameTr": "Ara tatil"
+  },
+  {
+   "id": "tedu-101",
+   "name": "Deadline for submitting the 2027 Spring Semester absence of leave applications",
+   "start": "2027-03-19",
+   "end": "2027-03-19",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-102",
+   "name": "NATIONAL SOVEREIGNTY AND CHILDREN'S DAY (HOLIDAY)",
+   "start": "2027-04-23",
+   "end": "2027-04-23",
+   "type": "holiday",
+   "nameTr": "Ulusal Egemenlik ve Çocuk Bayramı (Tatil)"
+  },
+  {
+   "id": "tedu-103",
+   "name": "English Language School courses start date (Spring Module 2)",
+   "start": "2027-04-26",
+   "end": "2027-04-26",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-104",
+   "name": "LABOR AND SOLIDARITY DAY (HOLIDAY)",
+   "start": "2027-05-01",
+   "end": "2027-05-01",
+   "type": "holiday",
+   "nameTr": "Emek ve Dayanışma Günü (Tatil)"
+  },
+  {
+   "id": "tedu-105",
+   "name": "Beginning of applications to the Graduate Programs Institute for graduate students to be admitted for the 2027 Fall semester",
+   "start": "2027-05-03",
+   "end": "2027-05-03",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-106",
+   "name": "FEAST OF SACRIFICE (HOLIDAY)",
+   "start": "2027-05-17",
+   "end": "2027-05-19",
+   "type": "holiday",
+   "nameTr": "Kurban Bayramı (Tatil)"
+  },
+  {
+   "id": "tedu-107",
+   "name": "THE COMMEMORATION OF ATATURK, YOUTH AND SPORTS DAY (National Holiday)",
+   "start": "2027-05-19",
+   "end": "2027-05-19",
+   "type": "holiday",
+   "nameTr": "Atatürk'ü Anma, Gençlik ve Spor Bayramı (Ulusal Tatil)"
+  },
+  {
+   "id": "tedu-108",
+   "name": "Break",
+   "start": "2027-05-20",
+   "end": "2027-05-21",
+   "type": "holiday",
+   "nameTr": "Ara tatil"
+  },
+  {
+   "id": "tedu-109",
+   "name": "2027 Spring Semester Course Ending Date",
+   "start": "2027-06-04",
+   "end": "2027-06-04",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-110",
+   "name": "Spring Semester Final Exams",
+   "start": "2027-06-05",
+   "end": "2027-06-18",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-111",
+   "name": "Semester final exam grade entry (Starts at 09:00 / Ends at 23:59)",
+   "start": "2027-06-05",
+   "end": "2027-06-22",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-112",
+   "name": "Announcement of 2027 Spring Semester letter grades (at 17:00)",
+   "start": "2027-06-23",
+   "end": "2027-06-23",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-113",
+   "name": "End of the 2027 Spring semester for English Language School",
+   "start": "2027-06-25",
+   "end": "2027-06-25",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-114",
+   "name": "Selection of majors through the portal for students who have completed 30 credits. (Starts at 09:00 / Ends at 18:00)",
+   "start": "2027-06-28",
+   "end": "2027-06-29",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-115",
+   "name": "Supplementary exam applications for graduation",
+   "start": "2027-06-28",
+   "end": "2027-06-29",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-116",
+   "name": "Tuition payment and registration of the International Students admitted to undergraduate programs",
+   "start": "2027-07-01",
+   "end": "2027-09-25",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-117",
+   "name": "Dates of the supplementary exam",
+   "start": "2027-07-01",
+   "end": "2027-07-02",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-118",
+   "name": "Deadline for missing (I) grade entry for 2027 Spring Semester",
+   "start": "2027-07-02",
+   "end": "2027-07-02",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-119",
+   "name": "English Proficiency Exam",
+   "start": "2027-07-05",
+   "end": "2027-07-06",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-120",
+   "name": "Double major/minor applications for 2027 Fall semester undergraduate programs",
+   "start": "2027-07-05",
+   "end": "2027-07-09",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-121",
+   "name": "Tuition payment for the Summer School Semester registration",
+   "start": "2027-07-06",
+   "end": "2027-07-07",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-122",
+   "name": "2027 Summer School Special Student applications and registration",
+   "start": "2027-07-06",
+   "end": "2027-07-07",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-123",
+   "name": "Deadline for submission of the letter grades for the supplementary exam",
+   "start": "2027-07-09",
+   "end": "2027-07-09",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-124",
+   "name": "Announcement of English Proficiency Exam",
+   "start": "2027-07-09",
+   "end": "2027-07-09",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-125",
+   "name": "2027 Summer School Course Start Date",
+   "start": "2027-07-12",
+   "end": "2027-07-12",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-126",
+   "name": "Deadline for course withdrawal start-end and Advisor approvals (Ends: 18:00)",
+   "start": "2027-07-13",
+   "end": "2027-07-13",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-127",
+   "name": "DEMOCRACY AND NATIONAL SOLIDARITY DAY (HOLIDAY)",
+   "start": "2027-07-15",
+   "end": "2027-07-15",
+   "type": "holiday",
+   "nameTr": "Demokrasi ve Millî Birlik Günü (Tatil)"
+  },
+  {
+   "id": "tedu-128",
+   "name": "Applications for transfer to undergraduate programs for the 2027 Fall semester",
+   "start": "2027-07-21",
+   "end": "2027-08-06",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-129",
+   "name": "Announcement of double major/minor application results for 2027 Fall semester undergraduate programs",
+   "start": "2027-07-30",
+   "end": "2027-07-30",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-130",
+   "name": "Application for transfer in graduate programs (between programs with/without thesis) for 2027 Fall Semester",
+   "start": "2027-08-19",
+   "end": "2027-08-19",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-131",
+   "name": "Double major/minor registrations for 2027 Fall semester undergraduate programs",
+   "start": "2027-08-19",
+   "end": "2027-08-20",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-132",
+   "name": "Announcement of transfer application results for 2027 Fall semester undergraduate programs",
+   "start": "2027-08-20",
+   "end": "2027-08-20",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-133",
+   "name": "Tuition payment and registration dates for new admitted undergraduate students to transfer applications of 2027 Fall Semester",
+   "start": "2027-08-26",
+   "end": "2027-08-27",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-134",
+   "name": "2027 Summer School Course Ending Date",
+   "start": "2027-08-27",
+   "end": "2027-08-27",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-135",
+   "name": "VICTORY DAY (NATIONAL HOLIDAY)",
+   "start": "2027-08-30",
+   "end": "2027-08-30",
+   "type": "holiday",
+   "nameTr": "Zafer Bayramı (Ulusal Tatil)"
+  },
+  {
+   "id": "tedu-136",
+   "name": "Summer School Final Exams",
+   "start": "2027-08-31",
+   "end": "2027-09-01",
+   "type": "exam"
+  },
+  {
+   "id": "tedu-137",
+   "name": "Announcement of the results of the applications for transfer in graduate programs (between programs with/without thesis) for 2027 Fall Semester",
+   "start": "2027-09-02",
+   "end": "2027-09-03",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-138",
+   "name": "Summer School Final Exam grade entry (Starts at 09:00/ Ends at 23:59)",
+   "start": "2027-09-03",
+   "end": "2027-09-03",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-139",
+   "name": "Deadline for thesis grades entries for graduate students (Ends at 23:59)",
+   "start": "2027-09-03",
+   "end": "2027-09-03",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-140",
+   "name": "Announcement of the Summer school letter grades",
+   "start": "2027-09-04",
+   "end": "2027-09-04",
+   "type": "academic"
+  },
+  {
+   "id": "tedu-141",
+   "name": "Application for the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
+   "start": "2027-09-08",
+   "end": "2027-09-09",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-142",
+   "name": "Selection of majors through the portal for students who have completed 30 credits. (Starts at 09:00 / Ends at 18:00)",
+   "start": "2027-09-08",
+   "end": "2027-09-09",
+   "type": "registration"
+  },
+  {
+   "id": "tedu-143",
+   "name": "Deadline for missing (I) grade entry for 2027 Summer School",
+   "start": "2027-09-13",
+   "end": "2027-09-13",
+   "type": "deadline"
+  },
+  {
+   "id": "tedu-144",
+   "name": "Dates of the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
+   "start": "2027-09-13",
+   "end": "2027-09-14",
+   "type": "exam"
+  }
+ ]
+}

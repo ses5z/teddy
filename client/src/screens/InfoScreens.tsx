@@ -1,6 +1,6 @@
 import { useEffect, useState, type ReactNode } from 'react';
 import type { CourseListItem, Sourced } from '@teddy/shared';
-import { calendar, dateFromOffset, events, rules } from '@teddy/shared/data';
+import { dateFromOffset, events, rules } from '@teddy/shared/data';
 import { Skeleton } from '../components/Skeleton';
 import { DataSourceBadge } from '../components/SourceTag';
 import { useProfile } from '../context/ProfileContext';
@@ -25,23 +25,6 @@ function InfoPage({ title, children }: { title: TKey; children: ReactNode }) {
 }
 
 const CARD = 'border-b border-border py-3';
-
-export function CalendarScreen() {
-  const { settings } = useSettings();
-  const lang = settings.language;
-  return (
-    <InfoPage title="calendar.title">
-      {calendar.map((entry) => (
-        <li key={entry.id} className={CARD}>
-          <strong>{entry.title[lang]}</strong>
-          <br />
-          {formatDate(entry.start, lang)}
-          {entry.end && ` – ${formatDate(entry.end, lang)}`}
-        </li>
-      ))}
-    </InfoPage>
-  );
-}
 
 export function CoursesScreen() {
   const { t, settings } = useSettings();

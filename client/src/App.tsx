@@ -5,11 +5,12 @@ import { ReadAnnouncementsProvider } from './context/ReadAnnouncementsContext';
 import { useProfile } from './context/ProfileContext';
 import { useSettings } from './context/SettingsContext';
 import { AnnouncementsScreen } from './screens/Announcements';
+import { CalendarPage } from './screens/Calendar';
 import { Chat } from './screens/Chat';
 import { CourseDetailScreen } from './screens/CourseDetail';
 import { Dashboard } from './screens/Dashboard';
 import { Home } from './screens/Home';
-import { CalendarScreen, CoursesScreen, EventsScreen, RulesScreen } from './screens/InfoScreens';
+import { CoursesScreen, EventsScreen, RulesScreen } from './screens/InfoScreens';
 import { Login } from './screens/Login';
 import { Settings } from './screens/Settings';
 import { StudyMode } from './screens/StudyMode';
@@ -52,7 +53,7 @@ export function App() {
         >
           <Route path="/" element={<Home />} />
           <Route path="/chat" element={<Chat />} />
-          <Route path="/calendar" element={<CalendarScreen />} />
+          <Route path="/calendar" element={<CalendarPage />} />
           <Route path="/courses" element={<CoursesScreen />} />
           <Route path="/courses/:id" element={<CourseDetailScreen />} />
           <Route path="/events" element={<EventsScreen />} />
