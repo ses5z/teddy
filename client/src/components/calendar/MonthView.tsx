@@ -3,7 +3,7 @@ import type { CalendarApiEntry, CalendarEntryType } from '@teddy/shared';
 import { useSettings } from '../../context/SettingsContext';
 import { addDays, shiftMonth, formatLong, formatMonth, monthOf, monthWeeks, weekdayNames } from './dates';
 import { EntryRow } from './ListView';
-import { TYPE_META, ALL_TYPES } from './types';
+import { TYPE_META, ALL_TYPES, typeKey } from './types';
 
 interface Props {
   month: string;
@@ -94,7 +94,7 @@ export function MonthView({ month, entries, today, selected, onSelect }: Props) 
                   tabIndex={day === focusDay ? 0 : -1}
                   aria-selected={isSelected}
                   aria-current={isToday ? 'date' : undefined}
-                  aria-label={`${c('calendar.cellLabel', { date: formatLong(day, lang), count: list.length })}${isToday ? `, ${c('calendar.todayMark')}` : ''}`}
+                  aria-label={`${c('calendar.cellLabel', { date: formatLong(day, lang), count: list.length })}${types.length ? `: ${types.map((type) => c(typeKey(type))).join(', ')}` : ''}${isToday ? `, ${c('calendar.todayMark')}` : ''}`}
                   onClick={() => onSelect(day)}
                   onKeyDown={(e) => onKey(e, day)}
                   className={`flex min-h-16 min-w-0 cursor-pointer flex-col gap-1 overflow-hidden border-b border-r border-border p-1 sm:min-h-24 sm:p-2 ${isSelected ? 'bg-tint outline outline-2 -outline-offset-2 outline-primary' : 'hover:bg-tint/60'}`}
