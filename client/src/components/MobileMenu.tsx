@@ -86,7 +86,11 @@ export function MobileMenu() {
       <button
         ref={burgerRef}
         type="button"
-        aria-label={t(open ? 'nav.closeMenu' : 'nav.openMenu')}
+        aria-label={
+          open
+            ? t('nav.closeMenu')
+            : `${t('nav.openMenu')}${unread ? `, ${t('nav.unreadBadge', { count: unreadCount })}` : ''}`
+        }
         aria-expanded={open}
         aria-controls={PANEL_ID}
         onClick={() => setOpen((v) => !v)}
@@ -96,7 +100,6 @@ export function MobileMenu() {
         {unread && !open && (
           <>
             <span aria-hidden="true" className="absolute top-2 right-2 h-3 w-3 rounded-full border-2 border-surface bg-accent" />
-            <span className="sr-only">{t('nav.unreadBadge', { count: unreadCount })}</span>
           </>
         )}
       </button>
