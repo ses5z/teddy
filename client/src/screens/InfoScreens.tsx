@@ -82,7 +82,7 @@ export function EventsScreen() {
           <br />
           {formatDate(dateFromOffset(event.offsetDays), lang)}, {event.time} · {event.location[lang]}
           <br />
-          <span className="text-muted">{event.organizer}</span>
+          <span className="text-muted">{event.organizer[lang]}</span>
         </li>
       ))}
     </InfoPage>
@@ -97,7 +97,7 @@ export function RulesScreen() {
       {rules.map((rule) => (
         <li key={rule.id} className={CARD}>
           <h2 className="font-bold">{rule.title[lang]}</h2>
-          <p className=" text-muted">{rule.article}</p>
+          <p className=" text-muted">{rule.article[lang]}</p>
           <p>{rule.summary[lang]}</p>
         </li>
       ))}

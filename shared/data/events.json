@@ -1,13 +1,141 @@
 {
   "_note": "SAMPLE DATA – gerçek verilerle değiştirilecek",
   "items": [
-    { "id": "e1", "title": { "tr": "Örnek Kulüp Tanıtım Günü", "en": "Sample Club Fair" }, "organizer": "Örnek Öğrenci Konseyi", "location": { "tr": "Ana Bahçe", "en": "Main Garden" }, "offsetDays": 1, "time": "12:00" },
-    { "id": "e2", "title": { "tr": "Satranç Turnuvası", "en": "Chess Tournament" }, "organizer": "Örnek Satranç Kulübü", "location": { "tr": "Salon A", "en": "Hall A" }, "offsetDays": 3, "time": "17:00" },
-    { "id": "e3", "title": { "tr": "CV Hazırlama Atölyesi", "en": "CV Writing Workshop" }, "organizer": "Örnek Kariyer Merkezi", "location": { "tr": "Salon B", "en": "Hall B" }, "offsetDays": 5, "time": "15:00" },
-    { "id": "e4", "title": { "tr": "Film Gecesi", "en": "Movie Night" }, "organizer": "Örnek Sinema Kulübü", "location": { "tr": "Konferans Salonu", "en": "Conference Hall" }, "offsetDays": 8, "time": "19:00" },
-    { "id": "e5", "title": { "tr": "Erasmus Bilgilendirme", "en": "Erasmus Info Session" }, "organizer": "Örnek Uluslararası Ofis", "location": { "tr": "Salon C", "en": "Hall C" }, "offsetDays": 10, "time": "13:00" },
-    { "id": "e6", "title": { "tr": "Bahar Konseri Provası", "en": "Concert Rehearsal" }, "organizer": "Örnek Müzik Kulübü", "location": { "tr": "Müzik Odası", "en": "Music Room" }, "offsetDays": 12, "time": "18:00" },
-    { "id": "e7", "title": { "tr": "Kodlama Maratonu", "en": "Hackathon" }, "organizer": "Örnek Bilgisayar Kulübü", "location": { "tr": "Laboratuvar 2", "en": "Lab 2" }, "offsetDays": 16, "time": "10:00" },
-    { "id": "e8", "title": { "tr": "Münazara Akşamı", "en": "Debate Evening" }, "organizer": "Örnek Münazara Kulübü", "location": { "tr": "Salon A", "en": "Hall A" }, "offsetDays": 20, "time": "18:30" }
+    {
+      "id": "e1",
+      "title": {
+        "tr": "Örnek Kulüp Tanıtım Günü",
+        "en": "Sample Club Fair"
+      },
+      "organizer": {
+        "tr": "Örnek Öğrenci Konseyi",
+        "en": "Sample Student Council"
+      },
+      "location": {
+        "tr": "Ana Bahçe",
+        "en": "Main Garden"
+      },
+      "offsetDays": 1,
+      "time": "12:00"
+    },
+    {
+      "id": "e2",
+      "title": {
+        "tr": "Satranç Turnuvası",
+        "en": "Chess Tournament"
+      },
+      "organizer": {
+        "tr": "Örnek Satranç Kulübü",
+        "en": "Sample Chess Club"
+      },
+      "location": {
+        "tr": "Salon A",
+        "en": "Hall A"
+      },
+      "offsetDays": 3,
+      "time": "17:00"
+    },
+    {
+      "id": "e3",
+      "title": {
+        "tr": "CV Hazırlama Atölyesi",
+        "en": "CV Writing Workshop"
+      },
+      "organizer": {
+        "tr": "Örnek Kariyer Merkezi",
+        "en": "Sample Career Center"
+      },
+      "location": {
+        "tr": "Salon B",
+        "en": "Hall B"
+      },
+      "offsetDays": 5,
+      "time": "15:00"
+    },
+    {
+      "id": "e4",
+      "title": {
+        "tr": "Film Gecesi",
+        "en": "Movie Night"
+      },
+      "organizer": {
+        "tr": "Örnek Sinema Kulübü",
+        "en": "Sample Film Club"
+      },
+      "location": {
+        "tr": "Konferans Salonu",
+        "en": "Conference Hall"
+      },
+      "offsetDays": 8,
+      "time": "19:00"
+    },
+    {
+      "id": "e5",
+      "title": {
+        "tr": "Erasmus Bilgilendirme",
+        "en": "Erasmus Info Session"
+      },
+      "organizer": {
+        "tr": "Örnek Uluslararası Ofis",
+        "en": "Sample International Office"
+      },
+      "location": {
+        "tr": "Salon C",
+        "en": "Hall C"
+      },
+      "offsetDays": 10,
+      "time": "13:00"
+    },
+    {
+      "id": "e6",
+      "title": {
+        "tr": "Bahar Konseri Provası",
+        "en": "Concert Rehearsal"
+      },
+      "organizer": {
+        "tr": "Örnek Müzik Kulübü",
+        "en": "Sample Music Club"
+      },
+      "location": {
+        "tr": "Müzik Odası",
+        "en": "Music Room"
+      },
+      "offsetDays": 12,
+      "time": "18:00"
+    },
+    {
+      "id": "e7",
+      "title": {
+        "tr": "Kodlama Maratonu",
+        "en": "Hackathon"
+      },
+      "organizer": {
+        "tr": "Örnek Bilgisayar Kulübü",
+        "en": "Sample Computer Club"
+      },
+      "location": {
+        "tr": "Laboratuvar 2",
+        "en": "Lab 2"
+      },
+      "offsetDays": 16,
+      "time": "10:00"
+    },
+    {
+      "id": "e8",
+      "title": {
+        "tr": "Münazara Akşamı",
+        "en": "Debate Evening"
+      },
+      "organizer": {
+        "tr": "Örnek Münazara Kulübü",
+        "en": "Sample Debate Club"
+      },
+      "location": {
+        "tr": "Salon A",
+        "en": "Hall A"
+      },
+      "offsetDays": 20,
+      "time": "18:30"
+    }
   ]
 }

@@ -64,7 +64,7 @@ export interface CalendarEntry {
 
 export interface Rule {
   id: string;
-  article: string;
+  article: Localized;
   title: Localized;
   summary: Localized;
 }
@@ -81,7 +81,7 @@ export interface Course {
 export interface CampusEvent {
   id: string;
   title: Localized;
-  organizer: string;
+  organizer: Localized;
   location: Localized;
   offsetDays: number;
   time: string;

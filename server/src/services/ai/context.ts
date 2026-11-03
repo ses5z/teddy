@@ -31,7 +31,7 @@ export async function buildChatContext(question: string, language: Language, cou
     note: 'academicCalendar is the official TED University calendar. Rules, events and faq are SAMPLE data for a demo, not real TED University information.',
     today,
     academicCalendar,
-    rules: rules.map((item) => ({ article: item.article, title: item.title[language], summary: item.summary[language] })),
+    rules: rules.map((item) => ({ article: item.article[language], title: item.title[language], summary: item.summary[language] })),
     events: events.map((item) => ({
       title: item.title[language],
       date: dateFromOffset(item.offsetDays),
