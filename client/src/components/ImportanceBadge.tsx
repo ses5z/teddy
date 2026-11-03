@@ -47,7 +47,7 @@ export function ImportanceBadge({ level, reason }: { level: Importance; reason: 
         onKeyDown={(event) => {
           if (event.key === 'Escape') setOpen(false);
         }}
-        className="inline-flex min-h-8 min-w-8 cursor-pointer items-center justify-center rounded text-muted"
+        className="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded text-muted"
       >
         <HelpCircle size={16} aria-hidden="true" />
       </button>
