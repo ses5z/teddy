@@ -1,5 +1,4 @@
-import { courses } from '@teddy/shared/data';
-import type { CourseSummary, Language, MoodleProfile, Sourced, UpcomingItem } from '@teddy/shared';
+import type { Language, MoodleProfile, Sourced, UpcomingItem } from '@teddy/shared';
 import { dateFromOffset } from '@teddy/shared/data';
 import { readableCode } from './coursePackages';
 import { getSnapshot } from './moodleService';
@@ -19,18 +18,6 @@ export async function getUpcoming(language: Language, days: number): Promise<Sou
     };
   } catch {
     return { source: 'sample', data: getSampleUpcoming(language, days) };
-  }
-}
-
-export async function getCourses(language: Language): Promise<Sourced<CourseSummary[]>> {
-  try {
-    const snapshot = await getSnapshot();
-    return { source: 'moodle', data: snapshot.courses };
-  } catch {
-    return {
-      source: 'sample',
-      data: courses.map((course) => ({ code: course.code, name: course.name[language] })),
-    };
   }
 }
 
