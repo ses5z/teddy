@@ -24,112 +24,128 @@
    "name": "Spring Semester Final Exams",
    "start": "2026-06-01",
    "end": "2026-06-14",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "Bahar Dönemi final sınavları"
   },
   {
    "id": "tedu-3",
    "name": "Semester final exam grade entry (Starts at 09:00 / Ends at 23:59)",
    "start": "2026-06-01",
    "end": "2026-06-18",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Dönem sonu sınav notu girişi"
   },
   {
    "id": "tedu-4",
    "name": "2026 Spring Semester English Language School Courses End Dates",
    "start": "2026-06-12",
    "end": "2026-06-12",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2026 Bahar Dönemi Yabancı Diller Okulu derslerinin bitişi"
   },
   {
    "id": "tedu-5",
    "name": "English Language School Spring Semester Exams (Final)",
    "start": "2026-06-15",
    "end": "2026-06-17",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "Yabancı Diller Okulu Bahar Dönemi final sınavları"
   },
   {
    "id": "tedu-6",
    "name": "Announcement of 2025 Spring Semester letter grades (at 17:00)",
    "start": "2026-06-19",
    "end": "2026-06-19",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2025 Bahar Dönemi harf notlarının açıklanması (17:00)"
   },
   {
    "id": "tedu-7",
    "name": "Selection of majors through the portal for students who have completed 30 credits. (Starts at 09:00 - Ends at 18:00)",
    "start": "2026-06-22",
    "end": "2026-06-23",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "30 kredisini tamamlayan öğrenciler için portaldan bölüm seçimi"
   },
   {
    "id": "tedu-8",
    "name": "Supplementary exam applications for graduation",
    "start": "2026-06-22",
    "end": "2026-06-23",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Mezuniyet için bütünleme sınavı başvuruları"
   },
   {
    "id": "tedu-9",
    "name": "Tuition payment for the Summer School Semester registration",
    "start": "2026-06-24",
    "end": "2026-06-25",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Yaz Okulu kaydı için ücret ödemesi"
   },
   {
    "id": "tedu-10",
    "name": "2026 Summer School Special Student applications and registration",
    "start": "2026-06-24",
    "end": "2026-06-25",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2026 Yaz Okulu özel öğrenci başvuru ve kaydı"
   },
   {
    "id": "tedu-11",
    "name": "Dates of the supplementary exam",
    "start": "2026-06-25",
    "end": "2026-06-26",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "Bütünleme sınavı tarihleri"
   },
   {
    "id": "tedu-12",
    "name": "Double major/minor applications for 2026 Fall semester undergraduate programs",
    "start": "2026-06-25",
    "end": "2026-06-26",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2026 Güz Dönemi çift anadal/yandal başvuruları"
   },
   {
    "id": "tedu-13",
    "name": "Deadline for missing (I) grade entry for 2026 Spring Semester",
    "start": "2026-06-29",
    "end": "2026-06-29",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "2026 Bahar Dönemi eksik (I) notu girişi son tarihi"
   },
   {
    "id": "tedu-14",
    "name": "English Proficiency Exam",
    "start": "2026-06-29",
    "end": "2026-06-30",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "İngilizce Yeterlik Sınavı"
   },
   {
    "id": "tedu-15",
    "name": "2026 Summer School Course Start Date",
    "start": "2026-06-29",
    "end": "2026-06-29",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2026 Yaz Okulu derslerinin başlangıcı"
   },
   {
    "id": "tedu-16",
    "name": "Tuition payment and registration of the International Students admitted to undergraduate programs",
    "start": "2026-07-01",
    "end": "2026-09-25",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Lisans programlarına kabul edilen uluslararası öğrencilerin ücret ödemesi ve kaydı"
   },
   {
    "id": "tedu-17",
    "name": "Deadline for submission of the letter grades for the supplementary exam",
    "start": "2026-07-03",
    "end": "2026-07-03",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Bütünleme sınavı harf notları için son tarih"
   },
   {
    "id": "tedu-18",
@@ -144,7 +160,8 @@
    "name": "Deadline for course withdrawal start-end and Advisor approvals (Ends: 18:00)",
    "start": "2026-07-06",
    "end": "2026-07-31",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Ders bırakma ve danışman onayı son tarihi (18:00)"
   },
   {
    "id": "tedu-20",
@@ -159,98 +176,112 @@
    "name": "Applications for transfer to undergraduate programs for the 2026 Fall semester",
    "start": "2026-07-22",
    "end": "2026-08-07",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2026 Güz Dönemi lisans programlarına yatay geçiş başvuruları"
   },
   {
    "id": "tedu-22",
    "name": "Application for transfer in graduate programs (between programs with/without thesis) for 2026 Fall Semester",
    "start": "2026-07-31",
    "end": "2026-07-31",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2026 Güz Dönemi lisansüstü programlar arası geçiş başvurusu"
   },
   {
    "id": "tedu-23",
    "name": "Announcement of double major/minor application results for 2026 Fall semester undergraduate programs",
    "start": "2026-07-31",
    "end": "2026-07-31",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2026 Güz Dönemi çift anadal/yandal başvuru sonuçlarının açıklanması"
   },
   {
    "id": "tedu-24",
    "name": "End of applications by the graduate students to be admitted to the Graduate School for the 2026 Fall Semester",
    "start": "2026-08-07",
    "end": "2026-08-07",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "2026 Güz Dönemi lisansüstü başvurularının sonu"
   },
   {
    "id": "tedu-25",
    "name": "2026 Summer School Course Ending Date",
    "start": "2026-08-14",
    "end": "2026-08-14",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2026 Yaz Okulu derslerinin bitişi"
   },
   {
    "id": "tedu-26",
    "name": "Summer School Final Exams",
    "start": "2026-08-17",
    "end": "2026-08-18",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "Yaz Okulu final sınavları"
   },
   {
    "id": "tedu-27",
    "name": "Summer School grade entry (Starts at 09:00, Ends at 23:59)",
    "start": "2026-08-17",
    "end": "2026-08-20",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Yaz Okulu not girişi"
   },
   {
    "id": "tedu-28",
    "name": "Announcement of the Summer school letter grades",
    "start": "2026-08-21",
    "end": "2026-08-21",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "Yaz Okulu harf notlarının açıklanması"
   },
   {
    "id": "tedu-29",
    "name": "Application for the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
    "start": "2026-08-24",
    "end": "2026-08-25",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Mezuniyet bütünleme sınavı ve azami süre sonu ek sınav başvurusu"
   },
   {
    "id": "tedu-30",
    "name": "Selection of majors through the portal for students who have completed 30 credits. (Starts at 09:00 / Ends at 18:00)",
    "start": "2026-08-24",
    "end": "2026-08-25",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "30 kredisini tamamlayan öğrenciler için portaldan bölüm seçimi"
   },
   {
    "id": "tedu-31",
    "name": "Announcement of transfer application results for 2026 Fall semester undergraduate programs",
    "start": "2026-08-25",
    "end": "2026-08-25",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2026 Güz Dönemi yatay geçiş başvuru sonuçlarının açıklanması"
   },
   {
    "id": "tedu-32",
    "name": "Registration dates for students newly admitted to double major/minor programs for 2026 Fall semester undergraduate programs",
    "start": "2026-08-26",
    "end": "2026-08-27",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2026 Güz Dönemi çift anadal/yandal programlarına yeni kabul edilenlerin kaydı"
   },
   {
    "id": "tedu-33",
    "name": "Registration for undergraduate transfer programs for 2026 Fall Semester",
    "start": "2026-08-27",
    "end": "2026-08-28",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2026 Güz Dönemi lisans yatay geçiş kayıtları"
   },
   {
    "id": "tedu-34",
    "name": "Announcement of students admitted to graduate programs for the 2026 Fall Semester",
    "start": "2026-08-28",
    "end": "2026-08-28",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2026 Güz Dönemi lisansüstü programlara kabul edilenlerin açıklanması"
   },
   {
    "id": "tedu-35",
@@ -265,175 +296,200 @@
    "name": "Dates of the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
    "start": "2026-08-31",
    "end": "2026-09-01",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "Mezuniyet bütünleme sınavı ve azami süre sonu ek sınav tarihleri"
   },
   {
    "id": "tedu-37",
    "name": "Deadline for assigning a graduate thesis/project advisor and determining the thesis subject",
    "start": "2026-08-31",
    "end": "2026-08-31",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Lisansüstü tez/proje danışmanı ve konusu belirleme son tarihi"
   },
   {
    "id": "tedu-38",
    "name": "Announcement of the results of the applications for transfer in graduate programs (between programs with/without thesis) for 2026 Fall Semester",
    "start": "2026-08-31",
    "end": "2026-09-06",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2026 Güz Dönemi lisansüstü programlar arası geçiş sonuçlarının açıklanması"
   },
   {
    "id": "tedu-39",
    "name": "Deadline for missing (I) grade entry for 2026 Summer School",
    "start": "2026-08-31",
    "end": "2026-08-31",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "2026 Yaz Okulu eksik (I) notu girişi son tarihi"
   },
   {
    "id": "tedu-40",
    "name": "Deadline for thesis grades entries for graduate students (Ends at 23:59)",
    "start": "2026-09-02",
    "end": "2026-09-02",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Lisansüstü tez notu girişi son tarihi (23:59)"
   },
   {
    "id": "tedu-41",
    "name": "Tuition fee payment and registration for transfer in graduate programs (between programs with/without thesis) for 2026 Fall Semester",
    "start": "2026-09-04",
    "end": "2026-09-04",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2026 Güz Dönemi lisansüstü programlar arası geçiş ücret ödemesi ve kaydı"
   },
   {
    "id": "tedu-42",
    "name": "English Placement Exam and Announcement",
    "start": "2026-09-07",
    "end": "2026-09-07",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "İngilizce Seviye Belirleme Sınavı ve sonuçların açıklanması"
   },
   {
    "id": "tedu-43",
    "name": "Deadline for submission of the letter grades for the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
    "start": "2026-09-07",
    "end": "2026-09-08",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Mezuniyet bütünleme ve ek sınav harf notları için son tarih"
   },
   {
    "id": "tedu-44",
    "name": "English Proficiency Exam",
    "start": "2026-09-08",
    "end": "2026-09-09",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "İngilizce Yeterlik Sınavı"
   },
   {
    "id": "tedu-45",
    "name": "Registration dates of the Graduate Students admitted to graduate programs for 2026 Fall Semester",
    "start": "2026-09-10",
    "end": "2026-09-10",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2026 Güz Dönemi lisansüstü programlara kabul edilenlerin kaydı"
   },
   {
    "id": "tedu-46",
    "name": "Announcement of English Proficiency Exam results",
    "start": "2026-09-14",
    "end": "2026-09-14",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "İngilizce Yeterlik Sınavı sonuçlarının açıklanması"
   },
   {
    "id": "tedu-47",
    "name": "2026 Fall Semester Special Student applications- tuition fee payment and registration",
    "start": "2026-09-14",
    "end": "2026-09-15",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2026 Güz Dönemi özel öğrenci başvuru, ücret ödemesi ve kaydı"
   },
   {
    "id": "tedu-48",
    "name": "English Language School courses start date (Fall Module 1)",
    "start": "2026-09-21",
    "end": "2026-09-21",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "Yabancı Diller Okulu derslerinin başlangıcı (Güz Modül 1)"
   },
   {
    "id": "tedu-49",
    "name": "Orientation program for newly registered students",
    "start": "2026-09-21",
    "end": "2026-09-21",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "Yeni kayıtlı öğrenciler için oryantasyon programı"
   },
   {
    "id": "tedu-50",
    "name": "Selection of the secondary field programs through the portal (Starts at 09:00 - Ends at 18:00)",
    "start": "2026-09-22",
    "end": "2026-09-24",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Portaldan ikinci alan programı seçimi (09:00-18:00)"
   },
   {
    "id": "tedu-51",
    "name": "Course registration for senior students (4thyear) (Opening at 09.00)",
    "start": "2026-09-22",
    "end": "2026-09-22",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Son sınıf (4. sınıf) ders kaydı (09:00)"
   },
   {
    "id": "tedu-52",
    "name": "Course registration for sophister students (3rd year) (Opening at 13.00)",
    "start": "2026-09-22",
    "end": "2026-09-22",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "3. sınıf ders kaydı (13:00)"
   },
   {
    "id": "tedu-53",
    "name": "Course registration for post-graduate students (Opening at 09.00)",
    "start": "2026-09-23",
    "end": "2026-09-23",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Lisansüstü öğrenciler için ders kaydı (09:00)"
   },
   {
    "id": "tedu-54",
    "name": "Course registration for sophomore students (2nd year) (Starts at 09.00)",
    "start": "2026-09-23",
    "end": "2026-09-23",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2. sınıf ders kaydı (09:00)"
   },
   {
    "id": "tedu-55",
    "name": "Course registration for first year students (1st year) (Starts at 09.00)",
    "start": "2026-09-24",
    "end": "2026-09-24",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "1. sınıf ders kaydı (09:00)"
   },
   {
    "id": "tedu-56",
    "name": "Course registrations for all students (Ends at: 18:00)",
    "start": "2026-09-24",
    "end": "2026-09-24",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Tüm öğrenciler için ders kaydı (bitiş 18:00)"
   },
   {
    "id": "tedu-57",
    "name": "2026 Fall Semester Course Start Date",
    "start": "2026-09-28",
    "end": "2026-09-28",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2026 Güz Dönemi derslerinin başlangıcı"
   },
   {
    "id": "tedu-58",
    "name": "Selection of the secondary field programs through the portal (Starts at 09:00, Ends at 18:00)",
    "start": "2026-10-06",
    "end": "2026-10-07",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Portaldan ikinci alan programı seçimi (09:00-18:00)"
   },
   {
    "id": "tedu-59",
    "name": "Fall Semester / Add & Drop (Starts at 09:00 - Ends at 18:00)",
    "start": "2026-10-06",
    "end": "2026-10-07",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Güz Dönemi ekle-bırak (09:00-18:00)"
   },
   {
    "id": "tedu-60",
    "name": "Deadline for submitting the 2026 Fall Semester absence of leave applications",
    "start": "2026-10-23",
    "end": "2026-10-23",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "2026 Güz Dönemi izin başvuruları son tarihi"
   },
   {
    "id": "tedu-61",
@@ -448,28 +504,32 @@
    "name": "English Language School courses start date (Fall Module 2)",
    "start": "2026-11-23",
    "end": "2026-11-23",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "Yabancı Diller Okulu derslerinin başlangıcı (Güz Modül 2)"
   },
   {
    "id": "tedu-63",
    "name": "Application dates of 2027 Spring Semester post- graduate students to the related graduate programs",
    "start": "2026-12-01",
    "end": "2026-12-01",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Bahar Dönemi lisansüstü program başvuru tarihleri"
   },
   {
    "id": "tedu-64",
    "name": "Deadline for course withdrawal start-end and Advisor approvals (Ends: 18:00)",
    "start": "2026-12-04",
    "end": "2026-12-04",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Ders bırakma ve danışman onayı son tarihi (18:00)"
   },
   {
    "id": "tedu-65",
    "name": "2026 Fall Semester Course End Date",
    "start": "2026-12-31",
    "end": "2026-12-31",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2026 Güz Dönemi derslerinin bitişi"
   },
   {
    "id": "tedu-66",
@@ -484,224 +544,256 @@
    "name": "Fall Semester Final Exams",
    "start": "2027-01-04",
    "end": "2027-01-17",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "Güz Dönemi final sınavları"
   },
   {
    "id": "tedu-68",
    "name": "Application of the 2027 Spring Semester undergraduate transfer",
    "start": "2027-01-04",
    "end": "2027-01-08",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Bahar Dönemi lisans yatay geçiş başvurusu"
   },
   {
    "id": "tedu-69",
    "name": "Semester final exam grade entry (Starts at 09:00, Ends at 23:59)",
    "start": "2027-01-04",
    "end": "2027-01-21",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Dönem sonu sınav notu girişi"
   },
   {
    "id": "tedu-70",
    "name": "2026 Fall Semester English Language School Courses End Dates",
    "start": "2027-01-15",
    "end": "2027-01-15",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2026 Güz Dönemi Yabancı Diller Okulu derslerinin bitişi"
   },
   {
    "id": "tedu-71",
    "name": "Announcement of students admitted to graduate programs for the 2027 Spring semester",
    "start": "2027-01-22",
    "end": "2027-01-22",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2027 Bahar Dönemi lisansüstü programlara kabul edilenlerin açıklanması"
   },
   {
    "id": "tedu-72",
    "name": "Announcement of letter grades (at 17:00)",
    "start": "2027-01-22",
    "end": "2027-01-22",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "Harf notlarının açıklanması (17:00)"
   },
   {
    "id": "tedu-73",
    "name": "Application for transfer in graduate programs (between programs with/without thesis) for 2027 Spring Semester",
    "start": "2027-01-25",
    "end": "2027-01-25",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Bahar Dönemi lisansüstü programlar arası geçiş başvurusu"
   },
   {
    "id": "tedu-74",
    "name": "English Proficiency Exam",
    "start": "2027-01-25",
    "end": "2027-01-26",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "İngilizce Yeterlik Sınavı"
   },
   {
    "id": "tedu-75",
    "name": "Application of the 2027 Spring Semester double major/minor degree program",
    "start": "2027-01-25",
    "end": "2027-01-26",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Bahar Dönemi çift anadal/yandal başvurusu"
   },
   {
    "id": "tedu-76",
    "name": "Selection of majors through the portal for students who have completed 30 credits. (Starts at 09:00 - Ends at 18:00)",
    "start": "2027-01-25",
    "end": "2027-01-26",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "30 kredisini tamamlayan öğrenciler için portaldan bölüm seçimi"
   },
   {
    "id": "tedu-77",
    "name": "2027 Spring Semester Special Student applications- tuition fee payment and registration",
    "start": "2027-01-25",
    "end": "2027-01-26",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Bahar Dönemi özel öğrenci başvuru, ücret ödemesi ve kaydı"
   },
   {
    "id": "tedu-78",
    "name": "Deadline for assigning a graduate thesis/project advisor and determining the thesis subject",
    "start": "2027-01-27",
    "end": "2027-01-27",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Lisansüstü tez/proje danışmanı ve konusu belirleme son tarihi"
   },
   {
    "id": "tedu-79",
    "name": "Registration dates for new admitted students to graduate programs of 2027 Spring Semester",
    "start": "2027-01-28",
    "end": "2027-01-29",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Bahar Dönemi lisansüstü programlara kabul edilenlerin kaydı"
   },
   {
    "id": "tedu-80",
    "name": "Deadline for missing (I) grade entry for 2026 Fall Semester",
    "start": "2027-01-31",
    "end": "2027-01-31",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "2026 Güz Dönemi eksik (I) notu girişi son tarihi"
   },
   {
    "id": "tedu-81",
    "name": "Tuition payment and registration dates for new admitted undergraduate students to transfer applications of 2027 Spring Semester",
    "start": "2027-02-01",
    "end": "2027-02-02",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Bahar Dönemi yatay geçişle kabul edilenlerin ücret ödemesi ve kaydı"
   },
   {
    "id": "tedu-82",
    "name": "Dates of the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
    "start": "2027-02-01",
    "end": "2027-02-02",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "Mezuniyet bütünleme sınavı ve azami süre sonu ek sınav tarihleri"
   },
   {
    "id": "tedu-83",
    "name": "Announcement of the results of the applications for transfer in graduate programs (between programs with/without thesis) for 2027 Spring Semester",
    "start": "2027-02-03",
    "end": "2027-02-03",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2027 Bahar Dönemi lisansüstü programlar arası geçiş sonuçlarının açıklanması"
   },
   {
    "id": "tedu-84",
    "name": "Deadline for submission of the letter grades for the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
    "start": "2027-02-08",
    "end": "2027-02-09",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Mezuniyet bütünleme ve ek sınav harf notları için son tarih"
   },
   {
    "id": "tedu-85",
    "name": "Course registration for senior students (4th year) (Opening at 09.00)",
    "start": "2027-02-09",
    "end": "2027-02-09",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Son sınıf (4. sınıf) ders kaydı (09:00)"
   },
   {
    "id": "tedu-86",
    "name": "Selection of the secondary field programs through the portal (Starts at 09:00 - Ends at 18:00)",
    "start": "2027-02-09",
    "end": "2027-02-11",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Portaldan ikinci alan programı seçimi (09:00-18:00)"
   },
   {
    "id": "tedu-87",
    "name": "Course registration for sophister students (3rd year) (Opening at 13.00)",
    "start": "2027-02-09",
    "end": "2027-02-09",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "3. sınıf ders kaydı (13:00)"
   },
   {
    "id": "tedu-88",
    "name": "Course registration for post-graduate students (Starts at 09:00)",
    "start": "2027-02-10",
    "end": "2027-02-10",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Lisansüstü öğrenciler için ders kaydı (09:00)"
   },
   {
    "id": "tedu-89",
    "name": "Course registration for sophomore students (2nd year) (Starts at 09:00)",
    "start": "2027-02-10",
    "end": "2027-02-10",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2. sınıf ders kaydı (09:00)"
   },
   {
    "id": "tedu-90",
    "name": "Course registration for first year students (1st year) (Starts at 09:00)",
    "start": "2027-02-11",
    "end": "2027-02-11",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "1. sınıf ders kaydı (09:00)"
   },
   {
    "id": "tedu-91",
    "name": "Course registrations for all students (Ends at 18:00)",
    "start": "2027-02-11",
    "end": "2027-02-11",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Tüm öğrenciler için ders kaydı (bitiş 18:00)"
   },
   {
    "id": "tedu-92",
    "name": "Announcement of the results on the applications regarding the transfer to undergraduate programs for 2027 Spring semester, double/minor program admissions",
    "start": "2027-02-12",
    "end": "2027-02-12",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2027 Bahar Dönemi yatay geçiş ve çift anadal/yandal sonuçlarının açıklanması"
   },
   {
    "id": "tedu-93",
    "name": "Registration dates for students newly admitted to double major/minor programs for 2026 Spring semester undergraduate programs",
    "start": "2027-02-15",
    "end": "2027-02-16",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2026 Bahar Dönemi çift anadal/yandal programlarına yeni kabul edilenlerin kaydı"
   },
   {
    "id": "tedu-94",
    "name": "2027 Spring Semester Course Starting Date",
    "start": "2027-02-15",
    "end": "2027-02-15",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2027 Bahar Dönemi derslerinin başlangıcı"
   },
   {
    "id": "tedu-95",
    "name": "English Language School courses start date (Spring Module 1)",
    "start": "2027-02-15",
    "end": "2027-02-15",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "Yabancı Diller Okulu derslerinin başlangıcı (Bahar Modül 1)"
   },
   {
    "id": "tedu-96",
    "name": "Spring Semester / Add & Drop (Starts at 09:00 - Ends at 18:00)",
    "start": "2027-02-23",
    "end": "2027-02-24",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Bahar Dönemi ekle-bırak (09:00-18:00)"
   },
   {
    "id": "tedu-97",
    "name": "Selection of the secondary field programs through the portal (Starts at 09:00 - Ends at 18:00)",
    "start": "2027-02-23",
    "end": "2027-02-24",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Portaldan ikinci alan programı seçimi (09:00-18:00)"
   },
   {
    "id": "tedu-98",
    "name": "Deadline for course withdrawal start-end and Advisor approvals (Ends: 18:00)",
    "start": "2027-03-01",
    "end": "2027-05-07",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Ders bırakma ve danışman onayı son tarihi (18:00)"
   },
   {
    "id": "tedu-99",
@@ -724,7 +816,8 @@
    "name": "Deadline for submitting the 2027 Spring Semester absence of leave applications",
    "start": "2027-03-19",
    "end": "2027-03-19",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "2027 Bahar Dönemi izin başvuruları son tarihi"
   },
   {
    "id": "tedu-102",
@@ -739,7 +832,8 @@
    "name": "English Language School courses start date (Spring Module 2)",
    "start": "2027-04-26",
    "end": "2027-04-26",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "Yabancı Diller Okulu derslerinin başlangıcı (Bahar Modül 2)"
   },
   {
    "id": "tedu-104",
@@ -754,7 +848,8 @@
    "name": "Beginning of applications to the Graduate Programs Institute for graduate students to be admitted for the 2027 Fall semester",
    "start": "2027-05-03",
    "end": "2027-05-03",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Güz Dönemi lisansüstü başvurularının başlangıcı"
   },
   {
    "id": "tedu-106",
@@ -785,126 +880,144 @@
    "name": "2027 Spring Semester Course Ending Date",
    "start": "2027-06-04",
    "end": "2027-06-04",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2027 Bahar Dönemi derslerinin bitişi"
   },
   {
    "id": "tedu-110",
    "name": "Spring Semester Final Exams",
    "start": "2027-06-05",
    "end": "2027-06-18",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "Bahar Dönemi final sınavları"
   },
   {
    "id": "tedu-111",
    "name": "Semester final exam grade entry (Starts at 09:00 / Ends at 23:59)",
    "start": "2027-06-05",
    "end": "2027-06-22",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Dönem sonu sınav notu girişi"
   },
   {
    "id": "tedu-112",
    "name": "Announcement of 2027 Spring Semester letter grades (at 17:00)",
    "start": "2027-06-23",
    "end": "2027-06-23",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2027 Bahar Dönemi harf notlarının açıklanması (17:00)"
   },
   {
    "id": "tedu-113",
    "name": "End of the 2027 Spring semester for English Language School",
    "start": "2027-06-25",
    "end": "2027-06-25",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "Yabancı Diller Okulu 2027 Bahar Dönemi sonu"
   },
   {
    "id": "tedu-114",
    "name": "Selection of majors through the portal for students who have completed 30 credits. (Starts at 09:00 / Ends at 18:00)",
    "start": "2027-06-28",
    "end": "2027-06-29",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "30 kredisini tamamlayan öğrenciler için portaldan bölüm seçimi"
   },
   {
    "id": "tedu-115",
    "name": "Supplementary exam applications for graduation",
    "start": "2027-06-28",
    "end": "2027-06-29",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Mezuniyet için bütünleme sınavı başvuruları"
   },
   {
    "id": "tedu-116",
    "name": "Tuition payment and registration of the International Students admitted to undergraduate programs",
    "start": "2027-07-01",
    "end": "2027-09-25",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Lisans programlarına kabul edilen uluslararası öğrencilerin ücret ödemesi ve kaydı"
   },
   {
    "id": "tedu-117",
    "name": "Dates of the supplementary exam",
    "start": "2027-07-01",
    "end": "2027-07-02",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "Bütünleme sınavı tarihleri"
   },
   {
    "id": "tedu-118",
    "name": "Deadline for missing (I) grade entry for 2027 Spring Semester",
    "start": "2027-07-02",
    "end": "2027-07-02",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "2027 Bahar Dönemi eksik (I) notu girişi son tarihi"
   },
   {
    "id": "tedu-119",
    "name": "English Proficiency Exam",
    "start": "2027-07-05",
    "end": "2027-07-06",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "İngilizce Yeterlik Sınavı"
   },
   {
    "id": "tedu-120",
    "name": "Double major/minor applications for 2027 Fall semester undergraduate programs",
    "start": "2027-07-05",
    "end": "2027-07-09",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Güz Dönemi çift anadal/yandal başvuruları"
   },
   {
    "id": "tedu-121",
    "name": "Tuition payment for the Summer School Semester registration",
    "start": "2027-07-06",
    "end": "2027-07-07",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Yaz Okulu kaydı için ücret ödemesi"
   },
   {
    "id": "tedu-122",
    "name": "2027 Summer School Special Student applications and registration",
    "start": "2027-07-06",
    "end": "2027-07-07",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Yaz Okulu özel öğrenci başvuru ve kaydı"
   },
   {
    "id": "tedu-123",
    "name": "Deadline for submission of the letter grades for the supplementary exam",
    "start": "2027-07-09",
    "end": "2027-07-09",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Bütünleme sınavı harf notları için son tarih"
   },
   {
    "id": "tedu-124",
    "name": "Announcement of English Proficiency Exam",
    "start": "2027-07-09",
    "end": "2027-07-09",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "İngilizce Yeterlik Sınavı sonuçlarının açıklanması"
   },
   {
    "id": "tedu-125",
    "name": "2027 Summer School Course Start Date",
    "start": "2027-07-12",
    "end": "2027-07-12",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2027 Yaz Okulu derslerinin başlangıcı"
   },
   {
    "id": "tedu-126",
    "name": "Deadline for course withdrawal start-end and Advisor approvals (Ends: 18:00)",
    "start": "2027-07-13",
    "end": "2027-07-13",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Ders bırakma ve danışman onayı son tarihi (18:00)"
   },
   {
    "id": "tedu-127",
@@ -919,49 +1032,56 @@
    "name": "Applications for transfer to undergraduate programs for the 2027 Fall semester",
    "start": "2027-07-21",
    "end": "2027-08-06",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Güz Dönemi lisans programlarına yatay geçiş başvuruları"
   },
   {
    "id": "tedu-129",
    "name": "Announcement of double major/minor application results for 2027 Fall semester undergraduate programs",
    "start": "2027-07-30",
    "end": "2027-07-30",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2027 Güz Dönemi çift anadal/yandal başvuru sonuçlarının açıklanması"
   },
   {
    "id": "tedu-130",
    "name": "Application for transfer in graduate programs (between programs with/without thesis) for 2027 Fall Semester",
    "start": "2027-08-19",
    "end": "2027-08-19",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Güz Dönemi lisansüstü programlar arası geçiş başvurusu"
   },
   {
    "id": "tedu-131",
    "name": "Double major/minor registrations for 2027 Fall semester undergraduate programs",
    "start": "2027-08-19",
    "end": "2027-08-20",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Güz Dönemi çift anadal/yandal kayıtları"
   },
   {
    "id": "tedu-132",
    "name": "Announcement of transfer application results for 2027 Fall semester undergraduate programs",
    "start": "2027-08-20",
    "end": "2027-08-20",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2027 Güz Dönemi yatay geçiş başvuru sonuçlarının açıklanması"
   },
   {
    "id": "tedu-133",
    "name": "Tuition payment and registration dates for new admitted undergraduate students to transfer applications of 2027 Fall Semester",
    "start": "2027-08-26",
    "end": "2027-08-27",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "2027 Güz Dönemi yatay geçişle kabul edilenlerin ücret ödemesi ve kaydı"
   },
   {
    "id": "tedu-134",
    "name": "2027 Summer School Course Ending Date",
    "start": "2027-08-27",
    "end": "2027-08-27",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2027 Yaz Okulu derslerinin bitişi"
   },
   {
    "id": "tedu-135",
@@ -976,63 +1096,72 @@
    "name": "Summer School Final Exams",
    "start": "2027-08-31",
    "end": "2027-09-01",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "Yaz Okulu final sınavları"
   },
   {
    "id": "tedu-137",
    "name": "Announcement of the results of the applications for transfer in graduate programs (between programs with/without thesis) for 2027 Fall Semester",
    "start": "2027-09-02",
    "end": "2027-09-03",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "2027 Güz Dönemi lisansüstü programlar arası geçiş sonuçlarının açıklanması"
   },
   {
    "id": "tedu-138",
    "name": "Summer School Final Exam grade entry (Starts at 09:00/ Ends at 23:59)",
    "start": "2027-09-03",
    "end": "2027-09-03",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Yaz Okulu not girişi"
   },
   {
    "id": "tedu-139",
    "name": "Deadline for thesis grades entries for graduate students (Ends at 23:59)",
    "start": "2027-09-03",
    "end": "2027-09-03",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "Lisansüstü tez notu girişi son tarihi (23:59)"
   },
   {
    "id": "tedu-140",
    "name": "Announcement of the Summer school letter grades",
    "start": "2027-09-04",
    "end": "2027-09-04",
-   "type": "academic"
+   "type": "academic",
+   "nameTr": "Yaz Okulu harf notlarının açıklanması"
   },
   {
    "id": "tedu-141",
    "name": "Application for the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
    "start": "2027-09-08",
    "end": "2027-09-09",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "Mezuniyet bütünleme sınavı ve azami süre sonu ek sınav başvurusu"
   },
   {
    "id": "tedu-142",
    "name": "Selection of majors through the portal for students who have completed 30 credits. (Starts at 09:00 / Ends at 18:00)",
    "start": "2027-09-08",
    "end": "2027-09-09",
-   "type": "registration"
+   "type": "registration",
+   "nameTr": "30 kredisini tamamlayan öğrenciler için portaldan bölüm seçimi"
   },
   {
    "id": "tedu-143",
    "name": "Deadline for missing (I) grade entry for 2027 Summer School",
    "start": "2027-09-13",
    "end": "2027-09-13",
-   "type": "deadline"
+   "type": "deadline",
+   "nameTr": "2027 Yaz Okulu eksik (I) notu girişi son tarihi"
   },
   {
    "id": "tedu-144",
    "name": "Dates of the supplementary exam for graduation and the additional exam held after the end of maximum period of study",
    "start": "2027-09-13",
    "end": "2027-09-14",
-   "type": "exam"
+   "type": "exam",
+   "nameTr": "Mezuniyet bütünleme sınavı ve azami süre sonu ek sınav tarihleri"
   }
  ]
 }
