@@ -7,3 +7,10 @@ dist/
 *.log
 server/.cache/
 test-screenshots/
+
+# Okulun markası, resmi kaynaktan indirilir
+client/public/brand/*
+!client/public/brand/.gitkeep
+
+# Yerel ajan tanımları
+.claude/agents/

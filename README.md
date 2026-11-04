@@ -2,7 +2,17 @@
 
 TEDDY, öğrencilerin kampüs ve ders sorularına tek yerden cevap veren bir asistandır. Takvim, kurallar, dersler, etkinlikler ve Moodle son tarihleri tek arayüzde toplanır. Ders Modu cevabı hemen vermez, ipuçlarıyla öğrencinin kendisinin çözmesine yardım eder.
 
-Bu proje bir ders için hazırlanmış demodur. **Uygulamadaki kampüs verileri örnektir, gerçek TEDÜ bilgisi değildir.**
+Bu proje bir ders için hazırlanmış demodur. **Uygulamadaki kampüs verileri örnektir, gerçek TEDÜ bilgisi değildir.** Tek istisna akademik takvimdir: `shared/data/tedu-calendar.json`, üniversitenin yayımladığı takvimden türetilmiştir ve kaynağı dosyada yazar. Türkçe adlar resmî çeviri değildir.
+
+> Bu bir öğrenci projesidir, TED Üniversitesi'nin resmi uygulaması değildir.
+
+## Ekran görüntüleri
+
+Görüntüler Moodle bağlantısı olmadan, yalnızca örnek veriyle çekilmiştir.
+
+![Ana sayfa](docs/screenshots/ana-sayfa.png)
+
+![Duyurular](docs/screenshots/duyurular.png)
 
 ## Kurulum ve çalıştırma
 
@@ -10,8 +20,11 @@ Node.js 20 veya üzeri gerekir.
 
 ```bash
 npm install
+cp server/.env.example server/.env
 npm run dev
 ```
+
+Moodle token'ı ve AI anahtarı repoda yoktur. İsterseniz kendi değerlerinizi `server/.env` dosyasına siz eklersiniz. Bu dosya git'e girmez. Değerler boşsa uygulama örnek veriyle demo modunda çalışır.
 
 Uygulama http://127.0.0.1:5173 adresinde açılır. API sunucusu `127.0.0.1:3001` üzerinde çalışır.
 
@@ -160,7 +173,7 @@ Ders Modu cevapları, tarayıcı paketine girmesin diye `server/src/data/` için
 ## Tema ve logo
 
 - Renkler ve fontlar `client/src/theme.css` dosyasındadır. Renkler logodan alınmıştır.
-- Logo `client/public/brand/tedu-logo.svg` veya `.png` olarak aranır, SVG önceliklidir. Dosya yoksa "TEDDY" metni gösterilir.
+- Logo okulun markası olduğu için repoda yoktur. Logoyu resmi kaynaktan indirip `client/public/brand/` klasörüne `tedu-logo.svg` veya `tedu-logo.png` adıyla koyun, SVG önceliklidir. Dosya yoksa "TEDDY" metni gösterilir.
 - Fontlar Google Fonts'tan yüklenir: başlıklar Source Serif 4, metinler Source Sans 3. İnternet yoksa sistem fontlarına dönülür.
 
 ## Erişilebilirlik
@@ -201,3 +214,7 @@ Ders Modu cevapları, tarayıcı paketine girmesin diye `server/src/data/` için
 - 👍/👎 geri bildirimlerini toplayıp analiz etme
 - Bildirim ve hatırlatmalar
 - Otomatik testler
+
+## Ekip ve katkı
+
+<!-- İsimler buraya eklenecek -->
