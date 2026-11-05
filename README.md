@@ -217,4 +217,11 @@ Ders Modu cevapları, tarayıcı paketine girmesin diye `server/src/data/` için
 
 ## Ekip ve katkı
 
-<!-- İsimler buraya eklenecek -->
+Bu proje TED Üniversitesi TEDU109 dersi kapsamında geliştirilmiştir.
+
+| İsim | E-posta |
+|---|---|
+| Duru İçli | duru.icli@tedu.edu.tr |
+| Yusuf Cem Yılmaz | ycem.yilmaz@tedu.edu.tr |
+| Sudenaz Kılıç | sudenaz.kilic@tedu.edu.tr |
+| Beril Ak | beril.ak@tedu.edu.tr |
